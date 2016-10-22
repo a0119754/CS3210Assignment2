@@ -65,6 +65,7 @@ rank 5=soctf-pdc-002 slot=0:0-2
 - MPI_Isend() and MPI_Irecv() are non-blocking (caller continues executing instructions) (MPI_Test() checks if communication has finished, and MPI_Wait() blocks until it has finished)
 
 To do:
+
 1. The four files for execution on 3-node cluster lab machine:
   1. makefile.lab (instructions on compiling) Example:
 ```
