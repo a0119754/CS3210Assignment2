@@ -75,6 +75,7 @@ rank 5=soctf-pdc-002 slot=0:0-2
   * Compile and run for two processes. Distribute data and show that data is received properly by recipient
   * Perform computation on distributed data and return correct results with respect to sequential version
   * Handle small range of processes more than two, distributing data and carrying out computation accordingly
+3. Figure out how many cores each system in the 3-node cluster has (I'm guessing the i5 has four, the i7 has four (but it says eight due to hyperthreading), and the JETSON has... four? Iunno, read it in assignment 1 specifications, not sure how accurate). For now, work with assumption that we have twelve cores combined
 
 Example of makefile.lab:
 ```
