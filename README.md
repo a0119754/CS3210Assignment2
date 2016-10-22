@@ -13,7 +13,7 @@ Rough idea on what to do:
   * May want to spend some time on this stage experimenting and figuring out which way would be faster to rotate while sending (maybe send to 1, who will send to 2 who send to 3 who send to 4, etc., meanwhile 1 rotates and send to 2 to 3 to 4 etc., then repeat for two more rotations?)
   * Master does not need to know how the rotated patterns look like (or does it? Do we want to involve the master in searching? Or nah, master should evolve while the rest search)
 2. For each iteration:
-  1. Split up the world into n portions for n processes (I recommend splitting them horizontally, so process 1 takes top x%, process 2 takes next x%, etc., and process n takes bottom x%, where x=100/n)
+  1. Split up the world into n portions for n processes ~~(I recommend splitting them horizontally, so process 1 takes top x%, process 2 takes next x%, etc., and process n takes bottom x%, where x=100/n)~~ (How about first checking the number of rows and columns, then act accordingly? ie. if number of columns is more than number of rows then split vertically, else split horizontally?)
   2. Give each process a portion of the world
   3. Master evolves current iteration into the next, while the slaves search for aliens (if have time, sort results obtained in point 2.7?)
   4. Slave starts searching starting each cell which most top-left belongs to them (or is this efficient? Bottom would have lots of waiting, but it's meaningless for two processors to start searching for the same halves when one has already invalidated it). Incompleted results is sent to the next slave
