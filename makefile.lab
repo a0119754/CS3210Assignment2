@@ -1,0 +1,5 @@
+SETL:		SETL.c
+			gcc -o SETL SETL.c
+
+SETL_par:	SETL_par.c
+			mpicc SETL_par.c -o SETL_par

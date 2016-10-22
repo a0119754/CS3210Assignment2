@@ -1,0 +1,5 @@
+SETL:		SETL.c
+			./SETL [filename of world file] [number of iterations] [filename of pattern file]
+
+SETL_par:	SETL_par.c
+			mpirun -machinefile machinefile.lab -rankfile rankfile.lab -np [number_of_processes] ./SETL_par [filename of world file] [number of iterations] [filename of pattern file]
