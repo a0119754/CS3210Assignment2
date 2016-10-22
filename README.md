@@ -67,11 +67,7 @@ rank 5=soctf-pdc-002 slot=0:0-2
 To do:
 
 1. The four files for execution on 3-node cluster lab machine:
-  1. makefile.lab (instructions on compiling) Example:
-```
-      SETL:	SETL.c
-      		  gcc -o SETL SETL.c
-```
+  1. makefile.lab (instructions on compiling) Example below
   2. runfile.lab (instructions on executing)
   3. machinefile.lab
   4. rankfile.lab
@@ -79,3 +75,9 @@ To do:
   * Compile and run for two processes. Distribute data and show that data is received properly by recipient
   * Perform computation on distributed data and return correct results with respect to sequential version
   * Handle small range of processes more than two, distributing data and carrying out computation accordingly
+
+Example of makefile.lab:
+```
+      SETL:	SETL.c
+      		  gcc -o SETL SETL.c
+```
