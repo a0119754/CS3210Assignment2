@@ -6,7 +6,7 @@ SETL.c is the initial, sequential version of the code that we need to paralleliz
 + To compile it: `gcc -o SETL SETL.c`
 + To execute it: `./SETL [filename of world file] [number of iterations] [filename of pattern file]`
 
-Rough idea on what to do:
+## Rough idea on what to do:
 
 1. Distribute the four rotated positions of the single pattern to all processes
   * A naive approach would be to have master do the rotating, then send all 4 to each process
@@ -64,7 +64,7 @@ rank 5=soctf-pdc-002 slot=0:0-2
 - MPI_Send() and MPI_Recv() are blocking (caller is stopped until message is successfully sent/received)
 - MPI_Isend() and MPI_Irecv() are non-blocking (caller continues executing instructions) (MPI_Test() checks if communication has finished, and MPI_Wait() blocks until it has finished)
 
-To do:
+## To do:
 
 1. The four files for execution on 3-node cluster lab machine:
   1. makefile.lab (instructions on compiling) Example below
