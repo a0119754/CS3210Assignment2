@@ -64,11 +64,16 @@ rank 5=soctf-pdc-002 slot=0:0-2
 - MPI_Send() and MPI_Recv() are blocking (caller is stopped until message is successfully sent/received)
 - MPI_Isend() and MPI_Irecv() are non-blocking (caller continues executing instructions) (MPI_Test() checks if communication has finished, and MPI_Wait() blocks until it has finished)
 
+## Lab system information
+
+* Jetson - 4 CPUs
+* i-7 - 4 cores x 2 threads each = 8 CPUs
+* i-5 - 4 CPUs
+
 ## To do:
 
 1. Primitive version of SETL_par.c which can handle these by Wednesday:
   * Compile and run for two processes. Distribute data and show that data is received properly by recipient
   * Perform computation on distributed data and return correct results with respect to sequential version
   * Handle small range of processes more than two, distributing data and carrying out computation accordingly
-2. Figure out how many cores each system in the 3-node cluster has (I'm guessing the i5 has four, the i7 has four (but it says eight due to hyperthreading), and the JETSON has... four? Iunno, read it in assignment 1 specifications, not sure how accurate). For now, work with assumption that we have twelve cores combined
-3. Update machinefile.lab and rankfile.lab accordingly to which systems to use, and how many cores are in each
+2. Update machinefile.lab and rankfile.lab accordingly to which systems to use, and how many cores are in each
