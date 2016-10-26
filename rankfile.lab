@@ -2,4 +2,4 @@ rank 0=soctf-pdc-007 slot=0
 rank 1=soctf-pdc-007 slot=1
 rank 2=soctf-pdc-007 slot=2
 rank 3=soctf-pdc-007 slot=3
-rank 4=soctf-pdc-007 slot=4
+rank 4=jetson07 slot=0
