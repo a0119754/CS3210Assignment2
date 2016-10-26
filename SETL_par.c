@@ -249,10 +249,10 @@ int main( int argc, char** argv)
 		MPI_Send(&noOfResults, 1, MPI_INT, 0, 4 + iter, MPI_COMM_WORLD);
 		cur = list->tail->next; // Personally I have no idea what this is for, but it's in the implementation of printList(), and I don't know exactly how the MATCHLIST structure works exactly and technically, and I'm way too used to object-oriented languages to even wrap my head around the primitive concept of using structs before classes ever existed anyway, so yeah, I am just going to leave it here and pray hard it doesn't do something wrong by skipping the tail
 		for (i = 0; i < noOfResults; i++, cur = cur->next) { // Wow didn't know you could do that in a for-loop. Commas, huh? I'll keep that in mind. Guess you DO learn something new everyday
-			MPI_Send(cur->iteration, 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
-			MPI_Send(cur->row, 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
-			MPI_Send(cur->col, 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
-			MPI_Send(cur->rotation, 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
+			MPI_Send(&(cur->iteration), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
+			MPI_Send(&(cur->row), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
+			MPI_Send(&(cur->col), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
+			MPI_Send(&(cur->rotation), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
 			// Sending four consecutive messages one after another with the same message tag. Would that be alright?
 		}
 	}
