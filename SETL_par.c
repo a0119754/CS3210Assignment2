@@ -155,6 +155,8 @@ int main( int argc, char** argv)
 	if (rank == 0)
 		before = wallClockTime();
 	
+	printf("Passing slaves size of world.../n");
+	
 	// Master pass slaves size of world
 	if (rank == 0) {
 		for (i = 1; i < processes; i++) {
@@ -164,6 +166,8 @@ int main( int argc, char** argv)
 		MPI_Recv(&size, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, &mpiStatus);
 		curW = allocateSquareMatrix(size+2, DEAD); // Slaves allocate memory of world
 	}
+	
+	printf("Passing slaves size of pattern.../n");
 	
 	// Master pass slaves size of pattern
 	if (rank == 0) {
@@ -175,6 +179,8 @@ int main( int argc, char** argv)
 		patterns[0] = allocateSquareMatrix(patternSize, DEAD); // Slaves allocate memory for pattern
 		// xxx how many patterns should each slave have?
 	}
+	
+	printf("Distributing patterns to slave.../n");
 	
 	// Distribute patterns to slaves
 	if (rank == 0) {
@@ -193,6 +199,8 @@ int main( int argc, char** argv)
 		}
 	}
 
+	printf("Starting work.../n");
+	
     //Actual work start
     list = newList();
 
