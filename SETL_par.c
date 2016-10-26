@@ -115,7 +115,7 @@ int main( int argc, char** argv)
 	MPI_Comm_size(MPI_COMM_WORLD, &processes);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	
-	if ((processes != 2) || (processes != 5)) {
+	if ((processes != 2) && (processes != 5)) {
 		fprintf(stderr, "Currently this parallelized version of the code is written for the specific usage of two or five processes");
 		exit(1);
 	}
