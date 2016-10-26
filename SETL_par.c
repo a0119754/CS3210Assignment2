@@ -113,7 +113,7 @@ int main( int argc, char** argv)
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	
 	if (processes != 5) {
-		fprintf("Currently this parallelized version of the code is written for the specific usage of five processes");
+		fprintf(stderr, "Currently this parallelized version of the code is written for the specific usage of five processes");
 		exit(1);
 	}
 	
