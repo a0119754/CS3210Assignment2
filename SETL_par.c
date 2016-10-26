@@ -179,7 +179,7 @@ int main( int argc, char** argv)
 	// Distribute patterns to slaves
 	if (rank == 0) {
 		dir = N;
-		for (i = 1; i < processes; i++) {
+		for (i = 1; i < processes; i++, dir++) {
 			MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, i, 3, MPI_COMM_WORLD); // This message has tag of 3
 		}
 	} else {
