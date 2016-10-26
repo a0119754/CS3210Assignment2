@@ -115,8 +115,8 @@ int main( int argc, char** argv)
 	MPI_Comm_size(MPI_COMM_WORLD, &processes);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	
-	if (processes != 5) {
-		fprintf(stderr, "Currently this parallelized version of the code is written for the specific usage of five processes");
+	if ((processes != 2) || (processes != 5)) {
+		fprintf(stderr, "Currently this parallelized version of the code is written for the specific usage of two or five processes");
 		exit(1);
 	}
 	
@@ -179,11 +179,18 @@ int main( int argc, char** argv)
 	// Distribute patterns to slaves
 	if (rank == 0) {
 		dir = N;
-		for (i = 1; i < processes; i++, dir++) {
-			MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, i, 3, MPI_COMM_WORLD); // This message has tag of 3
+		for (i = 1; i < 5 /*processes*/; i++, dir++) {
+			// xxx Need to change this part when variable number of processes
+			MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, (processes == 5) ? i : 1, 3, MPI_COMM_WORLD); // This message has tag of 3
 		}
 	} else {
-		MPI_Recv(&(patterns[0][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
+		if (processes == 2) {
+			for (i = 0; i < 4; i++) {
+				MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
+			}
+		} else {
+			MPI_Recv(&(patterns[0][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
+		}
 	}
 
     //Actual work start
@@ -211,7 +218,11 @@ int main( int argc, char** argv)
 		}
 		// While slaves search for pattern 
 		else {
-			searchPatternInOnlyOneDirection(curW, size, iter, patterns, patternSize, list, rank - 1);
+			if (processes == 5) {
+				searchPatternInOnlyOneDirection(curW, size, iter, patterns, patternSize, list, rank - 1);
+			} else {
+				searchPatterns( curW, size, iter, patterns, patternSize, list);
+			}
 		}
 
 		// Only master needs to do this; the slaves only use one world array
