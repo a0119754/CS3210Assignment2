@@ -176,7 +176,13 @@ int main( int argc, char** argv)
 		}
 	} else {
 		MPI_Recv(&patternSize, 1, MPI_INT, 0, 2, MPI_COMM_WORLD, &mpiStatus);
-		patterns[0] = allocateSquareMatrix(patternSize, DEAD); // Slaves allocate memory for pattern
+		if (processes == 5) {
+			patterns[0] = allocateSquareMatrix(patternSize, DEAD); // Slaves allocate memory for pattern
+		} else if (processes == 2) {
+			for (i = 0; i < 4; i++) {
+				patterns[i] = allocateSquareMatrix(patternSize, DEAD);
+			}
+		}
 		// xxx how many patterns should each slave have?
 	}
 	
