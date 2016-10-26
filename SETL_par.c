@@ -99,6 +99,7 @@ int main( int argc, char** argv)
     char **patterns[4];
     int dir, iterations, iter, processes, rank, i, j, noOfResults;
     int size, patternSize;
+	int debug = 1;
 	int forResults[4];
     long long before, after;
     MATCHLIST*list;
@@ -157,6 +158,7 @@ int main( int argc, char** argv)
 	
 	// Master pass slaves size of world
 	if (rank == 0) {
+		if (debug) printf("Passing world size to slaves\n");
 		for (i = 1; i < processes; i++) {
 			MPI_Send(&size, 1, MPI_INT, i, 1, MPI_COMM_WORLD); // This message has tag of 1
 		}
@@ -167,6 +169,7 @@ int main( int argc, char** argv)
 	
 	// Master pass slaves size of pattern
 	if (rank == 0) {
+		if (debug) printf("Passing pattern size to slaves\n");
 		for (i = 1; i < processes; i++) {
 			MPI_Send(&patternSize, 1, MPI_INT, i, 2, MPI_COMM_WORLD); // This message has tag of 2
 		}
@@ -184,6 +187,7 @@ int main( int argc, char** argv)
 	
 	// Distribute patterns to slaves
 	if (rank == 0) {
+		if (debug) printf("Distributing rotated patterns to slaves\n");
 		dir = N;
 		for (i = 1; i < 5 /*processes*/; i++, dir++) {
 			// xxx Need to change this part when variable number of processes
@@ -197,6 +201,10 @@ int main( int argc, char** argv)
 		} else {
 			MPI_Recv(&(patterns[0][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 		}
+	}
+	
+	if ((debug) && (rank == 0)) {
+		printf("Starting work\n");
 	}
 	
     //Actual work start
