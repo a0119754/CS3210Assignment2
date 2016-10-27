@@ -72,8 +72,6 @@ rank 5=soctf-pdc-002 slot=0:0-2
 
 ## To do:
 
-1. Primitive version of SETL_par.c which can handle these by Wednesday:
-  * Compile and run for two processes. Distribute data and show that data is received properly by recipient
-  * Perform computation on distributed data and return correct results with respect to sequential version
-  * Handle small range of processes more than two, distributing data and carrying out computation accordingly
-2. Update machinefile.lab and rankfile.lab accordingly to which systems to use, and how many cores are in each
+1. Code variable number of processes p >= 1 into the program
+2. Find out what exactly is wrong and what causes the block when creating processes on the cores of different systems in a cluster
+3. Determine if printf() is correct, valid, and exactly when the code hits that line (it does not seem to act that way duirng last week's debugging, printing everything out after the code has finished executing and was thus completely useless)
