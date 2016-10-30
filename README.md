@@ -4,8 +4,8 @@ Personal repository to facilitate transfer of data between multiple machines for
 
 + To compile SETL.c: `gcc -o SETL SETL.c`
 + To execute SETL: `./SETL [filename of world file] [number of iterations] [filename of pattern file]`
-+ To compile SETL_par.c: 
-+ To execute SETL_par:
++ To compile SETL_par.c: `mpicc SETL_par.c -o SETL_par`
++ To execute SETL_par: `mpirun -machinefile machinefile.lab -rankfile rankfile.lab -np [number_of_processes] ./SETL_par [filename of world file] [number of iterations] [filename of pattern file]`
 + To send a file through SCP: `scp [filename] [account_name]@[host_name]:~`
 
 ## Rough idea on what to do:
