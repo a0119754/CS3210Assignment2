@@ -116,11 +116,6 @@ int main( int argc, char** argv)
 	MPI_Comm_size(MPI_COMM_WORLD, &processes);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	
-	if ((processes != 2) && (processes != 5)) {
-		fprintf(stderr, "Currently this parallelized version of the code is written for the specific usage of two or five processes");
-		exit(1);
-	}
-	
 	if (rank == 0) {
 		// Master will read the world from file
 		curW = readWorldFromFile(argv[1], &size);
@@ -165,6 +160,7 @@ int main( int argc, char** argv)
 	} else {
 		MPI_Recv(&size, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, &mpiStatus);
 		curW = allocateSquareMatrix(size+2, DEAD); // Slaves allocate memory of world
+		// xxx if processes > 5, some slaves would not need the entire world
 	}
 	
 	// Master pass slaves size of pattern
@@ -175,14 +171,19 @@ int main( int argc, char** argv)
 		}
 	} else {
 		MPI_Recv(&patternSize, 1, MPI_INT, 0, 2, MPI_COMM_WORLD, &mpiStatus);
-		if (processes == 5) {
-			patterns[0] = allocateSquareMatrix(patternSize, DEAD); // Slaves allocate memory for pattern
-		} else if (processes == 2) {
-			for (i = 0; i < 4; i++) {
+		
+		// Slaves allocate memory for pattern
+		if (processes >= 5) {
+			// There are at least four slave processes, and thus we can divide the slaves into
+			// groups of four, with each group in charge of a single rotated pattern
+			// 2 processes = 4 rotated patterns
+			// 3 processes = 2 + 2 rotated patterns
+			// 4 processes = 2 + 1 + 1 rotated patterns
+			j = (processes >= 5) ? 1 : ((processes == 2) ? 4 : ((rank == 1) ? 2 : ((processes == 3) ? 2 : 1)));
+			for (i = 0; i < j; i++) {
 				patterns[i] = allocateSquareMatrix(patternSize, DEAD);
 			}
 		}
-		// xxx how many patterns should each slave have?
 	}
 	
 	// Distribute patterns to slaves
