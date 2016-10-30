@@ -161,6 +161,8 @@ int main( int argc, char** argv)
 		MPI_Recv(&size, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, &mpiStatus);
 		curW = allocateSquareMatrix(size+2, DEAD); // Slaves allocate memory of world
 		// xxx if processes > 5, some slaves would not need the entire world
+		// However, simply allocating memory enough for entire world for now, since
+		// 1. memory usage is rarely our concern, 2. easier to code since their indexes are of the actual ones
 	}
 	
 	// Master pass slaves size of pattern
@@ -172,29 +174,44 @@ int main( int argc, char** argv)
 	} else {
 		MPI_Recv(&patternSize, 1, MPI_INT, 0, 2, MPI_COMM_WORLD, &mpiStatus);
 		
-		// Slaves allocate memory for pattern
-		if (processes >= 5) {
-			// There are at least four slave processes, and thus we can divide the slaves into
-			// groups of four, with each group in charge of a single rotated pattern
-			// 2 processes = 4 rotated patterns
-			// 3 processes = 2 + 2 rotated patterns
-			// 4 processes = 2 + 1 + 1 rotated patterns
-			j = (processes >= 5) ? 1 : ((processes == 2) ? 4 : ((rank == 1) ? 2 : ((processes == 3) ? 2 : 1)));
-			for (i = 0; i < j; i++) {
-				patterns[i] = allocateSquareMatrix(patternSize, DEAD);
-			}
+		// --- Slaves allocate memory for pattern ---
+		// There are at least four slave processes, and thus we can divide the slaves into
+		// groups of four, with each group in charge of a single rotated pattern
+		// 2 processes = 4 rotated patterns
+		// 3 processes = 2 + 2 rotated patterns
+		// 4 processes = 2 + 1 + 1 rotated patterns
+		j = (processes >= 5) ? 1 : ((processes == 2) ? 4 : ((rank == 1) ? 2 : ((processes == 3) ? 2 : 1)));
+		for (i = 0; i < j; i++) {
+			patterns[i] = allocateSquareMatrix(patternSize, DEAD);
 		}
 	}
 	
 	// Distribute patterns to slaves
 	if (rank == 0) {
 		if (debug) printf("Distributing rotated patterns to slaves\n");
-		dir = N;
-		for (i = 1; i < 5 /*processes*/; i++, dir++) {
-			// xxx Need to change this part when variable number of processes
-			MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, (processes == 5) ? i : 1, 3, MPI_COMM_WORLD); // This message has tag of 3
+		
+		if (processes == 2) {
+			for (dir = N; dir <= W; dir++){
+				MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, 1, 3, MPI_COMM_WORLD); // This message has tag of 3
+			}
+		} else if (processes >= 5) {
+			// xxx distribute four rotated patterns among all the slaves
+			
+		} else { // 3 or 4
+			for (dir = N; dir <= E; dir++){
+				MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, 1, 3, MPI_COMM_WORLD); // This message has tag of 3
+			}
+			if (processes == 3) {				
+				for (dir = S; dir <= W; dir++){
+					MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, 2, 3, MPI_COMM_WORLD); // This message has tag of 3
+				}
+			} else {
+				MPI_Send(&(patterns[S][0][0]), patternSize * patternSize, MPI_CHAR, 2, 3, MPI_COMM_WORLD); // This message has tag of 3
+				MPI_Send(&(patterns[W][0][0]), patternSize * patternSize, MPI_CHAR, 3, 3, MPI_COMM_WORLD); // This message has tag of 3
+			}
 		}
 	} else {
+		// xxx need to update the receiving
 		if (processes == 2) {
 			for (i = 0; i < 4; i++) {
 				MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
