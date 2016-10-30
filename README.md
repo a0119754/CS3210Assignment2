@@ -79,3 +79,4 @@ rank 5=soctf-pdc-002 slot=0:0-2
   - Compile and execute `loc.c` with a machine file, a rank file, and any number of processes, and see what happens
 3. Determine if printf() is correct, valid, and exactly when the code hits that line (it does not seem to act that way duirng last week's debugging, printing everything out after the code has finished executing and was thus completely useless)
   - Apparently the output stream is only flushed when it encounters the newline character. Try attaching `\n` to the end of every sentence printed?
+4. Code the sorting of results before output
