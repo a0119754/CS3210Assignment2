@@ -77,6 +77,7 @@ rank 5=soctf-pdc-002 slot=0:0-2
 1. Code variable number of processes p >= 1 into the program
 2. Find out what exactly is wrong and what causes the block when creating processes on the cores of different systems in a cluster
   - Compile and execute `loc.c` with a machine file, a rank file, and any number of processes, and see what happens
+  - Evidence strongly suggests that the jetson machines are not meant to run MPI programs. They seem not to be able to execute even a single process after SSH-ing into them
 3. Determine if printf() is correct, valid, and exactly when the code hits that line (it does not seem to act that way duirng last week's debugging, printing everything out after the code has finished executing and was thus completely useless)
   - Apparently the output stream is only flushed when it encounters the newline character. Try attaching `\n` to the end of every sentence printed?
 4. Code the sorting of results before output
