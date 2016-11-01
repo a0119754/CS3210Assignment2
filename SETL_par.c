@@ -64,6 +64,8 @@ void insertEnd(MATCHLIST*, int, int, int, int);
 
 void printList(MATCHLIST*);
 
+void printListSorted(MATCHLIST*);
+
 
 /***********************************************************
    Search related functions
@@ -362,11 +364,8 @@ int main( int argc, char** argv)
 			}
 		}
 		
-		// Sort results using merge sort
-		
-		
 		// Output results
-		printList( list );
+		printListSorted( list );
 		
 		//Stop timer
 		after = wallClockTime();
@@ -758,7 +757,6 @@ void printList(MATCHLIST* list)
 
     printf("List size = %d\n", list->nItem);    
 
-
     if (list->nItem == 0) return;
 
     cur = list->tail->next;
@@ -766,5 +764,45 @@ void printList(MATCHLIST* list)
         printf("%d:%d:%d:%d\n", 
                 cur->iteration, cur->row, cur->col, cur->rotation);
     }
+}
+
+int isSmaller(int iter1, int rot1, int r1, int c1, int iter2, int rot2, int r2, int c2) {
+	if (iter1 < iter2) return 1;
+	if (iter1 > iter2) return 0;
+	if (rot1 < rot2) return 1;
+	if (rot1 > rot2) return 0;
+	if (r1 < r2) return 1;
+	if (r1 > r2) return 0;
+	if (c1 < c2) return 1;
+	return 0;
+}
+
+void printListSorted(MATCHLIST*) {
+    int i, x, iter, rot, r, c, takeCurrent;
+    MATCH* cur, designated;
+
+    printf("List size = %d\n", list->nItem);    
+
+    if (list->nItem == 0) return;
+
+	for (x = 0; x < list->nItem; x++) {
+		cur = list->tail->next;
+		iter = -1;
+		takeCurrent = 0;
+		for( i = 0; i < list->nItem; i++, cur=cur->next){
+			if (cur->iteration != -1) {
+				if ((iter == -1) || (isSmaller(cur->iteration, cur->rotation, cur->row, cur->col, iter, rot, r, c))) {
+					iter = cur->iteration;
+					rot = cur->rotation;
+					r = cur->row;
+					c = cur->col;
+					designated = cur;
+				}
+			}
+			
+			designated->iter = -1;
+			printf("%d:%d:%d:%d\n", iter, r, c, rot);
+		}
+	}
 }
 
