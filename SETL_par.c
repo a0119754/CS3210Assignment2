@@ -94,12 +94,12 @@ int main( int argc, char** argv)
 {
     char **curW, **nextW, **temp, dummy[20];
     char **patterns[4];
-    int dir, iterations, iter, processes, rank, i, j, k, l, m, n, m2, n2, noOfResults;
+    int dir, iterations, iter, processes, rank, noOfPatterns, i, j, k, l, m, n, m2, n2, start, partSize, end, noOfResults;
     int size, patternSize;
 	int debug = 1;
 	int forResults[4];
     long long before, after;
-    MATCHLIST*list;
+    MATCHLIST* list, prevList, nextList;
 	MATCH* cur;
 	MPI_Status mpiStatus;
     
@@ -185,6 +185,7 @@ int main( int argc, char** argv)
 	
 	// Distribute patterns to slaves
 	if (rank == 0) {
+		noOfPatterns = 4;
 		if (debug) printf("Distributing rotated patterns to slaves\n");
 		
 		if (processes == 2) {
@@ -214,16 +215,16 @@ int main( int argc, char** argv)
 	} else {
 		if (processes == 2) {
 			// Only slave process; accept all four rotated patterns
-			for (i = 0; i < 4; i++) {
-				MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
-			}
+			noOfPatterns = 4;
 		} else if ((rank == 1) && ((processes == 3) || (processes == 4))) {
 			// Process 1 when there are either 3 or 4 processes needs to receive two patterns
-			for (i = 0; i < 2; i++) {
-				MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
-			}
+			noOfPatterns = 2;
 		} else {
-			MPI_Recv(&(patterns[0][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
+			noOfPatterns = 1;
+		}
+		
+		for (i = 0; i < noOfPatterns; i++) {
+			MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 		}
 	}
 	
@@ -233,6 +234,10 @@ int main( int argc, char** argv)
 	n = size / j; // How much to divide the world up into
 	m2 = size % (j - 1); // Remainder trying to split up the world size among (j - 1) processes
 	n2 = size / (j - 1); // How much to divide the world up into for (j - 1) processes
+	l = (rank == 0) ? 0 : (rank - 2) / 4;
+	start = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
+	partSize = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
+	end = (rank == 0) ? 0 : (start + partSize - 1);
 	
 	if ((debug) && (rank == 0)) {
 		printf("Starting work\n");
@@ -240,6 +245,8 @@ int main( int argc, char** argv)
 	
     //Actual work start
     list = newList();
+	prevList = newList();
+	nextList = newList();
 
     for (iter = 0; iter < iterations; iter++){
 
@@ -252,21 +259,12 @@ int main( int argc, char** argv)
 		if (rank == 0) {
 			for (i = 1; i < processes; i++) {
 				l = (i - 2) / 4; // Which part of the world this process will receive
-				if ((k == 0) || (((i - 1) % 4) <= k)) {
-					// Divide world up into maximum number of processes
-					MPI_Send(&(curW[(l <= m) ? (l * (n + 1)) : (l * n + m)][0]), size * (n + ((l < m) ? 1 : 0)), MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
-				} else {
-					// Divide world up into (maximum number of processes - 1)
-					MPI_Send(&(curW[(l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)][0]), size * (n2 + ((l < m2) ? 1 : 0)), MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
-				}
+				start = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
+				partSize = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
+				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
 			}
 		} else {
-			l = (rank - 2) / 4;
-			if ((k == 0) || (((rank - 1) % 4) <= k)) {
-				MPI_Recv(&(curW[(l <= m) ? (l * (n + 1)) : (l * n + m)][0]), size * (n + ((l < m) ? 1 : 0)), MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
-			} else {
-				MPI_Recv(&(curW[(l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)][0]), size * (n2 + ((l < m2) ? 1 : 0)), MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
-			}
+			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
 		}
 		
 		// Master focus on evolving to next generation
@@ -275,13 +273,33 @@ int main( int argc, char** argv)
 		}
 		// While slaves search for pattern 
 		else {
-			// xxx modify code so that each slave only searches their part of the world, as well as receive unfinished results from previous slave, then submit unfinished results to next slave
-			
-			if (processes == 5) {
-				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rank - 1, list);
-			} else {
-				searchPatterns( curW, size, iter, patterns, patternSize, list);
+			if (processes == 2) {
+				// One process search patterns in all four directions
+				for (i = 0; i < noOfPatterns; i++) {
+					searchSinglePattern(curW, size, iter, patterns[i], patternSize, i, list, 0, 1, size - 1);
+				}
+			} else if (processes >= 5) {
+				// One process search for pattern in a specific direction according to its rank
+				searchSinglePattern(curW, size, iter, patterns[0], patternSize, (rank - 2) % 4, list, nextList, start, end);
+				
+				// xxx receive results from previous guy
+				
+				// xxx send results to next guy
+				
+			} else { // 3 or 4 processes
+				if (rank == 2) { // Search for patterns in first two directions
+					for (i = 0; i < noOfPatterns; i++) {
+						searchSinglePattern(curW, size, iter, patterns[i], patternSize, i, list, 0, 1, size - 1);
+					}
+				} else if (processes == 3) { // Search for patterns in last two directions
+					for (i = 0; i < noOfPatterns; i++) {
+						searchSinglePattern(curW, size, iter, patterns[i], patternSize, i + 2, list, 0, 1, size - 1);
+					}
+				} else { // 
+					searchSinglePattern(curW, size, iter, patterns[0], patternSize, rank, list, 0, 1, size - 1);
+				}
 			}
+			
 		}
 
 		// Only master needs to do this; the slaves only use one world array
@@ -334,14 +352,15 @@ int main( int argc, char** argv)
 
     //Clean up
     deleteList( list );
+    deleteList( prevList );
+    deleteList( nextList );
 
     freeSquareMatrix( curW );
 	if (rank == 0) // Only master has two world arrays
 		freeSquareMatrix( nextW );
 	
 	// Free memory used for patterns
-	j = (rank == 0) ? 4 : ((processes >= 5) ? 1 : ((processes == 2) ? 4 : ((rank == 1) ? 2 : ((processes == 3) ? 2 : 1))));
-	for (i = 0; i < j; i++) {
+	for (i = 0; i < noOfPatterns; i++) {
 		freeSquareMatrix( patterns[i] );
 	}
 	
@@ -557,18 +576,19 @@ void searchPatterns(char** world, int wSize, int iteration,
 
     for (dir = N; dir <= W; dir++){
         searchSinglePattern(world, wSize, iteration, 
-                patterns[dir], pSize, dir, list);
+                patterns[dir], pSize, dir, list, 0, 1, wSize - 1);
     }
 }
 
-void searchSinglePattern(char** world, int wSize, int iteration,
-        char** pattern, int pSize, int rotation, MATCHLIST* list)
+void searchSinglePattern(char** world, int wSize, int iteration, char** pattern, int pSize,
+		int rotation, MATCHLIST* list, MATCHLIST* listToContinueFinding, int start, int end)
 {
     int wRow, wCol, pRow, pCol, match;
+	int cTerminate = wSize - pSize + 1;
+	int wTerminate = (end < cTerminate) ? end : cTerminate;
 
-
-    for (wRow = 1; wRow <= (wSize-pSize+1); wRow++){
-        for (wCol = 1; wCol <= (wSize-pSize+1); wCol++){
+    for (wRow = start; wRow <= wTerminate; wRow++){
+        for (wCol = 1; wCol <= cTerminate; wCol++){
             match = 1;
 #ifdef DEBUGMORE
             printf("S:(%d, %d)\n", wRow-1, wCol-1);
@@ -582,14 +602,23 @@ void searchSinglePattern(char** world, int wSize, int iteration,
 #endif
                         match = 0;    
                     }
+					if ((wRow + pRow) > end) {
+						pRow = pSize;
+						pCol = pSize;
+						match = 2;
+					}
                 }
             }
-            if (match){
+            if (match == 1){
                 insertEnd(list, iteration, wRow-1, wCol-1, rotation);
 #ifdef DEBUGMORE
 printf("*** Row = %d, Col = %d\n", wRow-1, wCol-1);
 #endif
-            }
+            } else if (match == 2) {
+				if (listToContinueFinding) {
+					insertEnd(listToContinueFinding, iteration, wRow - 1, wCol - 1, rotation);
+				}
+			}
         }
     }
 }
