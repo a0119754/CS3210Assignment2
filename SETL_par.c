@@ -82,9 +82,6 @@ void rotate90(char** current, char** rotated, int size);
 void searchPatterns(char** world, int wSize, int iteration, 
         char** patterns[4], int pSize, MATCHLIST* list);
 
-void searchPatternInOnlyOneDirection(char** world, int wSize, int iteration, 
-        char** patterns[4], int pSize, MATCHLIST* list, int dir);
-
 void searchSinglePattern(char** world, int wSize, int interation,
         char** pattern, int pSize, int rotation, MATCHLIST* list);
 
@@ -97,7 +94,7 @@ int main( int argc, char** argv)
 {
     char **curW, **nextW, **temp, dummy[20];
     char **patterns[4];
-    int dir, iterations, iter, processes, rank, i, j, noOfResults;
+    int dir, iterations, iter, processes, rank, i, j, k, l, m, n, m2, n2, noOfResults;
     int size, patternSize;
 	int debug = 1;
 	int forResults[4];
@@ -230,6 +227,13 @@ int main( int argc, char** argv)
 		}
 	}
 	
+	j = (processes + 2) / 4; // Maximum number of processes to handle one rotated pattern
+	k = (processes - 1) % 4; // Number of rotated patterns handled by maximum number of processes
+	m = size % j; // Remainder trying to split up the world size
+	n = size / j; // How much to divide the world up into
+	m2 = size % (j - 1); // Remainder trying to split up the world size among (j - 1) processes
+	n2 = size / (j - 1); // How much to divide the world up into for (j - 1) processes
+	
 	if ((debug) && (rank == 0)) {
 		printf("Starting work\n");
 	}
@@ -243,14 +247,26 @@ int main( int argc, char** argv)
         printf("World Iteration.%d\n", iter);
         printSquareMatrix(curW, size+2);
 #endif
-
+			
 		// Distribute world to slaves
 		if (rank == 0) {
 			for (i = 1; i < processes; i++) {
-				MPI_Send(&(curW[0][0]), size * size, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD); // This message has tag of 4+iter
+				l = (i - 2) / 4; // Which part of the world this process will receive
+				if ((k == 0) || (((i - 1) % 4) <= k)) {
+					// Divide world up into maximum number of processes
+					MPI_Send(&(curW[(l <= m) ? (l * (n + 1)) : (l * n + m)][0]), size * (n + ((l < m) ? 1 : 0)), MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
+				} else {
+					// Divide world up into (maximum number of processes - 1)
+					MPI_Send(&(curW[(l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)][0]), size * (n2 + ((l < m2) ? 1 : 0)), MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
+				}
 			}
 		} else {
-			MPI_Recv(&(curW[0][0]), size * size, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
+			l = (rank - 2) / 4;
+			if ((k == 0) || (((rank - 1) % 4) <= k)) {
+				MPI_Recv(&(curW[(l <= m) ? (l * (n + 1)) : (l * n + m)][0]), size * (n + ((l < m) ? 1 : 0)), MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
+			} else {
+				MPI_Recv(&(curW[(l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)][0]), size * (n2 + ((l < m2) ? 1 : 0)), MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
+			}
 		}
 		
 		// Master focus on evolving to next generation
@@ -259,8 +275,10 @@ int main( int argc, char** argv)
 		}
 		// While slaves search for pattern 
 		else {
+			// xxx modify code so that each slave only searches their part of the world, as well as receive unfinished results from previous slave, then submit unfinished results to next slave
+			
 			if (processes == 5) {
-				searchPatternInOnlyOneDirection(curW, size, iter, patterns, patternSize, list, rank - 1);
+				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rank - 1, list);
 			} else {
 				searchPatterns( curW, size, iter, patterns, patternSize, list);
 			}
@@ -292,6 +310,8 @@ int main( int argc, char** argv)
 			}
 		}
 		
+		// xxx sort results
+		
 		// Output results
 		printList( list );
 		
@@ -319,12 +339,10 @@ int main( int argc, char** argv)
 	if (rank == 0) // Only master has two world arrays
 		freeSquareMatrix( nextW );
 	
-	// xxx not all slaves are going to create four patterns
-    freeSquareMatrix( patterns[0] );
-	if (rank == 0) {
-		freeSquareMatrix( patterns[1] );
-		freeSquareMatrix( patterns[2] );
-		freeSquareMatrix( patterns[3] );
+	// Free memory used for patterns
+	j = (rank == 0) ? 4 : ((processes >= 5) ? 1 : ((processes == 2) ? 4 : ((rank == 1) ? 2 : ((processes == 3) ? 2 : 1))));
+	for (i = 0; i < j; i++) {
+		freeSquareMatrix( patterns[i] );
 	}
 	
 	MPI_Finalize();
@@ -541,12 +559,6 @@ void searchPatterns(char** world, int wSize, int iteration,
         searchSinglePattern(world, wSize, iteration, 
                 patterns[dir], pSize, dir, list);
     }
-}
-
-void searchPatternInOnlyOneDirection(char** world, int wSize, int iteration, 
-        char** patterns[4], int pSize, MATCHLIST* list, int dir) {
-        searchSinglePattern(world, wSize, iteration, 
-                patterns[0], pSize, dir, list);
 }
 
 void searchSinglePattern(char** world, int wSize, int iteration,
