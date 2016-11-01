@@ -191,13 +191,17 @@ int main( int argc, char** argv)
 		if (debug) printf("Distributing rotated patterns to slaves\n");
 		
 		if (processes == 2) {
+			// Send all four rotated patterns to the one slave
 			for (dir = N; dir <= W; dir++){
 				MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, 1, 3, MPI_COMM_WORLD); // This message has tag of 3
 			}
 		} else if (processes >= 5) {
-			// xxx distribute four rotated patterns among all the slaves
-			
+			// Send one pattern to processes 1,5,9,..., one to 2,6,10,..., one to 3,7,11,..., one to 4,8,12,...
+			for (i = 1, dir = N; i < processes; i++, dir++) {
+				MPI_Send(&(patterns[dir % 4][0][0]), patternSize * patternSize, MPI_CHAR, i, 3, MPI_COMM_WORLD); // This message has tag of 3
+			}
 		} else { // 3 or 4
+			// Send two patterns to process 1, and either other two patterns to process 2, or split them between processes 2 and 3
 			for (dir = N; dir <= E; dir++){
 				MPI_Send(&(patterns[dir][0][0]), patternSize * patternSize, MPI_CHAR, 1, 3, MPI_COMM_WORLD); // This message has tag of 3
 			}
@@ -211,9 +215,14 @@ int main( int argc, char** argv)
 			}
 		}
 	} else {
-		// xxx need to update the receiving
 		if (processes == 2) {
+			// Only slave process; accept all four rotated patterns
 			for (i = 0; i < 4; i++) {
+				MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
+			}
+		} else if ((rank == 1) && ((processes == 3) || (processes == 4))) {
+			// Process 1 when there are either 3 or 4 processes needs to receive two patterns
+			for (i = 0; i < 2; i++) {
 				MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 			}
 		} else {
