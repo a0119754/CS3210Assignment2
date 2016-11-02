@@ -660,6 +660,9 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 					}
 				}
 			}
+			
+			printf("(%d, %d) gets match = %d\n", wRow - 1, wCol - 1, match);
+			
 			if (match == 1){
 				insertEnd(list, iteration, wRow-1, wCol-1, rotation);
 //#ifdef DEBUGMORE
