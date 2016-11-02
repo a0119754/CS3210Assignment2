@@ -84,8 +84,8 @@ void rotate90(char** current, char** rotated, int size);
 void searchPatterns(char** world, int wSize, int iteration, 
         char** patterns[4], int pSize, MATCHLIST* list);
 
-void searchSinglePattern(char** world, int wSize, int interation,
-        char** pattern, int pSize, int rotation, MATCHLIST* list);
+void searchSinglePattern(char** world, int wSize, int iteration, char** pattern, int pSize,
+		int rotation, MATCHLIST* list, MATCHLIST* listToContinueFinding, int start, int end);
 		
 void continueSearch(char** world, int wSize, int iteration, char** pattern, int pSize, int rotation,
 		MATCHLIST* list, MATCHLIST* listToResumeFrom, MATCHLIST* listToContinueFinding, int start, int end);
