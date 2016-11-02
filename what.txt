@@ -4,44 +4,65 @@ Pattern size = 3
 Passing world size to slaves
 Passing pattern size to slaves
 Distributing rotated patterns to slaves
+Rank 0: j = 2
+Rank 0: k = 1
+Rank 0: m = 0
+Rank 0: n = 10
+Rank 0: m2 = 0
+Rank 0: n2 = 20
+Rank 0: l = 0
+Rank 0: start = 0
+Rank 0: partSize = 0
+Rank 0: end = 0
+Rank 1: j = 2
+Rank 1: k = 1
+Rank 1: m = 0
+Rank 1: n = 10
+Rank 1: m2 = 0
+Rank 1: n2 = 20
+Rank 1: l = 0
 Rank 0, starting work!
-Rank 5, starting work!
-Rank 1, starting work!
+Master is sending world (iter 0) to slave 1 out of 6 processes, from start = 0 at partSize = 10
+Rank 2: j = 2
+Rank 2: k = 1
+Rank 2: m = 0
+Rank 2: n = 10
+Rank 2: m2 = 0
+Rank 2: n2 = 20
+Rank 2: l = 0
+Rank 2: start = 0
+Rank 2: partSize = 20
+Rank 2: end = 19
 Rank 2, starting work!
-Rank 5 receiving results from previous guy, rank 1, in iteration 0
+Rank 1: start = 0
+Rank 1: partSize = 10
+Rank 1: end = 9
+Rank 1, starting work!
+Master is sending world (iter 0) to slave 2 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 0) to slave 3 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 0) to slave 4 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 0) to slave 5 out of 6 processes, from start = 10 at partSize = 10
 Rank 1 sending 0 results to next guy, rank 5, in iteration 0
 Rank 1 finished sending results to next guy, rank 5
---- SPECIAL DEBUG!! (local) ---
-0  OOOOOOOOOOOOOOOOOOOO
+Master is sending world (iter 1) to slave 1 out of 6 processes, from start = 0 at partSize = 10
+Master is sending world (iter 1) to slave 2 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 1) to slave 3 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 1) to slave 4 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 1) to slave 5 out of 6 processes, from start = 10 at partSize = 10
 Rank 1 sending 0 results to next guy, rank 5, in iteration 1
 Rank 1 finished sending results to next guy, rank 5
+--- SPECIAL DEBUG!! (world) ---
+0  OOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOXXOOOOOOOOOOO
 2  OXOXOOOXXOOOOOOOOOOO
 3  OOXXOOOOOOOOOOOOOOOO
-Rank 5 receiving results from previous guy, rank 1, in iteration 1
 4  OOXOOOOOOOOOOOOOOOOO
 5  OOOOOOOOOOOOOOOOOOOO
 6  OOOOOOOOOOOOOOOOOOOO
 7  OOXOOOOOOOOOOOOOOOOO
 8  OOXOOOOOOOOOOOOOOOOO
-9  OOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOOO
-11 OOOOOOOOOOOOOOOOOOOO
-12 OOOOOOOOOOOOOOOOOOOO
-13 OOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOO
-15 OOOOOOOOOOOOOOOOOOOO
-16 OOOOOOOOOOOOOOOOOOOO
-17 OOOOOOOOOOOOOOOOOOOO
-18 OOOOOOOOOOOOOOOOOOOO
-19 OOOOOOOOOOOOOOOOOOOO
-
-0  XXX
-1  OOO
-2  OOO
-
+9  OOXOOOOOOOOOOOOOOXXX
 --- SPECIAL DEBUG!! (local) ---
---- SPECIAL DEBUG!! (world) ---
 0  OOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOXXOOOOOOOOOOO
 2  OXOXOOOXXOOOOOOOOOOO
@@ -61,38 +82,93 @@ Rank 5 receiving results from previous guy, rank 1, in iteration 1
 16 OOOOOOOOOOOOOOOOOOOO
 17 OOOOOOOOOOOOOOOOOOOO
 18 OOOOOOOOOOOOOOOOOOOO
+19 OOOOOOOOOOOOOOOOOOOO
+
+0  XXX
+1  OOO
+2  OOO
+
+--- SPECIAL DEBUG!! (local) ---
+10 OOOOOOOOOOOOOOOOOOOO
+11 OOOOOOOOOOOOOOOOOOOO
+12 OXXOOOOOOOOOOOOOOOOO
+13 OOOOOOOOOOOOOOOOOOOO
+14 OOOOOOOOOOOOOOOOOOOO
+15 OOOOOOOOOOOOOOOOOOOO
+16 OOOOOOOOOOOOOOOOOOOO
+17 OOOOOOOOOOOOOOOOOOOO
+18 OOOOOOOOOOOOOOOOOOOO
 19 OXOOOOOOOOOOOOOOOOOO
 
 --- SPECIAL DEBUG!! (world) ---
+Master is sending world (iter 2) to slave 1 out of 6 processes, from start = 0 at partSize = 10
+Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 at partSize = 20
 Rank 1 sending 0 results to next guy, rank 5, in iteration 2
 Rank 1 finished sending results to next guy, rank 5
-Rank 5 receiving results from previous guy, rank 1, in iteration 2
-Rank 5 reporting: ITERATIONS ARE OVER
-Rank 2 reporting: ITERATIONS ARE OVER
-Debug: Slave process 2 is printing list before submitting to master for salt
-List size = 3
+Master is sending world (iter 2) to slave 3 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 2) to slave 4 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 2) to slave 5 out of 6 processes, from start = 10 at partSize = 10
 Rank 1 reporting: ITERATIONS ARE OVER
 Debug: Slave process 1 is printing list before submitting to master for salt
 List size = 1
-Debug: Slave process 5 is printing list before submitting to master for salt
-List size = 1
-2:1:2:0
-0:2:0:1
-0:7:0:1
-2:7:0:1
-Debug: Slave process 2 has finished printing list and will submit to master for salt
 2:1:2:0
 Debug: Slave process 1 has finished printing list and will submit to master for salt
-Debug: Slave process 5 has finished printing list and will submit to master for salt
 Rank 0 reporting: ITERATIONS ARE OVER
+Rank 2 reporting: ITERATIONS ARE OVER
+Debug: Slave process 2 is printing list before submitting to master for salt
+List size = 4
+0:2:0:1
+0:7:0:1
+1:8:16:1
+2:7:0:1
+Debug: Slave process 2 has finished printing list and will submit to master for salt
+Rank 5: j = 2
+Rank 5: k = 1
+Rank 5: m = 0
+Rank 5: n = 10
+Rank 5: m2 = 0
+Rank 5: n2 = 20
+Rank 5: l = 1
+Rank 5: start = 10
+Rank 5: partSize = 10
+Rank 5: end = 19
+Rank 3: j = 2
+Rank 3: k = 1
+Rank 3: m = 0
+Rank 3: n = 10
+Rank 5, starting work!
+Rank 5 receiving results from previous guy, rank 1, in iteration 0
+Rank 5 receiving results from previous guy, rank 1, in iteration 1
+Rank 5 receiving results from previous guy, rank 1, in iteration 2
+Rank 5 reporting: ITERATIONS ARE OVER
+Debug: Slave process 5 is printing list before submitting to master for salt
+List size = 1
+Rank 3: m2 = 0
+Rank 3: n2 = 20
+Rank 3: l = 0
+Rank 3: start = 0
+Rank 3: partSize = 20
+Rank 3: end = 19
 Rank 3, starting work!
-Rank 4, starting work!
+0:10:0:0
+Debug: Slave process 5 has finished printing list and will submit to master for salt
 Rank 3 reporting: ITERATIONS ARE OVER
 Debug: Slave process 3 is printing list before submitting to master for salt
 List size = 2
 0:7:15:2
 2:7:15:2
 Debug: Slave process 3 has finished printing list and will submit to master for salt
+Rank 4: j = 2
+Rank 4: k = 1
+Rank 4: m = 0
+Rank 4: n = 10
+Rank 4: m2 = 0
+Rank 4: n2 = 20
+Rank 4: l = 0
+Rank 4: start = 0
+Rank 4: partSize = 20
+Rank 4: end = 19
+Rank 4, starting work!
 Rank 4 reporting: ITERATIONS ARE OVER
 Debug: Slave process 4 is printing list before submitting to master for salt
 List size = 3
@@ -101,25 +177,27 @@ List size = 3
 2:5:0:3
 Debug: Slave process 4 has finished printing list and will submit to master for salt
 Printing out unsalted list:
-List size = 10
+List size = 11
 2:1:2:0
 0:2:0:1
 0:7:0:1
+1:8:16:1
 2:7:0:1
 0:7:15:2
 2:7:15:2
 0:5:0:3
 1:6:16:3
 2:5:0:3
-2:1:2:0
+0:10:0:0
 Printing out salted list:
-List size = 10
+List size = 11
+0:10:0:0
 0:2:0:1
 0:7:0:1
 0:7:15:2
 0:5:0:3
+1:8:16:1
 1:6:16:3
-2:1:2:0
 2:1:2:0
 2:7:0:1
 2:7:15:2
