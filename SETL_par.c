@@ -330,20 +330,20 @@ int main( int argc, char** argv)
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
 					
-					for (i = 0; i < omg; i++) {
-						MPI_Recv(&forResults[0], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
-						MPI_Recv(&forResults[1], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
-						MPI_Recv(&forResults[2], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
-						MPI_Recv(&forResults[3], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
-						
-						insertEnd(prevList, forResults[0], forResults[1], forResults[2], forResults[3]);
+					if (omg > 0) {
+						for (i = 0; i < omg; i++) {
+							MPI_Recv(&forResults[0], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
+							MPI_Recv(&forResults[1], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
+							MPI_Recv(&forResults[2], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
+							MPI_Recv(&forResults[3], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
+
+							insertEnd(prevList, forResults[0], forResults[1], forResults[2], forResults[3]);
+						}
+						printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
+
+						continueSearch(curW, size, iter, patterns[0], patternSize, rotation, list, prevList, nextList, start, end);
 					}
-					printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
-					
-					continueSearch(curW, size, iter, patterns[0], patternSize, rotation, list, prevList, nextList, start, end);
 				}
-				
-				printf("rank = %d, iteration = %d, WHAT IS GOING ON??\n", rank, iter);
 				
 				if ((rank + 4) < processes) {
 					printf("Rank %d sending %d results to next guy, rank %d, in iteration %d\n", rank, nextList->nItem, rank + 4, iter);
