@@ -300,6 +300,7 @@ int main( int argc, char** argv)
 			if (iter == 1) {
 				printf("--- SPECIAL DEBUG!! (world) ---\n");
 				printSquareMatrix(curW, size);
+				printf("--- SPECIAL DEBUG!! (world) ---\n");
 			}
 		} else {
 			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
@@ -679,9 +680,10 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 		int rotation, MATCHLIST* list, MATCHLIST* listToContinueFinding, int start, int end)
 {
 	if ((iteration == 1) && (rotation == 1)) {
-		printf("--- SPECIAL DEBUG!! ---\n");
+		printf("--- SPECIAL DEBUG!! (local) ---\n");
 		printSquareMatrix(world, wSize);
 		printSquareMatrix(pattern, pSize);
+		printf("--- SPECIAL DEBUG!! (local) ---\n");
 	}
 	
 	int wRow, wCol, pRow, pCol, match;
