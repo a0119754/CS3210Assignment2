@@ -254,9 +254,9 @@ int main( int argc, char** argv)
 	n = size / j; // How big should each divided world piece be
 	m2 = (j > 1) ? (size % (j - 1)) : 0; // Remainder trying to split up the world size among (j - 1) processes
 	n2 = (j > 1) ? (size / (j - 1)) : 0; // How much to divide the world up into for (j - 1) processes
-	l = (rank == 0) ? 0 : (rank - 2) / 4;
-	start = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
-	partSize = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
+	l = (rank == 0) ? 0 : (rank - 1) / 4;
+	start = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) < k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
+	partSize = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) < k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 	end = (rank == 0) ? 0 : (start + partSize - 1);
 	
 	if (1) {
