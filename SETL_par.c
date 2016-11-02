@@ -296,6 +296,11 @@ int main( int argc, char** argv)
 				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
 				//if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 			}
+			
+			if (iter == 1) {
+				printf("--- SPECIAL DEBUG!! (world) ---\n");
+				printSquareMatrix(curW, size);
+			}
 		} else {
 			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
 			
