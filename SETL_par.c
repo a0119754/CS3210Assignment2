@@ -646,10 +646,10 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 			for (pRow = 0; match && pRow < pSize; pRow++){
 				for (pCol = 0; match && pCol < pSize; pCol++){
 					if(world[wRow+pRow][wCol+pCol] != pattern[pRow][pCol]){
-#ifdef DEBUGMORE
+//#ifdef DEBUGMORE
 						printf("\tF:(%d, %d) %c != %c\n", pRow, pCol,
 						world[wRow+pRow][wCol+pCol], pattern[pRow][pCol]);
-#endif
+//#endif
 						match = 0;    
 					}
 					if ((wRow + pRow) > (end + 1)) {
