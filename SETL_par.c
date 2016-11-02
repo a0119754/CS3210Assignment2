@@ -233,11 +233,11 @@ int main( int argc, char** argv)
 		for (i = 0; i < noOfPatterns; i++) {
 			MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 			
+			printf("Debug: Rank %d printing out %d spattern after receiving them from master\n", rank, noOfPatterns);
 			if (debug) {
-				printf("Debug: Rank %d printing out pattern %d after receiving them from master\n", rank, i);
 				printSquareMatrix(patterns[i], patternSize);
-				printf("Debug: Rank %d finished printing out pattern %d after receiving them from master\n", rank, i);
 			}
+			printf("Debug: Rank %d finished printing out %d patterns after receiving them from master\n", rank, noOfPatterns);
 		}
 	}
 	
