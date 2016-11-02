@@ -837,7 +837,7 @@ void printListSorted(MATCHLIST* list) {
 	for (x = 0; x < list->nItem; x++) {
 		cur = list->tail->next;
 		iter = -1;
-		printf("Iteration %d out of %d\n", x, list->nItem);
+		//printf("Iteration %d out of %d\n", x, list->nItem);
 		for( i = 0; i < list->nItem; i++, cur=cur->next){
 			//printf("%d:%d:%d:%d\n", cur->iteration, cur->row, cur->col, cur->rotation);
 			if (cur->iteration != -1) {
