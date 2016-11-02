@@ -233,6 +233,15 @@ int main( int argc, char** argv)
 		for (i = 0; i < noOfPatterns; i++) {
 			MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 		}
+		
+		if (debug) {
+			printf("Debug: Printing out patterns after receiving them from master\n");
+			printSquareMatrix(patterns[N], patternSize);
+			printSquareMatrix(patterns[E], patternSize);
+			printSquareMatrix(patterns[S], patternSize);
+			printSquareMatrix(patterns[W], patternSize);
+			printf("Debug: Printing out patterns after receiving them from master\n");
+		}
 	}
 	
 	if ((debug) && (rank == 0)) printf("Executing calculations\n");
