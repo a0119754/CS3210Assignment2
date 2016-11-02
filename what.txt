@@ -1,0 +1,127 @@
+World Size = 20
+Iterations = 3
+Pattern size = 3
+Passing world size to slaves
+Passing pattern size to slaves
+Distributing rotated patterns to slaves
+Rank 0, starting work!
+Rank 5, starting work!
+Rank 1, starting work!
+Rank 2, starting work!
+Rank 5 receiving results from previous guy, rank 1, in iteration 0
+Rank 1 sending 0 results to next guy, rank 5, in iteration 0
+Rank 1 finished sending results to next guy, rank 5
+--- SPECIAL DEBUG!! (local) ---
+0  OOOOOOOOOOOOOOOOOOOO
+Rank 1 sending 0 results to next guy, rank 5, in iteration 1
+Rank 1 finished sending results to next guy, rank 5
+1  OOOOOOOXXOOOOOOOOOOO
+2  OXOXOOOXXOOOOOOOOOOO
+3  OOXXOOOOOOOOOOOOOOOO
+Rank 5 receiving results from previous guy, rank 1, in iteration 1
+4  OOXOOOOOOOOOOOOOOOOO
+5  OOOOOOOOOOOOOOOOOOOO
+6  OOOOOOOOOOOOOOOOOOOO
+7  OOXOOOOOOOOOOOOOOOOO
+8  OOXOOOOOOOOOOOOOOOOO
+9  OOOOOOOOOOOOOOOOOOOO
+10 OOOOOOOOOOOOOOOOOOOO
+11 OOOOOOOOOOOOOOOOOOOO
+12 OOOOOOOOOOOOOOOOOOOO
+13 OOOOOOOOOOOOOOOOOOOO
+14 OOOOOOOOOOOOOOOOOOOO
+15 OOOOOOOOOOOOOOOOOOOO
+16 OOOOOOOOOOOOOOOOOOOO
+17 OOOOOOOOOOOOOOOOOOOO
+18 OOOOOOOOOOOOOOOOOOOO
+19 OOOOOOOOOOOOOOOOOOOO
+
+0  XXX
+1  OOO
+2  OOO
+
+--- SPECIAL DEBUG!! (local) ---
+--- SPECIAL DEBUG!! (world) ---
+0  OOOOOOOOOOOOOOOOOOOO
+1  OOOOOOOXXOOOOOOOOOOO
+2  OXOXOOOXXOOOOOOOOOOO
+3  OOXXOOOOOOOOOOOOOOOO
+4  OOXOOOOOOOOOOOOOOOOO
+5  OOOOOOOOOOOOOOOOOOOO
+6  OOOOOOOOOOOOOOOOOOOO
+7  OOXOOOOOOOOOOOOOOOOO
+8  OOXOOOOOOOOOOOOOOOOO
+9  OOXOOOOOOOOOOOOOOXXX
+10 OOOOOOOOOOOOOOOOOOOO
+11 OOOOOOOOOOOOOOOOOOOO
+12 OXXOOOOOOOOOOOOOOOOO
+13 OOOOOOOOOOOOOOOOOOOO
+14 OOOOOOOOOOOOOOOOOOOO
+15 OOOOOOOOOOOOOOOOOOOO
+16 OOOOOOOOOOOOOOOOOOOO
+17 OOOOOOOOOOOOOOOOOOOO
+18 OOOOOOOOOOOOOOOOOOOO
+19 OXOOOOOOOOOOOOOOOOOO
+
+--- SPECIAL DEBUG!! (world) ---
+Rank 1 sending 0 results to next guy, rank 5, in iteration 2
+Rank 1 finished sending results to next guy, rank 5
+Rank 5 receiving results from previous guy, rank 1, in iteration 2
+Rank 5 reporting: ITERATIONS ARE OVER
+Rank 2 reporting: ITERATIONS ARE OVER
+Debug: Slave process 2 is printing list before submitting to master for salt
+List size = 3
+Rank 1 reporting: ITERATIONS ARE OVER
+Debug: Slave process 1 is printing list before submitting to master for salt
+List size = 1
+Debug: Slave process 5 is printing list before submitting to master for salt
+List size = 1
+2:1:2:0
+0:2:0:1
+0:7:0:1
+2:7:0:1
+Debug: Slave process 2 has finished printing list and will submit to master for salt
+2:1:2:0
+Debug: Slave process 1 has finished printing list and will submit to master for salt
+Debug: Slave process 5 has finished printing list and will submit to master for salt
+Rank 0 reporting: ITERATIONS ARE OVER
+Rank 3, starting work!
+Rank 4, starting work!
+Rank 3 reporting: ITERATIONS ARE OVER
+Debug: Slave process 3 is printing list before submitting to master for salt
+List size = 2
+0:7:15:2
+2:7:15:2
+Debug: Slave process 3 has finished printing list and will submit to master for salt
+Rank 4 reporting: ITERATIONS ARE OVER
+Debug: Slave process 4 is printing list before submitting to master for salt
+List size = 3
+0:5:0:3
+1:6:16:3
+2:5:0:3
+Debug: Slave process 4 has finished printing list and will submit to master for salt
+Printing out unsalted list:
+List size = 10
+2:1:2:0
+0:2:0:1
+0:7:0:1
+2:7:0:1
+0:7:15:2
+2:7:15:2
+0:5:0:3
+1:6:16:3
+2:5:0:3
+2:1:2:0
+Printing out salted list:
+List size = 10
+0:2:0:1
+0:7:0:1
+0:7:15:2
+0:5:0:3
+1:6:16:3
+2:1:2:0
+2:1:2:0
+2:7:0:1
+2:7:15:2
+2:5:0:3
+Parallel SETL took 0.00 seconds
