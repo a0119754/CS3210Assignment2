@@ -424,10 +424,10 @@ int main( int argc, char** argv)
 
 		printf("Parallel SETL took %1.2f seconds\n", ((float)(after - before))/1000000000);
 	} else {
-		if ((debug) & (0)) {
-			printf("Debug: Slave process %d is printing list\n", rank);
+		if ((debug) & (1)) {
+			printf("Debug: Slave process %d is printing list before submitting to master for salt\n", rank);
 			printList(list);
-			printf("Debug: Slave process %d has finished printing list\n", rank);
+			printf("Debug: Slave process %d has finished printing list and will submit to master for salt\n", rank);
 		}
 		
 		noOfResults = list->nItem;
