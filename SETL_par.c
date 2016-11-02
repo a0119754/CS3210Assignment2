@@ -278,6 +278,8 @@ int main( int argc, char** argv)
 	list = newList();
 
 	for (iter = 0; iter < iterations; iter++){
+		
+		printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
 
 #ifdef DEBUG
 		printf("World Iteration.%d\n", iter);
