@@ -676,7 +676,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 	if ((iteration == 1) && (rotation == 1)) {
 		printf("--- SPECIAL DEBUG!! ---\n");
 		printSquareMatrix(world, wSize);
-		printSquareMatrix(ppattern, pSize);
+		printSquareMatrix(pattern, pSize);
 	}
 	
 	int wRow, wCol, pRow, pCol, match;
