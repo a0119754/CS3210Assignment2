@@ -97,22 +97,24 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
 
 int main( int argc, char** argv)
 {
-    char **curW, **nextW, **temp, dummy[20];
-    char **patterns[4];
-    int dir, iterations, iter, processes, rank, noOfPatterns, rotation, i, j, k, l, m, n, m2, n2, omg, start, partSize, end, noOfResults;
-    int size, patternSize;
+	char **curW, **nextW, **temp, dummy[20];
+	char **patterns[4];
+	int dir, iterations, iter, processes, rank, noOfPatterns, rotation, i, j, k, l, m, n, m2, n2, omg, start, partSize, end, noOfResults;
+	int size, patternSize;
 	int debug = 1;
 	int forResults[4];
-    long long before, after;
-    MATCHLIST* list, prevList, nextList;
+	long long before, after;
+	MATCHLIST* list;
+	MATCHLIST* prevList;
+	MATCHLIST* nextList;
 	MATCH* cur;
 	MPI_Status mpiStatus;
     
-    if (argc < 4 ){
+	if (argc < 4 ){
 		if (rank == 0)
 			fprintf(stderr, "Usage: %s <world file> <Iterations> <pattern file>\n", argv[0]);
-        exit(1);
-    } 
+		exit(1);
+	}
 
 	MPI_Init(&argc, &argv);
 	MPI_Comm_size(MPI_COMM_WORLD, &processes);
@@ -124,7 +126,7 @@ int main( int argc, char** argv)
 		nextW = allocateSquareMatrix(size+2, DEAD);
 	}
 
-    iterations = atoi(argv[2]);
+	iterations = atoi(argv[2]);
 	
 	// Let only master printf to prevent clutter
 	if (rank == 0) {
@@ -142,14 +144,14 @@ int main( int argc, char** argv)
 		printf("Pattern size = %d\n", patternSize);
 		
 #ifdef DEBUG
-    printSquareMatrix(patterns[N], patternSize);
-    printSquareMatrix(patterns[E], patternSize);
-    printSquareMatrix(patterns[S], patternSize);
-    printSquareMatrix(patterns[W], patternSize);
+	printSquareMatrix(patterns[N], patternSize);
+	printSquareMatrix(patterns[E], patternSize);
+	printSquareMatrix(patterns[S], patternSize);
+	printSquareMatrix(patterns[W], patternSize);
 #endif
 	}
  
-    //Start timer
+	//Start timer
 	if (rank == 0)
 		before = wallClockTime();
 	
