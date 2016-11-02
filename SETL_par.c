@@ -826,7 +826,7 @@ int isSmaller(int iter1, int rot1, int r1, int c1, int iter2, int rot2, int r2, 
 }
 
 void printListSorted(MATCHLIST* list) {
-    int i, x, iter, rot, r, c, takeCurrent;
+    int i, x, iter, rot, r, c;
     MATCH* cur;
     MATCH* designated;
 
@@ -837,8 +837,9 @@ void printListSorted(MATCHLIST* list) {
 	for (x = 0; x < list->nItem; x++) {
 		cur = list->tail->next;
 		iter = -1;
-		takeCurrent = 0;
+		printf("Iteration %d out of %d\n", x, list->nItem);
 		for( i = 0; i < list->nItem; i++, cur=cur->next){
+			printf("%d:%d:%d:%d\n", cur->iteration, cur->row, cur->col, cur->rotation);
 			if (cur->iteration != -1) {
 				if ((iter == -1) || (isSmaller(cur->iteration, cur->rotation, cur->row, cur->col, iter, rot, r, c))) {
 					iter = cur->iteration;
