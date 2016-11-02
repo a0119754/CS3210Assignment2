@@ -839,7 +839,7 @@ void printListSorted(MATCHLIST* list) {
 		iter = -1;
 		printf("Iteration %d out of %d\n", x, list->nItem);
 		for( i = 0; i < list->nItem; i++, cur=cur->next){
-			printf("%d:%d:%d:%d\n", cur->iteration, cur->row, cur->col, cur->rotation);
+			//printf("%d:%d:%d:%d\n", cur->iteration, cur->row, cur->col, cur->rotation);
 			if (cur->iteration != -1) {
 				if ((iter == -1) || (isSmaller(cur->iteration, cur->rotation, cur->row, cur->col, iter, rot, r, c))) {
 					iter = cur->iteration;
@@ -849,11 +849,10 @@ void printListSorted(MATCHLIST* list) {
 					designated = cur;
 				}
 			}
-			
-			printf("%d:%d:%d:%d\n", iter, r, c, rot);
-			designated->iteration = -1;
-			i = list->nItem;
 		}
+		printf("%d:%d:%d:%d\n", iter, r, c, rot);
+		designated->iteration = -1;
+		i = list->nItem;
 	}
 }
 
