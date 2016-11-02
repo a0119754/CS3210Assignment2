@@ -838,8 +838,9 @@ void printListSorted(MATCHLIST* list) {
 				}
 			}
 			
-			designated->iteration = -1;
 			printf("%d:%d:%d:%d\n", iter, r, c, rot);
+			designated->iteration = -1;
+			i = list->nItem;
 		}
 	}
 }
