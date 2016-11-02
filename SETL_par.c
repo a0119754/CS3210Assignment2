@@ -259,7 +259,7 @@ int main( int argc, char** argv)
 	partSize = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 	end = (rank == 0) ? 0 : (start + partSize - 1);
 	
-	if (1) {
+	if (0) {
 		if (debug) printf("Rank %d: j = %d\n", rank, j);
 		if (debug) printf("Rank %d: k = %d\n", rank, k);
 		if (debug) printf("Rank %d: m = %d\n", rank, m);
@@ -279,7 +279,7 @@ int main( int argc, char** argv)
 
 	for (iter = 0; iter < iterations; iter++){
 		
-		printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
+		//printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
 
 #ifdef DEBUG
 		printf("World Iteration.%d\n", iter);
@@ -384,7 +384,7 @@ int main( int argc, char** argv)
 		}
 	}
 	
-	printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
+	//printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
 
 	// slaves return results to master
 	if (rank == 0) {
@@ -416,7 +416,7 @@ int main( int argc, char** argv)
 
 		printf("Parallel SETL took %1.2f seconds\n", ((float)(after - before))/1000000000);
 	} else {
-		if (debug) {
+		if ((debug) & (0)) {
 			printf("Debug: Slave process %d is printing list\n", rank);
 			printList(list);
 			printf("Debug: Slave process %d has finished printing list\n", rank);
