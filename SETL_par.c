@@ -801,7 +801,7 @@ void printListSorted(MATCHLIST* list) {
 				}
 			}
 			
-			designated->iter = -1;
+			designated->iteration = -1;
 			printf("%d:%d:%d:%d\n", iter, r, c, rot);
 		}
 	}
