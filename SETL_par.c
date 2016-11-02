@@ -640,9 +640,9 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 	for (wRow = start; wRow <= wTerminate; wRow++){
 		for (wCol = 1; wCol <= cTerminate; wCol++){
 			match = 1;
-//#ifdef DEBUGMORE
+#ifdef DEBUGMORE
 			printf("S:(%d, %d)\n", wRow-1, wCol-1);
-//#endif
+#endif
 			for (pRow = 0; match && pRow < pSize; pRow++){
 				for (pCol = 0; match && pCol < pSize; pCol++){
 					if(world[wRow+pRow][wCol+pCol] != pattern[pRow][pCol]){
