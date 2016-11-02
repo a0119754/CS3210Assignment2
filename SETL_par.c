@@ -730,7 +730,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
     cur = list->tail->next;
     for( i = 0; i < list->nItem; i++, cur=cur->next) {
 	
-		printf("i = %d, DO YOU HAVE ANY IDEA WHAT THAT MEANS THOUGH?\n", i);
+		printf("i = %d, list->nItem = %d, DO YOU HAVE ANY IDEA WHAT THAT MEANS THOUGH?\n", i, list->nItem);
 		match = 1;
 		
 		for (pRow = start - cur->row + 1; match && pRow < pSize; pRow++){
