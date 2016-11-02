@@ -259,7 +259,7 @@ int main( int argc, char** argv)
 	partSize = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 	end = (rank == 0) ? 0 : (start + partSize - 1);
 	
-	if (0) {
+	if (1) {
 		if (debug) printf("Rank %d: j = %d\n", rank, j);
 		if (debug) printf("Rank %d: k = %d\n", rank, k);
 		if (debug) printf("Rank %d: m = %d\n", rank, m);
