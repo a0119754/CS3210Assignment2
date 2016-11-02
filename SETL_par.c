@@ -245,9 +245,9 @@ int main( int argc, char** argv)
 	if (debug) printf("Rank %d: m = %d\n", rank, m);
 	n = size / j; // How much to divide the world up into
 	if (debug) printf("Rank %d: n = %d\n", rank, n);
-	m2 = size % (j - 1); // Remainder trying to split up the world size among (j - 1) processes
+	m2 = (j > 1) ? (size % (j - 1)) : 0; // Remainder trying to split up the world size among (j - 1) processes
 	if (debug) printf("Rank %d: m2 = %d\n", rank, m2);
-	n2 = size / (j - 1); // How much to divide the world up into for (j - 1) processes
+	n2 = (j > 1) ? (size / (j - 1)) : 0; // How much to divide the world up into for (j - 1) processes
 	if (debug) printf("Rank %d: n2 = %d\n", rank, n2);
 	l = (rank == 0) ? 0 : (rank - 2) / 4;
 	if (debug) printf("Rank %d: l = %d\n", rank, l);
