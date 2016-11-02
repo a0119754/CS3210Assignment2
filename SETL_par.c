@@ -396,6 +396,12 @@ int main( int argc, char** argv)
 			}
 		}
 		
+		if (debug) {
+			printf("Printing out unsalted list:\n");
+			printList(list);
+			printf("Printing out salted list:\n");
+		}
+		
 		// Output results
 		printListSorted( list );
 		
