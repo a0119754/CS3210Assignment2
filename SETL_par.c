@@ -343,6 +343,8 @@ int main( int argc, char** argv)
 					continueSearch(curW, size, iter, patterns[0], patternSize, rotation, list, prevList, nextList, start, end);
 				}
 				
+				printf("rank = %d, iteration = %d, WHAT IS GOING ON??\n", rank, iter);
+				
 				if ((rank + 4) < processes) {
 					printf("Rank %d sending %d results to next guy, rank %d, in iteration %d\n", rank, nextList->nItem, rank + 4, iter);
 					// Send results to next guy
