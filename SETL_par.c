@@ -388,7 +388,7 @@ int main( int argc, char** argv)
 		}
 	}
 	
-	//printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
+	printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
 
 	// slaves return results to master
 	if (rank == 0) {
