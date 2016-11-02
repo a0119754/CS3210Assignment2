@@ -777,9 +777,10 @@ int isSmaller(int iter1, int rot1, int r1, int c1, int iter2, int rot2, int r2, 
 	return 0;
 }
 
-void printListSorted(MATCHLIST*) {
+void printListSorted(MATCHLIST* list) {
     int i, x, iter, rot, r, c, takeCurrent;
-    MATCH* cur, designated;
+    MATCH* cur;
+    MATCH* designated;
 
     printf("List size = %d\n", list->nItem);    
 
