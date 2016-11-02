@@ -292,7 +292,7 @@ int main( int argc, char** argv)
 				partSize = (i == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 				if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
-				if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes", iter, i, processes);
+				if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 			}
 		} else {
 			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
@@ -380,7 +380,9 @@ int main( int argc, char** argv)
 			curW = nextW;
 			nextW = temp;
 		}
-    }
+	}
+	
+	printf("Rank %d reporting: ITERATIONS ARE OVER \o/", rank);
 
 	// slaves return results to master
 	if (rank == 0) {
