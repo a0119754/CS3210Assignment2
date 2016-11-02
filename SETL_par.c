@@ -290,9 +290,9 @@ int main( int argc, char** argv)
 				l = (i - 2) / 4; // Which part of the world this process will receive
 				start = (i == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
 				partSize = (i == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
-				if (debug) printf("Master is sending world to slave %d out of %d processes", i, processes);
+				if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
-				if (debug) printf("Master has sent world to slave %d out of %d processes", i, processes);
+				if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes", iter, i, processes);
 			}
 		} else {
 			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
