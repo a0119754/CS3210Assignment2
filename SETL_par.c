@@ -355,7 +355,7 @@ int main( int argc, char** argv)
 				deleteList( nextList );
 				
 			} else { // 3 or 4 processes
-				if (rank == 2) { // Search for patterns in first two directions
+				if (rank == 1) { // Search for patterns in first two directions
 					for (i = 0; i < noOfPatterns; i++) {
 						searchSinglePattern(curW, size, iter, patterns[i], patternSize, i, list, 0, 1, size - 1);
 					}
@@ -363,7 +363,7 @@ int main( int argc, char** argv)
 					for (i = 0; i < noOfPatterns; i++) {
 						searchSinglePattern(curW, size, iter, patterns[i], patternSize, i + 2, list, 0, 1, size - 1);
 					}
-				} else { // 
+				} else { // Ranks 2 and 3 in 4 processes taking care of one pattern each
 					searchSinglePattern(curW, size, iter, patterns[0], patternSize, rank, list, 0, 1, size - 1);
 				}
 			}
