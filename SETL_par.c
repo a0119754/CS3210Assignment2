@@ -364,7 +364,7 @@ int main( int argc, char** argv)
 				deleteList( prevList );
 				deleteList( nextList );
 				
-				printf("Slave process with rank %d done for iteration %d\n", rank, iter);
+				//printf("Slave process with rank %d done for iteration %d\n", rank, iter);
 				
 			} else { // 3 or 4 processes
 				if (rank == 1) { // Search for patterns in first two directions
