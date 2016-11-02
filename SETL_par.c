@@ -325,7 +325,7 @@ int main( int argc, char** argv)
 				// One process search for pattern in a specific direction according to its rank
 				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rotation, list, nextList, start, end);
 				
-				if (rank <= 4) {
+				if (rank > 4) {
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
 					
