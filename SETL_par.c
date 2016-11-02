@@ -722,15 +722,15 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
     int i, match, pRow, pCol;
     MATCH* cur;
 	
-	printf("I SUSPECT THAT I AM LOST IN HERE! list->nItem = %d\n", list->nItem);
+	printf("I SUSPECT THAT I AM LOST IN HERE! listToResumeFrom->nItem = %d\n", listToResumeFrom->nItem);
 	
-    if (list->nItem == 0) return;
+    if (listToResumeFrom->nItem == 0) return;
 	
 
-    cur = list->tail->next;
-    for( i = 0; i < list->nItem; i++, cur=cur->next) {
+    cur = listToResumeFrom->tail->next;
+    for( i = 0; i < listToResumeFrom->nItem; i++, cur=cur->next) {
 	
-		printf("i = %d, list->nItem = %d, DO YOU HAVE ANY IDEA WHAT THAT MEANS THOUGH?\n", i, list->nItem);
+		printf("i = %d, listToResumeFrom->nItem = %d, DO YOU HAVE ANY IDEA WHAT THAT MEANS THOUGH?\n", i, listToResumeFrom->nItem);
 		match = 1;
 		
 		for (pRow = start - cur->row + 1; match && pRow < pSize; pRow++){
