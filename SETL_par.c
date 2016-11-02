@@ -348,7 +348,7 @@ int main( int argc, char** argv)
 					// Send results to next guy
 					omg = nextList->nItem;
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
-					cur = list->tail->next;
+					if (omg > 0) cur = list->tail->next;
 					for (i = 0; i < omg; i++, cur = cur->next) {
 						MPI_Send(&(cur->iteration), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
 						MPI_Send(&(cur->row), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
