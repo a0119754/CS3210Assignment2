@@ -287,7 +287,7 @@ int main( int argc, char** argv)
 		} else {
 			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
 			
-			if (debug) {
+			if ((debug) && (0)) {
 				printf("Debug: Printing out world after receiving on iteration %d\n", iter);
 				printSquareMatrix(curW, size+2);
 				printf("Debug: Printing out world after receiving on iteration %d\n", iter);
