@@ -677,9 +677,9 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 			
 			if (match == 1){
 				insertEnd(list, iteration, wRow-1, wCol-1, rotation);
-//#ifdef DEBUGMORE
+#ifdef DEBUGMORE
 printf("*** Row = %d, Col = %d\n", wRow-1, wCol-1);
-//#endif
+#endif
 			} else if (match == 2) {
 				if (listToContinueFinding) {
 					insertEnd(listToContinueFinding, iteration, wRow - 1, wCol - 1, rotation);
