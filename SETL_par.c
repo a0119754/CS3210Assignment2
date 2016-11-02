@@ -283,8 +283,8 @@ int main( int argc, char** argv)
 		if (rank == 0) {
 			for (i = 1; i < processes; i++) {
 				l = (i - 2) / 4; // Which part of the world this process will receive
-				start = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
-				partSize = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
+				start = (i == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
+				partSize = (i == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
 			}
 		} else {
