@@ -527,7 +527,7 @@ void printSquareMatrix( char** matrix, int size )
 	int i,j;
     
 	for (i = 0; i < size; i++) {
-		print("%d", i);
+		printf("%d", i);
 		for (j = 0; j < size; j++) {
 			printf("%c", matrix[i][j]);
 		}
