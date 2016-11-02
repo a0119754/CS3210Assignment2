@@ -321,7 +321,7 @@ int main( int argc, char** argv)
 				prevList = newList();
 				nextList = newList();
 				
-				rotation = (rank - 2) % 4;
+				rotation = (rank - 1) % 4;
 				// One process search for pattern in a specific direction according to its rank
 				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rotation, list, nextList, start, end);
 				
