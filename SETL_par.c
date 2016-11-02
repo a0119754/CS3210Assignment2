@@ -223,17 +223,24 @@ int main( int argc, char** argv)
 		if (processes == 2) {
 			// Only slave process; accept all four rotated patterns
 			noOfPatterns = 4;
-		} else if ((rank == 1) && ((processes == 3) || (processes == 4))) {
-			// Process 1 when there are either 3 or 4 processes needs to receive two patterns
-			noOfPatterns = 2;
-		} else {
+		} else if (processes >= 5) {
+			// More than four slave process; each slave takes only one rotated patterns
 			noOfPatterns = 1;
+		} else {
+			if ((rank == 1) || (processes == 3)) {
+				// Rank 1 in 3 or 4 processes will take 2 either way
+				// Both ranks 1 and 2 in 3 processes take 2
+				noOfPatterns = 2;
+			} else {
+				// Ranks 3 and 4 in 34 processes take 1 each
+				noOfPatterns = 1;
+			}
 		}
 		
 		for (i = 0; i < noOfPatterns; i++) {
 			MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 			
-			printf("Debug: Rank %d printing out %d spattern after receiving them from master\n", rank, noOfPatterns);
+			printf("Debug: Rank %d printing out %d patterns after receiving them from master\n", rank, noOfPatterns);
 			if (debug) {
 				printSquareMatrix(patterns[i], patternSize);
 			}
