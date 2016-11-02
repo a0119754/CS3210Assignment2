@@ -272,7 +272,7 @@ int main( int argc, char** argv)
 		if (debug) printf("Rank %d: end = %d\n", rank, end);
 	}
 	
-	if ((debug) && (rank == 0)) printf("Starting work\n");
+	if (debug) printf("Rank %d, starting work!\n", rank);
 	
 	//Actual work start
 	list = newList();
