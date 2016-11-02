@@ -326,7 +326,7 @@ int main( int argc, char** argv)
 				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rotation, list, nextList, start, end);
 				
 				if (rank > 4) {
-					printf("Rank %d receiving results from next guy, rank %d, in iteration %d\n", rank, rank - 4, iter);
+					printf("Rank %d receiving results from previous guy, rank %d, in iteration %d\n", rank, rank - 4, iter);
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
 					
@@ -338,7 +338,7 @@ int main( int argc, char** argv)
 						
 						insertEnd(prevList, forResults[0], forResults[1], forResults[2], forResults[3]);
 					}
-					printf("Rank %d finished receiving results from next guy, rank %d\n", rank, rank - 4);
+					printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
 					
 					continueSearch(curW, size, iter, patterns[0], patternSize, rotation, list, prevList, nextList, start, end);
 				}
@@ -361,6 +361,8 @@ int main( int argc, char** argv)
 				// Clear prevList and nextList at the end of each iteration
 				deleteList( prevList );
 				deleteList( nextList );
+				
+				printf("Slave process with rank %d done for iteration %d\n", rank, iter);
 				
 			} else { // 3 or 4 processes
 				if (rank == 1) { // Search for patterns in first two directions
