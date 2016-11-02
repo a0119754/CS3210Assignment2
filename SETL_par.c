@@ -633,44 +633,45 @@ void searchPatterns(char** world, int wSize, int iteration,
 void searchSinglePattern(char** world, int wSize, int iteration, char** pattern, int pSize,
 		int rotation, MATCHLIST* list, MATCHLIST* listToContinueFinding, int start, int end)
 {
-    int wRow, wCol, pRow, pCol, match;
+	int wRow, wCol, pRow, pCol, match;
 	int cTerminate = wSize - pSize + 1;
 	int wTerminate = (end < cTerminate) ? end : cTerminate;
 
-    for (wRow = start; wRow <= wTerminate; wRow++){
-        for (wCol = 1; wCol <= cTerminate; wCol++){
-            match = 1;
+	for (wRow = start; wRow <= wTerminate; wRow++){
+		for (wCol = 1; wCol <= cTerminate; wCol++){
+			match = 1;
 #ifdef DEBUGMORE
-            printf("S:(%d, %d)\n", wRow-1, wCol-1);
+			printf("S:(%d, %d)\n", wRow-1, wCol-1);
 #endif
-            for (pRow = 0; match && pRow < pSize; pRow++){
-                for (pCol = 0; match && pCol < pSize; pCol++){
-                    if(world[wRow+pRow][wCol+pCol] != pattern[pRow][pCol]){
+			for (pRow = 0; match && pRow < pSize; pRow++){
+				for (pCol = 0; match && pCol < pSize; pCol++){
+					if(world[wRow+pRow][wCol+pCol] != pattern[pRow][pCol]){
 #ifdef DEBUGMORE
-                        printf("\tF:(%d, %d) %c != %c\n", pRow, pCol,
-                            world[wRow+pRow][wCol+pCol], pattern[pRow][pCol]);
+						printf("\tF:(%d, %d) %c != %c\n", pRow, pCol,
+						world[wRow+pRow][wCol+pCol], pattern[pRow][pCol]);
 #endif
-                        match = 0;    
-                    }
+						match = 0;    
+					}
 					if ((wRow + pRow) > end) {
+						printf("%d + %d is more than end %d\n", wRow, pRow, end);
 						pRow = pSize;
 						pCol = pSize;
 						match = 2;
 					}
-                }
-            }
-            if (match == 1){
-                insertEnd(list, iteration, wRow-1, wCol-1, rotation);
+				}
+			}
+			if (match == 1){
+				insertEnd(list, iteration, wRow-1, wCol-1, rotation);
 //#ifdef DEBUGMORE
 printf("*** Row = %d, Col = %d\n", wRow-1, wCol-1);
 //#endif
-            } else if (match == 2) {
+			} else if (match == 2) {
 				if (listToContinueFinding) {
 					insertEnd(listToContinueFinding, iteration, wRow - 1, wCol - 1, rotation);
 				}
 			}
-        }
-    }
+		}
+	}
 }
 
 void continueSearch(char** world, int wSize, int iteration, char** pattern, int pSize, int rotation,
