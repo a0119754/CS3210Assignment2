@@ -342,6 +342,7 @@ int main( int argc, char** argv)
 				}
 				
 				if ((rank + 4) < processes) {
+					printf("Rank %d sending results to next guy, rank %d\n", rank, rank + 4);
 					// Send results to next guy
 					omg = nextList->nItem;
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
@@ -352,6 +353,7 @@ int main( int argc, char** argv)
 						MPI_Send(&(cur->col), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
 						MPI_Send(&(cur->rotation), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
 					}
+					printf("Rank %d finished sending results to next guy, rank %d\n", rank, rank + 4);
 				}
 				
 				// Clear prevList and nextList at the end of each iteration
