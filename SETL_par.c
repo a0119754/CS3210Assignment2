@@ -240,7 +240,7 @@ int main( int argc, char** argv)
 		for (i = 0; i < noOfPatterns; i++) {
 			MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 			
-			if (debug) {
+			if (0) {
 				printf("Debug: Rank %d printing out %d of %d patterns after receiving them from master\n", rank, i, noOfPatterns);
 				printSquareMatrix(patterns[i], patternSize);
 				printf("Debug: Rank %d finished printing out %d of %d patterns after receiving them from master\n", rank, i, noOfPatterns);
@@ -292,9 +292,9 @@ int main( int argc, char** argv)
 				l = (i - 2) / 4; // Which part of the world this process will receive
 				start = (i == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
 				partSize = (i == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
-				if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
+				//if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
-				if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
+				//if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 			}
 		} else {
 			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
