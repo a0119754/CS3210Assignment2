@@ -243,7 +243,7 @@ int main( int argc, char** argv)
 	if (debug) printf("Rank %d: k = %d\n", rank, k);
 	m = size % j; // Remainder trying to split up the world size
 	if (debug) printf("Rank %d: m = %d\n", rank, m);
-	n = size / j; // How much to divide the world up into
+	n = size / j; // How big should each divided world piece be
 	if (debug) printf("Rank %d: n = %d\n", rank, n);
 	m2 = (j > 1) ? (size % (j - 1)) : 0; // Remainder trying to split up the world size among (j - 1) processes
 	if (debug) printf("Rank %d: m2 = %d\n", rank, m2);
@@ -251,9 +251,9 @@ int main( int argc, char** argv)
 	if (debug) printf("Rank %d: n2 = %d\n", rank, n2);
 	l = (rank == 0) ? 0 : (rank - 2) / 4;
 	if (debug) printf("Rank %d: l = %d\n", rank, l);
-	start = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
+	start = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) <= k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2)));
 	if (debug) printf("Rank %d: start = %d\n", rank, start);
-	partSize = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
+	partSize = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 	if (debug) printf("Rank %d: partSize = %d\n", rank, partSize);
 	end = (rank == 0) ? 0 : (start + partSize - 1);
 	if (debug) printf("Rank %d: end = %d\n", rank, end);
@@ -382,7 +382,7 @@ int main( int argc, char** argv)
 		//Stop timer
 		after = wallClockTime();
 
-		printf("Sequential SETL took %1.2f seconds\n", ((float)(after - before))/1000000000);
+		printf("Parallel SETL took %1.2f seconds\n", ((float)(after - before))/1000000000);
 	} else {
 		noOfResults = list->nItem;
 		MPI_Send(&noOfResults, 1, MPI_INT, 0, 4 + iter, MPI_COMM_WORLD);
