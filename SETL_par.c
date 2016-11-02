@@ -235,6 +235,8 @@ int main( int argc, char** argv)
 		}
 	}
 	
+	if ((debug) && (rank == 0)) printf("Executing calculations\n");
+	
 	j = (processes + 2) / 4; // Maximum number of processes to handle one rotated pattern
 	k = (processes - 1) % 4; // Number of rotated patterns handled by maximum number of processes
 	m = size % j; // Remainder trying to split up the world size
@@ -246,18 +248,16 @@ int main( int argc, char** argv)
 	partSize = (rank == 0) ? 0 : (((k == 0) || (((i - 1) % 4) <= k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 	end = (rank == 0) ? 0 : (start + partSize - 1);
 	
-	if ((debug) && (rank == 0)) {
-		printf("Starting work\n");
-	}
+	if ((debug) && (rank == 0)) printf("Starting work\n");
 	
-    //Actual work start
-    list = newList();
+	//Actual work start
+	list = newList();
 
-    for (iter = 0; iter < iterations; iter++){
+	for (iter = 0; iter < iterations; iter++){
 
 #ifdef DEBUG
-        printf("World Iteration.%d\n", iter);
-        printSquareMatrix(curW, size+2);
+		printf("World Iteration.%d\n", iter);
+		printSquareMatrix(curW, size+2);
 #endif
 			
 		// Distribute world to slaves
