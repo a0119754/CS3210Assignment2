@@ -384,6 +384,12 @@ int main( int argc, char** argv)
 
 		printf("Parallel SETL took %1.2f seconds\n", ((float)(after - before))/1000000000);
 	} else {
+		if (debug) {
+			printf("Debug: Slave process %d is printing list\n", rank);
+			printList(list);
+			printf("Debug: Slave process %d has finished printing list\n", rank);
+		}
+		
 		noOfResults = list->nItem;
 		MPI_Send(&noOfResults, 1, MPI_INT, 0, 4 + iter, MPI_COMM_WORLD);
 		cur = list->tail->next; // Personally I have no idea what this is for, but it's in the implementation of printList(), and I don't know exactly how the MATCHLIST structure works exactly and technically, and I'm way too used to object-oriented languages to even wrap my head around the primitive concept of using structs before classes ever existed anyway, so yeah, I am just going to leave it here and pray hard it doesn't do something wrong by skipping the tail
