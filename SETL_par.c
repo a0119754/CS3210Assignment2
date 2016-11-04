@@ -157,7 +157,7 @@ int main( int argc, char** argv)
 	
 	// Master pass slaves size of world
 	if (rank == 0) {
-		if (debug) printf("Passing world size to slaves\n");
+		//if (debug) printf("Passing world size to slaves\n");
 		for (i = 1; i < processes; i++) {
 			MPI_Send(&size, 1, MPI_INT, i, 1, MPI_COMM_WORLD); // This message has tag of 1
 		}
@@ -171,7 +171,7 @@ int main( int argc, char** argv)
 	
 	// Master pass slaves size of pattern
 	if (rank == 0) {
-		if (debug) printf("Passing pattern size to slaves\n");
+		//if (debug) printf("Passing pattern size to slaves\n");
 		for (i = 1; i < processes; i++) {
 			MPI_Send(&patternSize, 1, MPI_INT, i, 2, MPI_COMM_WORLD); // This message has tag of 2
 		}
@@ -193,7 +193,7 @@ int main( int argc, char** argv)
 	// Distribute patterns to slaves
 	if (rank == 0) {
 		noOfPatterns = 4;
-		if (debug) printf("Distributing rotated patterns to slaves\n");
+		//if (debug) printf("Distributing rotated patterns to slaves\n");
 		
 		if (processes == 2) {
 			// Send all four rotated patterns to the one slave
@@ -240,11 +240,11 @@ int main( int argc, char** argv)
 		for (i = 0; i < noOfPatterns; i++) {
 			MPI_Recv(&(patterns[i][0][0]), patternSize * patternSize, MPI_CHAR, 0, 3, MPI_COMM_WORLD, &mpiStatus);
 			
-			if (0) {
-				printf("Debug: Rank %d printing out %d of %d patterns after receiving them from master\n", rank, i, noOfPatterns);
-				printSquareMatrix(patterns[i], patternSize);
-				printf("Debug: Rank %d finished printing out %d of %d patterns after receiving them from master\n", rank, i, noOfPatterns);
-			}
+			/*
+			printf("Debug: Rank %d printing out %d of %d patterns after receiving them from master\n", rank, i, noOfPatterns);
+			printSquareMatrix(patterns[i], patternSize);
+			printf("Debug: Rank %d finished printing out %d of %d patterns after receiving them from master\n", rank, i, noOfPatterns);
+			*/
 		}
 	}
 	
@@ -259,20 +259,20 @@ int main( int argc, char** argv)
 	partSize = (rank == 0) ? 0 : (((k == 0) || (((rank - 1) % 4) < k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0)));
 	end = (rank == 0) ? 0 : (start + partSize - 1);
 	
-	if (1) {
-		if (debug) printf("Rank %d: j = %d\n", rank, j);
-		if (debug) printf("Rank %d: k = %d\n", rank, k);
-		if (debug) printf("Rank %d: m = %d\n", rank, m);
-		if (debug) printf("Rank %d: n = %d\n", rank, n);
-		if (debug) printf("Rank %d: m2 = %d\n", rank, m2);
-		if (debug) printf("Rank %d: n2 = %d\n", rank, n2);
-		if (debug) printf("Rank %d: l = %d\n", rank, l);
-		if (debug) printf("Rank %d: start = %d\n", rank, start);
-		if (debug) printf("Rank %d: partSize = %d\n", rank, partSize);
-		if (debug) printf("Rank %d: end = %d\n", rank, end);
-	}
+	/*
+	if (debug) printf("Rank %d: j = %d\n", rank, j);
+	if (debug) printf("Rank %d: k = %d\n", rank, k);
+	if (debug) printf("Rank %d: m = %d\n", rank, m);
+	if (debug) printf("Rank %d: n = %d\n", rank, n);
+	if (debug) printf("Rank %d: m2 = %d\n", rank, m2);
+	if (debug) printf("Rank %d: n2 = %d\n", rank, n2);
+	if (debug) printf("Rank %d: l = %d\n", rank, l);
+	if (debug) printf("Rank %d: start = %d\n", rank, start);
+	if (debug) printf("Rank %d: partSize = %d\n", rank, partSize);
+	if (debug) printf("Rank %d: end = %d\n", rank, end);
+	*/
 	
-	if (debug) printf("Rank %d, starting work!\n", rank);
+	//if (debug) printf("Rank %d, starting work!\n", rank);
 	
 	//Actual work start
 	list = newList();
@@ -280,11 +280,7 @@ int main( int argc, char** argv)
 	for (iter = 0; iter < iterations; iter++){
 		
 		//printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
-
-#ifdef DEBUG
-		printf("World Iteration.%d\n", iter);
-		printSquareMatrix(curW, size+2);
-#endif
+		//printSquareMatrix(curW, size+2);
 			
 		// Distribute world to slaves
 		if (rank == 0) {
@@ -292,24 +288,24 @@ int main( int argc, char** argv)
 				l = (i - 1) / 4; // Which part of the world this process will receive
 				start = ((k == 0) || (((i - 1) % 4) < k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2));
 				partSize = ((k == 0) || (((i - 1) % 4) < k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0));
-				if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
+				//if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
 				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
 				//if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 			}
 			
-			if (iter == 1) {
+			/*
 				printf("--- SPECIAL DEBUG!! (world) ---\n");
 				printSquareMatrix(curW, size);
 				printf("--- SPECIAL DEBUG!! (world) ---\n");
-			}
+			*/
 		} else {
 			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
 			
-			if ((debug) && (0)) {
-				printf("Debug: Printing out world after receiving on iteration %d\n", iter);
-				printSquareMatrix(curW, size+2);
-				printf("Debug: Printing out world after receiving on iteration %d\n", iter);
-			}
+			/*
+			printf("Debug: Printing out world after receiving on iteration %d\n", iter);
+			printSquareMatrix(curW, size+2);
+			printf("Debug: Printing out world after receiving on iteration %d\n", iter);
+			*/
 		}
 		
 		// Master focus on evolving to next generation
@@ -332,9 +328,9 @@ int main( int argc, char** argv)
 				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rotation, list, nextList, start, end);
 				
 				if (rank > 4) {
-					printf("Rank %d receiving results from previous guy, rank %d, in iteration %d\n", rank, rank - 4, iter);
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
+					printf("Rank %d receiving %d results from previous guy, rank %d, in iteration %d\n", rank, omg, rank - 4, iter);
 					
 					if (omg > 0) {
 						for (i = 0; i < omg; i++) {
@@ -345,7 +341,7 @@ int main( int argc, char** argv)
 
 							insertEnd(prevList, forResults[0], forResults[1], forResults[2], forResults[3]);
 						}
-						printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
+						//printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
 
 						continueSearch(curW, size, iter, patterns[0], patternSize, rotation, list, prevList, nextList, start, end);
 					}
@@ -363,7 +359,7 @@ int main( int argc, char** argv)
 						MPI_Send(&(cur->col), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
 						MPI_Send(&(cur->rotation), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
 					}
-					printf("Rank %d finished sending results to next guy, rank %d\n", rank, rank + 4);
+					//printf("Rank %d finished sending results to next guy, rank %d\n", rank, rank + 4);
 				}
 				
 				// Clear prevList and nextList at the end of each iteration
@@ -398,7 +394,7 @@ int main( int argc, char** argv)
 		}
 	}
 	
-	printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
+	//printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
 
 	// slaves return results to master
 	if (rank == 0) {
@@ -416,11 +412,12 @@ int main( int argc, char** argv)
 			}
 		}
 		
+		/*
 		if (debug) {
 			printf("Printing out unsalted list:\n");
 			printList(list);
 			printf("Printing out salted list:\n");
-		}
+		}*/
 		
 		// Output results
 		printListSorted( list );
