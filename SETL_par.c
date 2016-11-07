@@ -689,6 +689,9 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 	int wRow, wCol, pRow, pCol, match;
 	int cTerminate = wSize - pSize + 1;
 	int wTerminate = (end < cTerminate) ? end : cTerminate;
+	
+	if (rotation == 0)
+		printf("~~~ Starting loop (iteration = %d) from row = %d to row = %d inclusive\n", iteration, start +1, wTerminate);
 
 	for (wRow = start + 1; wRow <= wTerminate; wRow++){
 		for (wCol = 1; wCol <= cTerminate; wCol++){
