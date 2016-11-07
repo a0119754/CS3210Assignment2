@@ -373,10 +373,10 @@ int main( int argc, char** argv)
 					if (omg > 0) cur = list->tail->next;
 					for (i = 0; i < omg; i++, cur = cur->next) {
 						if (rank == 4) printf("RANK 4: KIBOU OU HOPE blah blah (%d)\n", i);
-						MPI_Send(&(cur->iteration), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
-						MPI_Send(&(cur->row), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
-						MPI_Send(&(cur->col), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
-						MPI_Send(&(cur->rotation), 1, MPI_INT, 0, 5 + iter + i, MPI_COMM_WORLD);
+						MPI_Send(&(cur->iteration), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
+						MPI_Send(&(cur->row), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
+						MPI_Send(&(cur->col), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
+						MPI_Send(&(cur->rotation), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 					}
 					//printf("Rank %d finished sending results to next guy, rank %d\n", rank, rank + 4);
 				}
