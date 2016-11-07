@@ -279,8 +279,9 @@ int main( int argc, char** argv)
 
 	for (iter = 0; iter < iterations; iter++){
 		
+		/*
 		if ((rank == 4) || (rank == 8))
-			printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
+			printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);*/
 		//printSquareMatrix(curW, size+2);
 			
 		// Distribute world to slaves
@@ -377,7 +378,7 @@ int main( int argc, char** argv)
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 					if (omg > 0) cur = list->tail->next;
 					for (i = 0; i < omg; i++, cur = cur->next) {
-						//if (rank == 4) printf("RANK 4: KIBOU OU HOPE blah blah (%d)\n", i);
+						if (rank == 4) printf("RANK 4: KIBOU OU HOPE i = %d, iter = %d, row = %d, col = %d, rot = %d\n", i, cur->iteration, cur->row, cur->col, cur->rotation);
 						MPI_Send(&(cur->iteration), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 						MPI_Send(&(cur->row), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 						MPI_Send(&(cur->col), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
@@ -422,8 +423,9 @@ int main( int argc, char** argv)
 		}
 	}
 	
+	/*
 	if ((rank == 4) || (rank == 8))
-		printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
+		printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);*/
 
 	// slaves return results to master
 	if (rank == 0) {
@@ -773,16 +775,16 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 
 void continueSearch(char** world, int wSize, int iteration, char** pattern, int pSize, int rotation,
 		MATCHLIST* list, MATCHLIST* listToResumeFrom, MATCHLIST* listToContinueFinding, int start, int end) {
-    int i, match, pRow, pCol;
-    MATCH* cur;
+	int i, match, pRow, pCol;
+	MATCH* cur;
 	
-	printf("I SUSPECT THAT I AM LOST IN HERE! listToResumeFrom->nItem = %d\n", listToResumeFrom->nItem);
+	//printf("I SUSPECT THAT I AM LOST IN HERE! listToResumeFrom->nItem = %d\n", listToResumeFrom->nItem);
 	
-    if (listToResumeFrom->nItem == 0) return;
+	if (listToResumeFrom->nItem == 0) return;
 	
 
-    cur = listToResumeFrom->tail->next;
-    for( i = 0; i < listToResumeFrom->nItem; i++, cur=cur->next) {
+	cur = listToResumeFrom->tail->next;
+	for( i = 0; i < listToResumeFrom->nItem; i++, cur=cur->next) {
 	
 		//printf("i = %d, listToResumeFrom->nItem = %d, DO YOU HAVE ANY IDEA WHAT THAT MEANS THOUGH?\n", i, listToResumeFrom->nItem);
 		match = 1;
@@ -806,7 +808,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
 				insertEnd(listToContinueFinding, iteration, cur->row, cur->col, rotation);
 			}
 		}
-    }
+	}
 }
 
 /***********************************************************
