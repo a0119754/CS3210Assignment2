@@ -288,7 +288,7 @@ int main( int argc, char** argv)
 				l = (i - 1) / 4; // Which part of the world this process will receive
 				start = ((k == 0) || (((i - 1) % 4) < k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2));
 				partSize = ((k == 0) || (((i - 1) % 4) < k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0));
-				//if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
+				if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
 				MPI_Send(&(curW[start][0]), size * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
 				//if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 			}
@@ -693,7 +693,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 	
 	if (rotation == 0) {
 		printf("~~~ Starting loop (iteration = %d) from row = %d to row = %d inclusive\n", iteration, start +1, wTerminate);
-		printSquareMatrix(world, wSize);
+		printSquareMatrix(world, wSize + 2);
 	}
 
 	for (wRow = start + 1; wRow <= wTerminate; wRow++){
