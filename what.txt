@@ -3,6 +3,9 @@ Iterations = 3
 Pattern size = 3
 Master is sending world (iter 0) to slave 1 out of 6 processes, from start = 0 at partSize = 10
 Master is sending world (iter 0) to slave 2 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 0) to slave 3 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 0) to slave 4 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 0) to slave 5 out of 6 processes, from start = 10 at partSize = 10
 ~~~ Starting loop (iteration = 0) from row = 1 to row = 10 inclusive
 0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOXOOOOXXOOOOOOOOOOOOO
@@ -11,31 +14,48 @@ Master is sending world (iter 0) to slave 2 out of 6 processes, from start = 0 a
 4  OOOOOOOOOOOOOOOOOOOOOO
 5  OOOOOOOOOOOOOOOOOOOOOO
 6  OOOOOOOOOOOOOOOOOOOOOO
+Master is sending world (iter 1) to slave 1 out of 6 processes, from start = 0 at partSize = 10
+Master is sending world (iter 1) to slave 2 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 1) to slave 3 out of 6 processes, from start = 0 at partSize = 20
 7  OOOOOOOOOOOOOOOOOOOOOO
 8  OXXXOOOOOOOOOOOOOOXOOO
-9  OOOOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOOOOO
+9  OOOOOOOOOOOOOOOOOOXOOO
+10 OOOOOOOOOOOOOOOOOOXOOO
 11 OOOOOOOOOOOOOOOOOOOOOO
 12 OOOOOOOOOOOOOOOOOOOOOO
 13 OOOOOOOOOOOOOOOOOOOOOO
+Master is sending world (iter 1) to slave 4 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 1) to slave 5 out of 6 processes, from start = 10 at partSize = 10
 14 OOOOOOOOOOOOOOOOOOOOOO
 15 OOOOOOOOOOOOOOOOOOOOOO
 16 OOOOOOOOOOOOOOOOOOOOOO
 17 OOOOOOOOOOOOOOOOOOOOOO
 18 OOOOOOOOOOOOOOOOOOOOOO
 19 OOOOOOOOOOOOOOOOOOOOOO
+Master is sending world (iter 2) to slave 1 out of 6 processes, from start = 0 at partSize = 10
 20 OOOOOOOOOOOOOOOOOOOOOO
 21 OOOOOOOOOOOOOOOOOOOOOO
 
+Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 2) to slave 3 out of 6 processes, from start = 0 at partSize = 20
+Master is sending world (iter 2) to slave 4 out of 6 processes, from start = 0 at partSize = 20
 ---------- Iteration = 0, Row = 0, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+Master is sending world (iter 2) to slave 5 out of 6 processes, from start = 10 at partSize = 10
 ---------- Iteration = 0, Row = 0, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
+Debug: Slave process 2 is printing list before submitting to master for salt
+List size = 4
+0:2:0:1
 ---------- Iteration = 0, Row = 0, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+0:7:0:1
+1:8:16:1
+2:7:0:1
+Debug: Slave process 2 has finished printing list and will submit to master for salt
 ---------- Iteration = 0, Row = 0, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 0, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -127,102 +147,40 @@ Master is sending world (iter 0) to slave 2 out of 6 processes, from start = 0 a
 ---------- Iteration = 0, Row = 5, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 5, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 5, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+Debug: Slave process 3 is printing list before submitting to master for salt
 ---------- Iteration = 0, Row = 5, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 5, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 5, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 5, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 5, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+List size = 2
+0:7:15:2
+2:7:15:2
+Debug: Slave process 3 has finished printing list and will submit to master for salt
 ---------- Iteration = 0, Row = 5, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 5, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+~~~ Starting loop (iteration = 0) from row = 11 to row = 18 inclusive
+0  OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 0, Row = 5, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 6, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 6, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 6, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 6, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
----------- Iteration = 0, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
----------- Iteration = 0, Row = 7, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
----------- Iteration = 0, Row = 7, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 7, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
----------- Iteration = 0, Row = 8, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
-Rank 1 sending 0 results to next guy, rank 5, in iteration 0
-Master is sending world (iter 0) to slave 3 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 0) to slave 4 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 0) to slave 5 out of 6 processes, from start = 10 at partSize = 10
-~~~ Starting loop (iteration = 0) from row = 11 to row = 18 inclusive
-0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOOOOOOOOOOOOOOOO
 2  OOOOOOOOOOOOOOOOOOOOOO
 3  OOOOOOOOOOOOOOOOOOOOOO
 4  OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 0, Row = 6, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 5  OOOOOOOOOOOOOOOOOOOOOO
 6  OOOOOOOOOOOOOOOOOOOOOO
 7  OOOOOOOOOOOOOOOOOOOOOO
 8  OOOOOOOOOOOOOOOOOOOOOO
 9  OOOOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOXOOO
+10 OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 0, Row = 6, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 11 OXOOOOOOOOOOOOOOOOOOOO
 12 OXOOOOOOOOOOOOOOOOOOOO
 13 OXOOOOOOOOOOOOOOOOOOOO
@@ -230,29 +188,62 @@ Master is sending world (iter 0) to slave 5 out of 6 processes, from start = 10 
 15 OOOOOOOOOOOOOOOOOOOOOO
 16 OOOOOOOOOOOOOOOOOOOOOO
 17 OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 0, Row = 6, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 18 OXOOOOOOOOOOOOOOOOOOXO
-19 OXOOOOOOOOOOOOOOOOOOOO
-20 OOOOOOOOOOOOOOOOOOOOOO
+19 OXOOOOOOOOOOOOOOOOOOXO
+20 OXXOOOOOOOOOOOOOOOOXXO
+---------- Iteration = 0, Row = 6, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 6, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
+---------- Iteration = 0, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 21 OOOOOOOOOOOOOOOOOOOOOO
 
 ---------- Iteration = 0, Row = 10, Col = 0, Rotation = 0, match = 1, listToContinueFinding = true
 ---------- Iteration = 0, Row = 10, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 7, Col = 17, Rotation = 0, match = 1, listToContinueFinding = true
 ---------- Iteration = 0, Row = 10, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 10, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -260,29 +251,60 @@ Master is sending world (iter 0) to slave 5 out of 6 processes, from start = 10 
 ---------- Iteration = 0, Row = 11, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 11, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
+Rank 1 sending 0 results to next guy, rank 5, in iteration 0
 ---------- Iteration = 0, Row = 12, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -290,268 +312,328 @@ Master is sending world (iter 0) to slave 5 out of 6 processes, from start = 10 
 ---------- Iteration = 0, Row = 12, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 12, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 13, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+~~~ Starting loop (iteration = 1) from row = 1 to row = 10 inclusive
+0  OOOOOOOOOOOOOOOOOOOOOO
+1  OOOOOOOXXOOOOOOOOOOOOO
 ---------- Iteration = 0, Row = 13, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 13, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 13, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 13, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 0, Row = 13, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 13, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 14, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 15, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 16, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
----------- Iteration = 0, Row = 17, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 0, Row = 17, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
-Rank 5 receiving 0 results from previous guy, rank 1, in iteration 0
-Master is sending world (iter 1) to slave 1 out of 6 processes, from start = 0 at partSize = 10
-Master is sending world (iter 1) to slave 2 out of 6 processes, from start = 0 at partSize = 20
-~~~ Starting loop (iteration = 1) from row = 1 to row = 10 inclusive
-0  OOOOOOOOOOOOOOOOOOOOOO
-1  OOOOOOOXXOOOOOOOOOOOOO
 2  OXOXOOOXXOOOOOOOOOOOOO
 3  OOXXOOOOOOOOOOOOOOOOOO
 4  OOXOOOOOOOOOOOOOOOOOOO
 5  OOOOOOOOOOOOOOOOOOOOOO
 6  OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 0, Row = 13, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 7  OOXOOOOOOOOOOOOOOOOOOO
 8  OOXOOOOOOOOOOOOOOOOOOO
-9  OOOOOOOOOOOOOOOOOOOOOO
+9  OOXOOOOOOOOOOOOOOXXXOO
 10 OOOOOOOOOOOOOOOOOOOOOO
 11 OOOOOOOOOOOOOOOOOOOOOO
 12 OOOOOOOOOOOOOOOOOOOOOO
 13 OOOOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 0, Row = 13, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+-14 OOOOOOOOOOOOOOOOOOOOOO
 15 OOOOOOOOOOOOOOOOOOOOOO
 16 OOOOOOOOOOOOOOOOOOOOOO
+--------- Iteration = 0, Row = 13, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 17 OOOOOOOOOOOOOOOOOOOOOO
 18 OOOOOOOOOOOOOOOOOOOOOO
 19 OOOOOOOOOOOOOOOOOOOOOO
 20 OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 0, Row = 13, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 21 OOOOOOOOOOOOOOOOOOOOOO
 
 ---------- Iteration = 1, Row = 0, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 13, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 ---------- Iteration = 1, Row = 0, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 14, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 0, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 2) X != O
+---------- Iteration = 0, Row = 14, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 ---------- Iteration = 1, Row = 1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
+---------- Iteration = 0, Row = 15, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 15, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 2, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 16, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 1) X != O
+---------- Iteration = 0, Row = 17, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 3, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 0, Row = 17, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+Rank 5 receiving 0 results from previous guy, rank 1, in iteration 0
+~~~ Starting loop (iteration = 1) from row = 11 to row = 18 inclusive
 ---------- Iteration = 1, Row = 4, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+0  OOOOOOOOOOOOOOOOOOOOOO
+1  OOOOOOOOOOOOOOOOOOOOOO
+2  OOOOOOOOOOOOOOOOOOOOOO
+3  OOOOOOOOOOOOOOOOOOOOOO
+4  OOOOOOOOOOOOOOOOOOOOOO
+5  OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 1, Row = 4, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+6  OOOOOOOOOOOOOOOOOOOOOO
+7  OOOOOOOOOOOOOOOOOOOOOO
+8  OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 1, Row = 4, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 4, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+9  OOOOOOOOOOOOOOOOOOOOOO
+10 OOOOOOOOOOOOOOOOOOOOOO
+11 OOOOOOOOOOOOOOOOOOOOOO
+12 OXXOOOOOOOOOOOOOOOOOOO
+13 OOOOOOOOOOOOOOOOOOOOOO
+14 OOOOOOOOOOOOOOOOOOOOOO
+15 OOOOOOOOOOOOOOOOOOOOOO
+16 OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 1, Row = 5, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+17 OOOOOOOOOOOOOOOOOOOOOO
+18 OOOOOOOOOOOOOOOOOOOOOO
+19 OXOOOOOOOOOOOOOOOOOOXO
+20 OXXOOOOOOOOOOOOOOOOXXO
 ---------- Iteration = 1, Row = 5, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+21 OOOOOOOOOOOOOOOOOOOOOO
+
+---------- Iteration = 1, Row = 10, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 5, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 6, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
+---------- Iteration = 1, Row = 6, Col = 1, Rotation = 0, match = 1, listToContinueFinding = true
 ---------- Iteration = 1, Row = 6, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 10, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
+---------- Iteration = 1, Row = 11, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 6, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
+---------- Iteration = 1, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 11, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 12, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 12, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 7, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -561,222 +643,77 @@ Master is sending world (iter 1) to slave 2 out of 6 processes, from start = 0 a
 ---------- Iteration = 1, Row = 8, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 12, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 12, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 12, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 8, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
+---------- Iteration = 1, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 ---------- Iteration = 1, Row = 9, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
-Rank 1 sending 0 results to next guy, rank 5, in iteration 1
-Master is sending world (iter 1) to slave 3 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 1) to slave 4 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 1) to slave 5 out of 6 processes, from start = 10 at partSize = 10
-~~~ Starting loop (iteration = 1) from row = 11 to row = 18 inclusive
-0  OOOOOOOOOOOOOOOOOOOOOO
-1  OOOOOOOOOOOOOOOOOOOOOO
-2  OOOOOOOOOOOOOOOOOOOOOO
-3  OOOOOOOOOOOOOOOOOOOOOO
-4  OOOOOOOOOOOOOOOOOOOOOO
-5  OOOOOOOOOOOOOOOOOOOOOO
-6  OOOOOOOOOOOOOOOOOOOOOO
-7  OOOOOOOOOOOOOOOOOOOOOO
-8  OOOOOOOOOOOOOOOOOOOOOO
-9  OOOOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOOOOO
-11 OOOOOOOOOOOOOOOOOOOOOO
-12 OXXOOOOOOOOOOOOOOOOOOO
-13 OOOOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOOOO
-15 OOOOOOOOOOOOOOOOOOOOOO
-16 OOOOOOOOOOOOOOOOOOOOOO
-17 OOOOOOOOOOOOOOOOOOOOOO
-18 OOOOOOOOOOOOOOOOOOOOOO
-19 OXOOOOOOOOOOOOOOOOOOOO
-20 OOOOOOOOOOOOOOOOOOOOOO
-21 OOOOOOOOOOOOOOOOOOOOOO
-
----------- Iteration = 1, Row = 10, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 10, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
----------- Iteration = 1, Row = 11, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
----------- Iteration = 1, Row = 11, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 11, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 12, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 12, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 12, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 12, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 12, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 12, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 13, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 13, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 13, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 13, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 13, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 1, Row = 13, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 13, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 14, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 15, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 16, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 1, Row = 17, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
-Rank 5 receiving 0 results from previous guy, rank 1, in iteration 1
-Master is sending world (iter 2) to slave 1 out of 6 processes, from start = 0 at partSize = 10
-Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 at partSize = 20
+Rank 1 sending 0 results to next guy, rank 5, in iteration 1
 ~~~ Starting loop (iteration = 2) from row = 1 to row = 10 inclusive
 0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOXXOOOOOOOOOOOOO
+---------- Iteration = 1, Row = 13, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 2  OOOXOOOXXOOOOOOOOOOOOO
 3  OXOXOOOOOOOOOOOOOOOOOO
 4  OOXXOOOOOOOOOOOOOOOOOO
 5  OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 1, Row = 13, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 13, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 6  OOOOOOOOOOOOOOOOOOOOOO
 7  OOOOOOOOOOOOOOOOOOOOOO
 8  OXXXOOOOOOOOOOOOOOXOOO
-9  OOOOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOOOOO
+9  OOOOOOOOOOOOOOOOOOXOOO
+10 OOOOOOOOOOOOOOOOOOXOOO
 11 OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 1, Row = 13, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 13, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 12 OOOOOOOOOOOOOOOOOOOOOO
 13 OOOOOOOOOOOOOOOOOOOOOO
 14 OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 1, Row = 13, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 13, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 15 OOOOOOOOOOOOOOOOOOOOOO
 16 OOOOOOOOOOOOOOOOOOOOOO
 17 OOOOOOOOOOOOOOOOOOOOOO
@@ -785,42 +722,65 @@ Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 a
 20 OOOOOOOOOOOOOOOOOOOOOO
 21 OOOOOOOOOOOOOOOOOOOOOO
 
+---------- Iteration = 1, Row = 13, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 13, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 13, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 13, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 13, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 ---------- Iteration = 2, Row = 0, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 0, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 2, Rotation = 0, match = 1, listToContinueFinding = true
 ---------- Iteration = 2, Row = 1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 ---------- Iteration = 2, Row = 1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 14, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 2) X != O
 ---------- Iteration = 2, Row = 2, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
@@ -829,29 +789,44 @@ Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 a
 ---------- Iteration = 2, Row = 2, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 2, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 ---------- Iteration = 2, Row = 3, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 3, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -861,39 +836,60 @@ Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 a
 ---------- Iteration = 2, Row = 4, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 15, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 4, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 5, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 16, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -901,18 +897,27 @@ Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 a
 ---------- Iteration = 2, Row = 6, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 6, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
 ---------- Iteration = 2, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 1) X != O
+---------- Iteration = 1, Row = 17, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -920,99 +925,91 @@ Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 a
 ---------- Iteration = 2, Row = 7, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 7, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 2, Row = 7, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
+---------- Iteration = 2, Row = 7, Col = 17, Rotation = 0, match = 1, listToContinueFinding = true
 ---------- Iteration = 2, Row = 8, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 1, Row = 17, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+Rank 5 receiving 0 results from previous guy, rank 1, in iteration 1
 ---------- Iteration = 2, Row = 8, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+~~~ Starting loop (iteration = 2) from row = 11 to row = 18 inclusive
+0  OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 2, Row = 8, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+1  OOOOOOOOOOOOOOOOOOOOOO
+2  OOOOOOOOOOOOOOOOOOOOOO
+3  OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 2, Row = 8, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 2, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+---------- Iteration = 2, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(2, 0) O != X
+4  OOOOOOOOOOOOOOOOOOOOOO
+5  OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 2, Row = 9, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+6  OOOOOOOOOOOOOOOOOOOOOO
+7  OOOOOOOOOOOOOOOOOOOOOO
+8  OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 2, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+9  OOOOOOOOOOOOOOOOOOOOOO
+10 OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 2, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+11 OOOOOOOOOOOOOOOOOOOOOO
+12 OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 2, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+13 OOOOOOOOOOOOOOOOOOOOOO
+14 OOOOOOOOOOOOOOOOOOOOOO
 ---------- Iteration = 2, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
----------- Iteration = 2, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
-Rank 1 sending 0 results to next guy, rank 5, in iteration 2
-Debug: Slave process 1 is printing list before submitting to master for salt
-List size = 1
-2:1:2:0
-Debug: Slave process 1 has finished printing list and will submit to master for salt
-Master is sending world (iter 2) to slave 3 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 2) to slave 4 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 2) to slave 5 out of 6 processes, from start = 10 at partSize = 10
-Debug: Slave process 2 is printing list before submitting to master for salt
-List size = 4
-0:2:0:1
-0:7:0:1
-1:8:16:1
-2:7:0:1
-Debug: Slave process 2 has finished printing list and will submit to master for salt
-Debug: Slave process 3 is printing list before submitting to master for salt
-Debug: Slave process 4 is printing list before submitting to master for salt
-List size = 2
-0:7:15:2
-2:7:15:2
-Debug: Slave process 3 has finished printing list and will submit to master for salt
-List size = 3
-0:5:0:3
-1:6:16:3
-2:5:0:3
-Debug: Slave process 4 has finished printing list and will submit to master for salt
-~~~ Starting loop (iteration = 2) from row = 11 to row = 18 inclusive
-0  OOOOOOOOOOOOOOOOOOOOOO
-1  OOOOOOOOOOOOOOOOOOOOOO
-2  OOOOOOOOOOOOOOOOOOOOOO
-3  OOOOOOOOOOOOOOOOOOOOOO
-4  OOOOOOOOOOOOOOOOOOOOOO
-5  OOOOOOOOOOOOOOOOOOOOOO
-6  OOOOOOOOOOOOOOOOOOOOOO
-7  OOOOOOOOOOOOOOOOOOOOOO
-8  OOOOOOOOOOOOOOOOOOOOOO
-9  OOOOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOXOOO
-11 OOOOOOOOOOOOOOOOOOOOOO
-12 OOOOOOOOOOOOOOOOOOOOOO
-13 OOOOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOOOO
 15 OOOOOOOOOOOOOOOOOOOOOO
 16 OOOOOOOOOOOOOOOOOOOOOO
+---------- Iteration = 2, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true, F:(1, 0) O != X
+Rank 1 sending 0 results to next guy, rank 5, in iteration 2
+Debug: Slave process 1 is printing list before submitting to master for salt
 17 OOOOOOOOOOOOOOOOOOOOOO
 18 OOOOOOOOOOOOOOOOOOOOOO
-19 OXOOOOOOOOOOOOOOOOOOOO
-20 OOOOOOOOOOOOOOOOOOOOOO
+List size = 4
+0:7:17:0
+1:6:1:0
+2:1:2:0
+2:7:17:0
+19 OXXOOOOOOOOOOOOOOOOXXO
+20 OXXOOOOOOOOOOOOOOOOXXO
+Debug: Slave process 1 has finished printing list and will submit to master for salt
 21 OOOOOOOOOOOOOOOOOOOOOO
 
 ---------- Iteration = 2, Row = 10, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -1059,8 +1056,14 @@ Debug: Slave process 4 has finished printing list and will submit to master for 
 ---------- Iteration = 2, Row = 12, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 12, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 12, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+Debug: Slave process 4 is printing list before submitting to master for salt
+List size = 3
+0:5:0:3
+1:6:16:3
 ---------- Iteration = 2, Row = 12, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 12, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
+2:5:0:3
+Debug: Slave process 4 has finished printing list and will submit to master for salt
 ---------- Iteration = 2, Row = 12, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 12, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
 ---------- Iteration = 2, Row = 12, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true, F:(0, 0) O != X
@@ -1164,16 +1167,19 @@ Debug: Slave process 5 is printing list before submitting to master for salt
 List size = 1
 0:10:0:0
 Debug: Slave process 5 has finished printing list and will submit to master for salt
-List size = 11
+List size = 14
+0:7:17:0
 0:10:0:0
 0:2:0:1
 0:7:0:1
 0:7:15:2
 0:5:0:3
+1:6:1:0
 1:8:16:1
 1:6:16:3
 2:1:2:0
+2:7:17:0
 2:7:0:1
 2:7:15:2
 2:5:0:3
-Parallel SETL took 0.01 seconds
+Parallel SETL took 0.00 seconds
