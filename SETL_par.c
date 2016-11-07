@@ -341,6 +341,8 @@ int main( int argc, char** argv)
 					
 					if (omg > 0) {
 						for (i = 0; i < omg; i++) {
+							if (rank == 8) printf("RANK 8: HOPE HARBINGER blah blah (%d)\n", i);
+							
 							MPI_Recv(&forResults[0], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
 							MPI_Recv(&forResults[1], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
 							MPI_Recv(&forResults[2], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
