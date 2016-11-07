@@ -299,7 +299,7 @@ int main( int argc, char** argv)
 				printf("--- SPECIAL DEBUG!! (world) ---\n");
 			*/
 		} else {
-			MPI_Recv(&(curW[start][0]), size * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
+			MPI_Recv(&(curW[start + 1][0]), (size + 2) * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
 			
 			/*
 			printf("Debug: Printing out world after receiving on iteration %d\n", iter);
