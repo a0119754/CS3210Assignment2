@@ -329,19 +329,21 @@ int main( int argc, char** argv)
 				// One process search for pattern in a specific direction according to its rank
 				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rotation, list, nextList, start, end);
 				
+				/*
 				if (rank == 8) // Debugging
-					printf("EXCEED SUMMON!! iter = %d\n", iter);
+					printf("EXCEED SUMMON!! iter = %d\n", iter);*/
 				
 				if (rank > 4) {
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
 					
+					/*
 					if (rank == 8)
-						printf("Rank %d receiving %d results from previous guy, rank %d, in iteration %d\n", rank, omg, rank - 4, iter);
+						printf("Rank %d receiving %d results from previous guy, rank %d, in iteration %d\n", rank, omg, rank - 4, iter);*/
 					
 					if (omg > 0) {
 						for (i = 0; i < omg; i++) {
-							if (rank == 8) printf("RANK 8: HOPE HARBINGER blah blah (%d)\n", i);
+							//if (rank == 8) printf("RANK 8: HOPE HARBINGER blah blah (%d)\n", i);
 							
 							MPI_Recv(&forResults[0], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
 							MPI_Recv(&forResults[1], 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
@@ -351,15 +353,18 @@ int main( int argc, char** argv)
 							insertEnd(prevList, forResults[0], forResults[1], forResults[2], forResults[3]);
 						}
 						
+						/*
 						if (rank == 8)
-							printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
+							printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);*/
 
 						continueSearch(curW, size, iter, patterns[0], patternSize, rotation, list, prevList, nextList, start, end);
 					}
 				}
 				
+				/*
 				if (rank == 8) // Debugging
 					printf("RANK 8!! iter = %d\n", iter);
+					*/
 				
 				if ((rank + 4) < processes) {
 					//printf("Rank %d sending %d results to next guy, rank %d, in iteration %d\n", rank, nextList->nItem, rank + 4, iter);
@@ -372,7 +377,7 @@ int main( int argc, char** argv)
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 					if (omg > 0) cur = list->tail->next;
 					for (i = 0; i < omg; i++, cur = cur->next) {
-						if (rank == 4) printf("RANK 4: KIBOU OU HOPE blah blah (%d)\n", i);
+						//if (rank == 4) printf("RANK 4: KIBOU OU HOPE blah blah (%d)\n", i);
 						MPI_Send(&(cur->iteration), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 						MPI_Send(&(cur->row), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 						MPI_Send(&(cur->col), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
@@ -381,8 +386,9 @@ int main( int argc, char** argv)
 					//printf("Rank %d finished sending results to next guy, rank %d\n", rank, rank + 4);
 				}
 				
+				/*
 				if (rank == 8) // Debugging
-					printf("GALAXY-EYES CIPHER DRAGON!! iter = %d\n", iter);
+					printf("GALAXY-EYES CIPHER DRAGON!! iter = %d\n", iter);*/
 				
 				// Clear prevList and nextList at the end of each iteration
 				deleteList( prevList );
@@ -778,7 +784,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
     cur = listToResumeFrom->tail->next;
     for( i = 0; i < listToResumeFrom->nItem; i++, cur=cur->next) {
 	
-		printf("i = %d, listToResumeFrom->nItem = %d, DO YOU HAVE ANY IDEA WHAT THAT MEANS THOUGH?\n", i, listToResumeFrom->nItem);
+		//printf("i = %d, listToResumeFrom->nItem = %d, DO YOU HAVE ANY IDEA WHAT THAT MEANS THOUGH?\n", i, listToResumeFrom->nItem);
 		match = 1;
 		
 		for (pRow = start - cur->row + 1; match && pRow < pSize; pRow++){
