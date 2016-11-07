@@ -1,195 +1,1064 @@
 World Size = 20
 Iterations = 3
 Pattern size = 3
-Passing world size to slaves
-Passing pattern size to slaves
-Distributing rotated patterns to slaves
-Rank 0: j = 2
-Rank 0: k = 1
-Rank 0: m = 0
-Rank 0: n = 10
-Rank 0: m2 = 0
-Rank 0: n2 = 20
-Rank 0: l = 0
-Rank 0: start = 0
-Rank 0: partSize = 0
-Rank 0: end = 0
-Rank 1: j = 2
-Rank 1: k = 1
-Rank 1: m = 0
-Rank 1: n = 10
-Rank 1: m2 = 0
-Rank 1: n2 = 20
-Rank 1: l = 0
-Rank 0, starting work!
-Master is sending world (iter 0) to slave 1 out of 6 processes, from start = 0 at partSize = 10
-Rank 2: j = 2
-Rank 2: k = 1
-Rank 2: m = 0
-Rank 2: n = 10
-Rank 2: m2 = 0
-Rank 2: n2 = 20
-Rank 2: l = 0
-Rank 2: start = 0
-Rank 2: partSize = 20
-Rank 2: end = 19
-Rank 2, starting work!
-Rank 1: start = 0
-Rank 1: partSize = 10
-Rank 1: end = 9
-Rank 1, starting work!
-Master is sending world (iter 0) to slave 2 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 0) to slave 3 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 0) to slave 4 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 0) to slave 5 out of 6 processes, from start = 10 at partSize = 10
-Rank 1 sending 0 results to next guy, rank 5, in iteration 0
-Rank 1 finished sending results to next guy, rank 5
-Master is sending world (iter 1) to slave 1 out of 6 processes, from start = 0 at partSize = 10
-Master is sending world (iter 1) to slave 2 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 1) to slave 3 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 1) to slave 4 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 1) to slave 5 out of 6 processes, from start = 10 at partSize = 10
-Rank 1 sending 0 results to next guy, rank 5, in iteration 1
-Rank 1 finished sending results to next guy, rank 5
---- SPECIAL DEBUG!! (world) ---
-0  OOOOOOOOOOOOOOOOOOOO
-1  OOOOOOOXXOOOOOOOOOOO
-2  OXOXOOOXXOOOOOOOOOOO
-3  OOXXOOOOOOOOOOOOOOOO
-4  OOXOOOOOOOOOOOOOOOOO
-5  OOOOOOOOOOOOOOOOOOOO
-6  OOOOOOOOOOOOOOOOOOOO
-7  OOXOOOOOOOOOOOOOOOOO
-8  OOXOOOOOOOOOOOOOOOOO
-9  OOXOOOOOOOOOOOOOOXXX
---- SPECIAL DEBUG!! (local) ---
-0  OOOOOOOOOOOOOOOOOOOO
-1  OOOOOOOXXOOOOOOOOOOO
-2  OXOXOOOXXOOOOOOOOOOO
-3  OOXXOOOOOOOOOOOOOOOO
-4  OOXOOOOOOOOOOOOOOOOO
-5  OOOOOOOOOOOOOOOOOOOO
-6  OOOOOOOOOOOOOOOOOOOO
-7  OOXOOOOOOOOOOOOOOOOO
-8  OOXOOOOOOOOOOOOOOOOO
-9  OOXOOOOOOOOOOOOOOXXX
-10 OOOOOOOOOOOOOOOOOOOO
-11 OOOOOOOOOOOOOOOOOOOO
-12 OXXOOOOOOOOOOOOOOOOO
-13 OOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOO
-15 OOOOOOOOOOOOOOOOOOOO
-16 OOOOOOOOOOOOOOOOOOOO
-17 OOOOOOOOOOOOOOOOOOOO
-18 OOOOOOOOOOOOOOOOOOOO
-19 OOOOOOOOOOOOOOOOOOOO
-
-0  XXX
-1  OOO
-2  OOO
-
---- SPECIAL DEBUG!! (local) ---
-10 OOOOOOOOOOOOOOOOOOOO
-11 OOOOOOOOOOOOOOOOOOOO
-12 OXXOOOOOOOOOOOOOOOOO
-13 OOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOO
-15 OOOOOOOOOOOOOOOOOOOO
-16 OOOOOOOOOOOOOOOOOOOO
-17 OOOOOOOOOOOOOOOOOOOO
-18 OOOOOOOOOOOOOOOOOOOO
-19 OXOOOOOOOOOOOOOOOOOO
-
---- SPECIAL DEBUG!! (world) ---
-Master is sending world (iter 2) to slave 1 out of 6 processes, from start = 0 at partSize = 10
-Master is sending world (iter 2) to slave 2 out of 6 processes, from start = 0 at partSize = 20
-Rank 1 sending 0 results to next guy, rank 5, in iteration 2
-Rank 1 finished sending results to next guy, rank 5
-Master is sending world (iter 2) to slave 3 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 2) to slave 4 out of 6 processes, from start = 0 at partSize = 20
-Master is sending world (iter 2) to slave 5 out of 6 processes, from start = 10 at partSize = 10
-Rank 1 reporting: ITERATIONS ARE OVER
-Debug: Slave process 1 is printing list before submitting to master for salt
-List size = 1
-2:1:2:0
-Debug: Slave process 1 has finished printing list and will submit to master for salt
-Rank 0 reporting: ITERATIONS ARE OVER
-Rank 2 reporting: ITERATIONS ARE OVER
 Debug: Slave process 2 is printing list before submitting to master for salt
 List size = 4
 0:2:0:1
-0:7:0:1
-1:8:16:1
-2:7:0:1
-Debug: Slave process 2 has finished printing list and will submit to master for salt
-Rank 5: j = 2
-Rank 5: k = 1
-Rank 5: m = 0
-Rank 5: n = 10
-Rank 5: m2 = 0
-Rank 5: n2 = 20
-Rank 5: l = 1
-Rank 5: start = 10
-Rank 5: partSize = 10
-Rank 5: end = 19
-Rank 3: j = 2
-Rank 3: k = 1
-Rank 3: m = 0
-Rank 3: n = 10
-Rank 5, starting work!
-Rank 5 receiving results from previous guy, rank 1, in iteration 0
-Rank 5 receiving results from previous guy, rank 1, in iteration 1
-Rank 5 receiving results from previous guy, rank 1, in iteration 2
-Rank 5 reporting: ITERATIONS ARE OVER
-Debug: Slave process 5 is printing list before submitting to master for salt
-List size = 1
-Rank 3: m2 = 0
-Rank 3: n2 = 20
-Rank 3: l = 0
-Rank 3: start = 0
-Rank 3: partSize = 20
-Rank 3: end = 19
-Rank 3, starting work!
-0:10:0:0
-Debug: Slave process 5 has finished printing list and will submit to master for salt
-Rank 3 reporting: ITERATIONS ARE OVER
 Debug: Slave process 3 is printing list before submitting to master for salt
 List size = 2
 0:7:15:2
 2:7:15:2
 Debug: Slave process 3 has finished printing list and will submit to master for salt
-Rank 4: j = 2
-Rank 4: k = 1
-Rank 4: m = 0
-Rank 4: n = 10
-Rank 4: m2 = 0
-Rank 4: n2 = 20
-Rank 4: l = 0
-Rank 4: start = 0
-Rank 4: partSize = 20
-Rank 4: end = 19
-Rank 4, starting work!
-Rank 4 reporting: ITERATIONS ARE OVER
-Debug: Slave process 4 is printing list before submitting to master for salt
-List size = 3
-0:5:0:3
-1:6:16:3
-2:5:0:3
-Debug: Slave process 4 has finished printing list and will submit to master for salt
-Printing out unsalted list:
-List size = 11
-2:1:2:0
-0:2:0:1
 0:7:0:1
 1:8:16:1
 2:7:0:1
-0:7:15:2
-2:7:15:2
+Debug: Slave process 2 has finished printing list and will submit to master for salt
+---------- Iteration = 0, Row = 9, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 0, Rotation = 0, match = 1, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 10, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 11, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 12, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = -1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 13, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 0, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 14, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 15, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 2, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 16, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 3, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 17, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 4, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+Debug: Slave process 4 is printing list before submitting to master for salt
+List size = 3
 0:5:0:3
+---------- Iteration = 0, Row = 5, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
 1:6:16:3
 2:5:0:3
+Debug: Slave process 4 has finished printing list and will submit to master for salt
+---------- Iteration = 0, Row = 6, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 6, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 7, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 0, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+Rank 1 sending 0 results to next guy, rank 5, in iteration 0
+---------- Iteration = 1, Row = -1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+Rank 5 receiving 0 results from previous guy, rank 1, in iteration 0
+---------- Iteration = 1, Row = 9, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = -1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 0, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 10, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 11, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 2, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 12, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 3, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 13, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 4, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 14, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 5, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 15, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 16, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 7, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 17, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 1, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+Rank 1 sending 0 results to next guy, rank 5, in iteration 1
+---------- Iteration = 2, Row = -1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+Rank 5 receiving 0 results from previous guy, rank 1, in iteration 1
+---------- Iteration = 2, Row = 9, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = -1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 0, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 2, Rotation = 0, match = 1, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 10, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 11, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 2, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 12, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 3, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 13, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 4, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 14, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 5, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 15, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 6, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 16, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 0, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 1, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 2, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 17, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 3, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 4, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 5, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 6, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 7, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 8, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 9, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 10, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 11, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 12, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 13, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 14, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 15, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 16, Rotation = 0, match = 0, listToContinueFinding = true
+---------- Iteration = 2, Row = 8, Col = 17, Rotation = 0, match = 0, listToContinueFinding = true
+Rank 1 sending 0 results to next guy, rank 5, in iteration 2
+Debug: Slave process 1 is printing list before submitting to master for salt
+List size = 1
+2:1:2:0
+Debug: Slave process 1 has finished printing list and will submit to master for salt
+Rank 5 receiving 0 results from previous guy, rank 1, in iteration 2
+Debug: Slave process 5 is printing list before submitting to master for salt
+List size = 1
 0:10:0:0
-Printing out salted list:
+Debug: Slave process 5 has finished printing list and will submit to master for salt
 List size = 11
 0:10:0:0
 0:2:0:1
