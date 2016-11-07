@@ -328,6 +328,9 @@ int main( int argc, char** argv)
 				// One process search for pattern in a specific direction according to its rank
 				searchSinglePattern(curW, size, iter, patterns[0], patternSize, rotation, list, nextList, start, end);
 				
+				if (rank == 8) // Debugging
+					printf("EXCEED SUMMON!! iter = %d\n", iter);
+				
 				if (rank > 4) {
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
@@ -348,6 +351,9 @@ int main( int argc, char** argv)
 					}
 				}
 				
+				if (rank == 8) // Debugging
+					printf("RANK 8!! iter = %d\n", iter);
+				
 				if ((rank + 4) < processes) {
 					//printf("Rank %d sending %d results to next guy, rank %d, in iteration %d\n", rank, nextList->nItem, rank + 4, iter);
 					// Send results to next guy
@@ -362,6 +368,9 @@ int main( int argc, char** argv)
 					}
 					//printf("Rank %d finished sending results to next guy, rank %d\n", rank, rank + 4);
 				}
+				
+				if (rank == 8) // Debugging
+					printf("GALAXY-EYES CIPHER DRAGON!! iter = %d\n", iter);
 				
 				// Clear prevList and nextList at the end of each iteration
 				deleteList( prevList );
