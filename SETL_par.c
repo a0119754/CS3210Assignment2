@@ -330,7 +330,7 @@ int main( int argc, char** argv)
 				if (rank > 4) {
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
-					printf("Rank %d receiving %d results from previous guy, rank %d, in iteration %d\n", rank, omg, rank - 4, iter);
+					//printf("Rank %d receiving %d results from previous guy, rank %d, in iteration %d\n", rank, omg, rank - 4, iter);
 					
 					if (omg > 0) {
 						for (i = 0; i < omg; i++) {
@@ -348,7 +348,7 @@ int main( int argc, char** argv)
 				}
 				
 				if ((rank + 4) < processes) {
-					printf("Rank %d sending %d results to next guy, rank %d, in iteration %d\n", rank, nextList->nItem, rank + 4, iter);
+					//printf("Rank %d sending %d results to next guy, rank %d, in iteration %d\n", rank, nextList->nItem, rank + 4, iter);
 					// Send results to next guy
 					omg = nextList->nItem;
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
@@ -714,7 +714,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 #endif
 					}
 					if ((wRow + pRow) > (newEnd + 1)) {
-						printf("%d + %d is more than end %d\n", wRow, pRow, newEnd);
+						//printf("%d + %d is more than end %d\n", wRow, pRow, newEnd);
 						pRow = pSize;
 						pCol = pSize;
 						match = 2;
