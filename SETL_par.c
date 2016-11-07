@@ -699,10 +699,10 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 			for (pRow = 0; match && pRow < pSize; pRow++){
 				for (pCol = 0; match && pCol < pSize; pCol++){
 					if(world[wRow+pRow][wCol+pCol] != pattern[pRow][pCol]){
-#ifdef DEBUGMORE
-						printf("\tF:(%d, %d) %c != %c\n", pRow, pCol,
-						world[wRow+pRow][wCol+pCol], pattern[pRow][pCol]);
-#endif
+//#ifdef DEBUGMORE
+						if (rotation == 0)
+							printf("\tF:(%d, %d) %c != %c\n", pRow, pCol, world[wRow+pRow][wCol+pCol], pattern[pRow][pCol]);
+//#endif
 						match = 0;    
 					}
 					if ((wRow + pRow) > (end + 1)) {
@@ -718,11 +718,15 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 			
 			if (match == 1){
 				insertEnd(list, iteration, wRow-1, wCol-1, rotation);
-#ifdef DEBUGMORE
-printf("*** Row = %d, Col = %d\n", wRow-1, wCol-1);
-#endif
+//#ifdef DEBUGMORE
+				if (rotation == 0)
+					printf("*** Row = %d, Col = %d\n", wRow-1, wCol-1);
+//#endif
 			} else if (match == 2) {
 				if (listToContinueFinding) {
+				if (rotation == 0)
+					printf("---break: Row = %d, Col = %d\n", wRow-1, wCol-1);
+					
 					insertEnd(listToContinueFinding, iteration, wRow - 1, wCol - 1, rotation);
 				}
 			}
