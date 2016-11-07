@@ -75,4 +75,4 @@ rank 5=soctf-pdc-002 slot=0:0-2
 ## To do:
 
 1. When using more than one cluster, results seem erratic. Low priority - currently debugging code without using machinefile or rankfile
-2. Need to debug processes >= 6 (so two or more processes SHARE THE WORLD (ano oozora todoku made I BELIEVE HITOTSU NO ASHITAAAAAAAA)). Currently processes == 6, ranks 1 and 5 responsible for rotation 0 is successfully picking up 0:10:0:0 and 2:1:2:0, but not 0:7:17:0, 1:6:1:0 and 2:7:17:0.
+2. Tried processes from 2 to 8 inclusive, working fine. Processes = 9, rank 4 sends multiples of same item to rank 8, resulting in duplicates in final result.
