@@ -690,7 +690,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 	int cTerminate = wSize - pSize + 1;
 	int wTerminate = (end < cTerminate) ? end : cTerminate;
 
-	for (wRow = start; wRow <= wTerminate; wRow++){
+	for (wRow = start + 1; wRow <= wTerminate; wRow++){
 		for (wCol = 1; wCol <= cTerminate; wCol++){
 			match = 1;
 #ifdef DEBUGMORE
