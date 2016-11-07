@@ -288,7 +288,7 @@ int main( int argc, char** argv)
 				l = (i - 1) / 4; // Which part of the world this process will receive
 				start = ((k == 0) || (((i - 1) % 4) < k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2));
 				partSize = ((k == 0) || (((i - 1) % 4) < k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0));
-				if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
+				//if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
 				MPI_Send(&(curW[start + 1][0]), (size + 2) * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
 				//if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 			}
@@ -301,7 +301,7 @@ int main( int argc, char** argv)
 		} else {
 			MPI_Recv(&(curW[start + 1][0]), (size + 2) * partSize, MPI_CHAR, 0, 4 + iter, MPI_COMM_WORLD, &mpiStatus);
 			
-			printf("Rank %d received world on iteration %d\n", rank, iter);
+			//printf("Rank %d received world on iteration %d\n", rank, iter);
 			/*
 			printf("Debug: Printing out world after receiving on iteration %d\n", iter);
 			printSquareMatrix(curW, size+2);
@@ -358,6 +358,10 @@ int main( int argc, char** argv)
 					//printf("Rank %d sending %d results to next guy, rank %d, in iteration %d\n", rank, nextList->nItem, rank + 4, iter);
 					// Send results to next guy
 					omg = nextList->nItem;
+					
+					if (rank == 4) // Debugging
+						printf("RANK 4!! iter = %d, nextList->nItem = %d\n", iter, omg);
+					
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 					if (omg > 0) cur = list->tail->next;
 					for (i = 0; i < omg; i++, cur = cur->next) {
