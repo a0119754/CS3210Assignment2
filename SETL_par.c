@@ -688,7 +688,8 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 	
 	int wRow, wCol, pRow, pCol, match;
 	int cTerminate = wSize - pSize + 1;
-	int wTerminate = (end < cTerminate) ? end : cTerminate;
+	int newEnd = end + 1;
+	int wTerminate = (newEnd < cTerminate) ? newEnd : cTerminate;
 	
 	if (rotation == 0)
 		printf("~~~ Starting loop (iteration = %d) from row = %d to row = %d inclusive\n", iteration, start +1, wTerminate);
@@ -708,8 +709,8 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 							printf("---------- Iteration = %d, Row = %d, Col = %d, Rotation = %d, match = %d, listToContinueFinding = %s, F:(%d, %d) %c != %c\n", iteration, wRow-1, wCol-1, rotation, match, (listToContinueFinding ? "true" : "false"), pRow, pCol, world[wRow+pRow][wCol+pCol], pattern[pRow][pCol]);
 //#endif
 					}
-					if ((wRow + pRow) > (end + 1)) {
-						printf("%d + %d is more than end %d\n", wRow, pRow, end);
+					if ((wRow + pRow) > (newEnd + 1)) {
+						printf("%d + %d is more than end %d\n", wRow, pRow, newEnd);
 						pRow = pSize;
 						pCol = pSize;
 						match = 2;
