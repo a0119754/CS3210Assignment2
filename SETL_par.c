@@ -279,7 +279,7 @@ int main( int argc, char** argv)
 
 	for (iter = 0; iter < iterations; iter++){
 		
-		//printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
+		printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
 		//printSquareMatrix(curW, size+2);
 			
 		// Distribute world to slaves
