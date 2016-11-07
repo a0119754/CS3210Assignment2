@@ -288,7 +288,7 @@ int main( int argc, char** argv)
 				l = (i - 1) / 4; // Which part of the world this process will receive
 				start = ((k == 0) || (((i - 1) % 4) < k)) ? ((l <= m) ? (l * (n + 1)) : (l * n + m)) : ((l <= m2) ? (l * (n2 + 1)) : (l * n2 + m2));
 				partSize = ((k == 0) || (((i - 1) % 4) < k)) ? (n + ((l < m) ? 1 : 0)) : (n2 + ((l < m2) ? 1 : 0));
-				if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
+				//if (debug) printf("Master is sending world (iter %d) to slave %d out of %d processes, from start = %d at partSize = %d\n", iter, i, processes, start, partSize);
 				MPI_Send(&(curW[start + 1][0]), (size + 2) * partSize, MPI_CHAR, i, 4 + iter, MPI_COMM_WORLD);
 				//if (debug) printf("Master has sent world (iter %d) to slave %d out of %d processes\n", iter, i, processes);
 			}
@@ -427,11 +427,12 @@ int main( int argc, char** argv)
 
 		printf("Parallel SETL took %1.2f seconds\n", ((float)(after - before))/1000000000);
 	} else {
+		/*
 		if ((debug) & (1)) {
 			printf("Debug: Slave process %d is printing list before submitting to master for salt\n", rank);
 			printList(list);
 			printf("Debug: Slave process %d has finished printing list and will submit to master for salt\n", rank);
-		}
+		}*/
 		
 		noOfResults = list->nItem;
 		MPI_Send(&noOfResults, 1, MPI_INT, 0, 4 + iter, MPI_COMM_WORLD);
