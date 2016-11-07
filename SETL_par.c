@@ -279,7 +279,8 @@ int main( int argc, char** argv)
 
 	for (iter = 0; iter < iterations; iter++){
 		
-		printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
+		if ((rank == 4) || (rank == 8))
+			printf("Rank %d reporting the beginning of iteration %d out of %d iterations\n", rank, iter, iterations);
 		//printSquareMatrix(curW, size+2);
 			
 		// Distribute world to slaves
@@ -334,7 +335,9 @@ int main( int argc, char** argv)
 				if (rank > 4) {
 					// Receive results from previous guy
 					MPI_Recv(&omg, 1, MPI_INT, rank - 4, 0, MPI_COMM_WORLD, &mpiStatus);
-					//printf("Rank %d receiving %d results from previous guy, rank %d, in iteration %d\n", rank, omg, rank - 4, iter);
+					
+					if (rank == 8)
+						printf("Rank %d receiving %d results from previous guy, rank %d, in iteration %d\n", rank, omg, rank - 4, iter);
 					
 					if (omg > 0) {
 						for (i = 0; i < omg; i++) {
@@ -408,7 +411,8 @@ int main( int argc, char** argv)
 		}
 	}
 	
-	printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
+	if ((rank == 4) || (rank == 8))
+		printf("Rank %d reporting: ITERATIONS ARE OVER\n", rank);
 
 	// slaves return results to master
 	if (rank == 0) {
@@ -449,7 +453,7 @@ int main( int argc, char** argv)
 		
 		noOfResults = list->nItem;
 		
-		printf("Debug: Slave process %d is submitting %d items to master for salt\n", rank, noOfResults);
+		//printf("Debug: Slave process %d is submitting %d items to master for salt\n", rank, noOfResults);
 		
 		MPI_Send(&noOfResults, 1, MPI_INT, 0, 4 + iter, MPI_COMM_WORLD);
 		if (noOfResults > 0) cur = list->tail->next; // Personally I have no idea what this is for, but it's in the implementation of printList(), and I don't know exactly how the MATCHLIST structure works exactly and technically, and I'm way too used to object-oriented languages to even wrap my head around the primitive concept of using structs before classes ever existed anyway, so yeah, I am just going to leave it here and pray hard it doesn't do something wrong by skipping the tail
