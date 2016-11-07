@@ -348,7 +348,9 @@ int main( int argc, char** argv)
 
 							insertEnd(prevList, forResults[0], forResults[1], forResults[2], forResults[3]);
 						}
-						//printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
+						
+						if (rank == 8)
+							printf("Rank %d finished receiving results from previous guy, rank %d\n", rank, rank - 4);
 
 						continueSearch(curW, size, iter, patterns[0], patternSize, rotation, list, prevList, nextList, start, end);
 					}
