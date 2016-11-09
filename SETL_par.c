@@ -715,7 +715,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 		int rotation, MATCHLIST* list, MATCHLIST* listToContinueFinding, int start, int end)
 {
 	if ((iteration == 1) && (rotation == 0)) {
-		printf("--- SPECIAL DEBUG!! (local) ---\n");
+		printf("--- SPECIAL DEBUG!! (local) Start = %d, end = %d ---\n", start, end);
 		printSquareMatrix(world, wSize);
 		printSquareMatrix(pattern, pSize);
 		printf("--- SPECIAL DEBUG!! (local) ---\n");
