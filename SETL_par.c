@@ -797,6 +797,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
 		
 		for (pRow = start - cur->row + 1; match && pRow < pSize; pRow++){
 			for (pCol = 0; match && pCol < pSize; pCol++){
+				printf("@@@ world[%d][%d], pattern[%d][%d]\n", cur->row + pRow + 1, cur->col + pCol + 1, pRow, pCol);
 				if(world[cur->row + pRow + 1][cur->col + pCol + 1] != pattern[pRow][pCol]){
 					match = 0;    
 				}
