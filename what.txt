@@ -1,10 +1,22 @@
 World Size = 20
 Iterations = 3
 Pattern size = 3
----------- Iteration = 0, Row = 7, Col = 17, Rotation = 0, match = 1, listToContinueFinding = true
----------- Iteration = 1, Row = 6, Col = 1, Rotation = 0, match = 1, listToContinueFinding = true
----------- Iteration = 2, Row = 1, Col = 2, Rotation = 0, match = 1, listToContinueFinding = true
----------- Iteration = 2, Row = 7, Col = 17, Rotation = 0, match = 1, listToContinueFinding = true
+---------- Iteration = 0, Row = 5, Col = 0, Rotation = 3, match = 1, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 0, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 1, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 2, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 3, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 4, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 5, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 6, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 7, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 8, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 9, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 10, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 11, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 12, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 13, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 0, Row = 9, Col = 14, Rotation = 3, match = 2, listToContinueFinding = true
 RANK 4!! iter = 0, nextList->nItem = 15
 RANK 4: KIBOU OU HOPE i = 0, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 1, iter = 0, row = 5, col = 0, rot = 3
@@ -21,6 +33,25 @@ RANK 4: KIBOU OU HOPE i = 11, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 12, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 13, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 14, iter = 0, row = 5, col = 0, rot = 3
+---------- Iteration = 1, Row = 6, Col = 16, Rotation = 3, match = 1, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 0, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 1, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 2, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 3, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 4, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 5, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 6, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 7, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 8, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 9, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 10, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 11, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 12, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 13, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 14, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 15, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 16, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 1, Row = 9, Col = 17, Rotation = 3, match = 2, listToContinueFinding = true
 RANK 4!! iter = 1, nextList->nItem = 18
 RANK 4: KIBOU OU HOPE i = 0, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 1, iter = 1, row = 6, col = 16, rot = 3
@@ -40,6 +71,22 @@ RANK 4: KIBOU OU HOPE i = 14, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 15, iter = 1, row = 6, col = 16, rot = 3
 RANK 4: KIBOU OU HOPE i = 16, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 17, iter = 1, row = 6, col = 16, rot = 3
+---------- Iteration = 2, Row = 5, Col = 0, Rotation = 3, match = 1, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 0, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 1, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 2, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 3, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 4, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 5, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 6, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 7, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 8, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 9, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 10, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 11, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 12, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 13, Rotation = 3, match = 2, listToContinueFinding = true
+---------- Iteration = 2, Row = 9, Col = 14, Rotation = 3, match = 2, listToContinueFinding = true
 RANK 4!! iter = 2, nextList->nItem = 15
 RANK 4: KIBOU OU HOPE i = 0, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 1, iter = 1, row = 6, col = 16, rot = 3
@@ -56,7 +103,6 @@ RANK 4: KIBOU OU HOPE i = 11, iter = 2, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 12, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 13, iter = 1, row = 6, col = 16, rot = 3
 RANK 4: KIBOU OU HOPE i = 14, iter = 2, row = 5, col = 0, rot = 3
----------- Iteration = 0, Row = 10, Col = 0, Rotation = 0, match = 1, listToContinueFinding = true
 List size = 62
 0:7:17:0
 0:10:0:0
