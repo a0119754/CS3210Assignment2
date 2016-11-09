@@ -378,7 +378,7 @@ int main( int argc, char** argv)
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 					if (omg > 0) cur = nextList->tail->next;
 					for (i = 0; i < omg; i++, cur = cur->next) {
-						if (rank == 4) printf("RANK 4: KIBOU OU HOPE i = %d, iter = %d, row = %d, col = %d, rot = %d\n", i, cur->iteration, cur->row, cur->col, cur->rotation);
+						//if (rank == 4) printf("RANK 4: KIBOU OU HOPE i = %d, iter = %d, row = %d, col = %d, rot = %d\n", i, cur->iteration, cur->row, cur->col, cur->rotation);
 						MPI_Send(&(cur->iteration), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 						MPI_Send(&(cur->row), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 						MPI_Send(&(cur->col), 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
@@ -767,7 +767,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 				insertEnd(list, iteration, wRow-1, wCol-1, rotation);
 			} else if (match == 2) {
 				if (listToContinueFinding) {
-					if (rotation == 3) printf("------- Inserted into listToContinueFinding: iter = %d, row = %d, col = %d, rot = %d\n", iteration, wRow - 1, wCol - 1, rotation);
+					//if (rotation == 3) printf("------- Inserted into listToContinueFinding: iter = %d, row = %d, col = %d, rot = %d\n", iteration, wRow - 1, wCol - 1, rotation);
 					insertEnd(listToContinueFinding, iteration, wRow - 1, wCol - 1, rotation);
 				}
 			}
