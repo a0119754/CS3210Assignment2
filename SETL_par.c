@@ -716,7 +716,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 {
 	if ((iteration == 1) && (rotation == 0)) {
 		printf("--- SPECIAL DEBUG!! (local) Start = %d, end = %d ---\n", start, end);
-		printSquareMatrix(world, wSize);
+		printSquareMatrix(world, wSize + 2);
 		printSquareMatrix(pattern, pSize);
 		printf("--- SPECIAL DEBUG!! (local) ---\n");
 	}
@@ -742,10 +742,11 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 				for (pCol = 0; match && pCol < pSize; pCol++){
 					if(world[wRow+pRow][wCol+pCol] != pattern[pRow][pCol]){
 						match = 0;
-#ifdef DEBUGMORE
-						if (rotation == 0)
+//#ifdef DEBUGMORE
+						// Debugging for 1:6:1:0
+						if ((iteration == 1) && (wRow == 7) && (wCol == 2) && (rotation == 0))
 							printf("---------- Iteration = %d, Row = %d, Col = %d, Rotation = %d, match = %d, listToContinueFinding = %s, F:(%d, %d) %c != %c\n", iteration, wRow-1, wCol-1, rotation, match, (listToContinueFinding ? "true" : "false"), pRow, pCol, world[wRow+pRow][wCol+pCol], pattern[pRow][pCol]);
-#endif
+//#endif
 					}
 					if ((wRow + pRow) > (newEnd + 1)) {
 						//printf("%d + %d is more than end %d\n", wRow, pRow, newEnd);
