@@ -1,32 +1,3 @@
---- SPECIAL DEBUG!! (local) Start = 3, end = 5 ---
-0  OOOOOOOOOOOOOOOOOOOOOO
-1  OOOOOOOOOOOOOOOOOOOOOO
-2  OOOOOOOOOOOOOOOOOOOOOO
-3  OOOOOOOOOOOOOOOOOOOOOO
-4  OOOOOOOOOOOOOOOOOOOOOO
-5  OOOOOOOOOOOOOOOOOOOOOO
-6  OOOOOOOOOOOOOOOOOOOOOO
-7  OOOOOOOOOOOOOOOOOOOOOO
-8  OOOOOOOOOOOOOOOOOOOOOO
-9  OOOOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOOOOO
-11 OOOOOOOOOOOOOOOOOOOOOO
-12 OOOOOOOOOOOOOOOOOOOOOO
-13 OOOOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOOOO
-15 OOOOOOOOOOOOOOOOOOOOOO
-16 OOOOOOOOOOOOOOOOOOOOOO
-17 OOOOOOOOOOOOOOOOOOOOOO
-18 OOOOOOOOOOOOOOOOOOOOOO
-19 OOOOOOOOOOOOOOOOOOOOOO
-20 OOOOOOOOOOOOOOOOOOOOOO
-21 OOOOOOOOOOOOOOOOOOOOOO
-
-0  XOO
-1  XOO
-2  XOO
-
---- SPECIAL DEBUG!! (local) ---
 --- SPECIAL DEBUG!! (local) Start = 6, end = 8 ---
 0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOOOOOOOOOOOOOOOO
@@ -58,6 +29,29 @@
 --- SPECIAL DEBUG!! (local) ---
 ---------- Iteration = 0, Row = 7, Col = 17, Rotation = 0, match = 2, listToContinueFinding = true
 ---------- Iteration = 0, Row = 8, Col = 17, Rotation = 0, match = 2, listToContinueFinding = true
+i = 0, listToResumeFrom->nItem = 36, row = 4, col = 0, pRow = 3, pSize = 3
+@@@ world[7][1], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 4, col = 1, pRow = 3, pSize = 3
+@@@ world[7][2], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 4, col = 2, pRow = 3, pSize = 3
+@@@ world[7][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 4, col = 3, pRow = 3, pSize = 3
+@@@ world[7][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 4, col = 4, pRow = 3, pSize = 3
+@@@ world[7][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 4, col = 5, pRow = 3, pSize = 3
+@@@ world[7][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 4, col = 6, pRow = 3, pSize = 3
+@@@ world[7][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 4, col = 7, pRow = 3, pSize = 3
+@@@ world[7][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 4, col = 8, pRow = 3, pSize = 3
+@@@ world[7][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 4, col = 9, pRow = 3, pSize = 3
+@@@ world[7][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 4, col = 10, pRow = 3, pSize = 3
+@@@ world[7][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 4, col = 11, pRow = 3, pSize = 3
 --- SPECIAL DEBUG!! (local) Start = 9, end = 11 ---
 0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOOOOOOOOOOOOOOOO
@@ -89,6 +83,54 @@
 --- SPECIAL DEBUG!! (local) ---
 ---------- Iteration = 0, Row = 10, Col = 0, Rotation = 0, match = 2, listToContinueFinding = true
 ---------- Iteration = 0, Row = 11, Col = 0, Rotation = 0, match = 2, listToContinueFinding = true
+i = 0, listToResumeFrom->nItem = 2, row = 7, col = 17, pRow = 3, pSize = 3
+@@@ world[10][18], pattern[2][0], match = 1
+@@@ world[10][19], pattern[2][1], match = 1
+@@@ world[10][20], pattern[2][2], match = 1
+i = 1, listToResumeFrom->nItem = 2, row = 8, col = 17, pRow = 2, pSize = 3
+@@@ world[10][18], pattern[1][0], match = 1
+@@@ world[10][19], pattern[1][1], match = 1
+@@@ world[10][20], pattern[1][2], match = 1
+@@@ world[11][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 2, row = 7, col = 1, pRow = 3, pSize = 3
+@@@ world[10][2], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 2, row = 8, col = 1, pRow = 2, pSize = 3
+@@@ world[10][2], pattern[1][0], match = 0
+i = 0, listToResumeFrom->nItem = 2, row = 7, col = 17, pRow = 3, pSize = 3
+@@@ world[10][18], pattern[2][0], match = 1
+@@@ world[10][19], pattern[2][1], match = 1
+@@@ world[10][20], pattern[2][2], match = 1
+i = 1, listToResumeFrom->nItem = 2, row = 8, col = 17, pRow = 2, pSize = 3
+@@@ world[10][18], pattern[1][0], match = 1
+@@@ world[10][19], pattern[1][1], match = 1
+@@@ world[10][20], pattern[1][2], match = 1
+@@@ world[11][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 2, row = 7, col = 15, pRow = 3, pSize = 3
+@@@ world[10][16], pattern[2][0], match = 1
+@@@ world[10][17], pattern[2][1], match = 1
+@@@ world[10][18], pattern[2][2], match = 1
+i = 1, listToResumeFrom->nItem = 2, row = 8, col = 15, pRow = 2, pSize = 3
+@@@ world[10][16], pattern[1][0], match = 1
+@@@ world[10][17], pattern[1][1], match = 1
+@@@ world[10][18], pattern[1][2], match = 1
+@@@ world[11][16], pattern[2][0], match = 1
+@@@ world[11][17], pattern[2][1], match = 1
+@@@ world[11][18], pattern[2][2], match = 0
+i = 0, listToResumeFrom->nItem = 1, row = 8, col = 14, pRow = 2, pSize = 3
+@@@ world[10][15], pattern[1][0], match = 1
+@@@ world[10][16], pattern[1][1], match = 1
+@@@ world[10][17], pattern[1][2], match = 0
+i = 0, listToResumeFrom->nItem = 2, row = 7, col = 15, pRow = 3, pSize = 3
+@@@ world[10][16], pattern[2][0], match = 1
+@@@ world[10][17], pattern[2][1], match = 1
+@@@ world[10][18], pattern[2][2], match = 1
+i = 1, listToResumeFrom->nItem = 2, row = 8, col = 15, pRow = 2, pSize = 3
+@@@ world[10][16], pattern[1][0], match = 1
+@@@ world[10][17], pattern[1][1], match = 1
+@@@ world[10][18], pattern[1][2], match = 1
+@@@ world[11][16], pattern[2][0], match = 1
+@@@ world[11][17], pattern[2][1], match = 1
+@@@ world[11][18], pattern[2][2], match = 0
 --- SPECIAL DEBUG!! (local) Start = 12, end = 13 ---
 0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOOOOOOOOOOOOOOOO
@@ -118,6 +160,77 @@
 2  XOO
 
 --- SPECIAL DEBUG!! (local) ---
+i = 0, listToResumeFrom->nItem = 2, row = 10, col = 0, pRow = 3, pSize = 3
+@@@ world[13][1], pattern[2][0], match = 1
+@@@ world[13][2], pattern[2][1], match = 1
+@@@ world[13][3], pattern[2][2], match = 1
+i = 1, listToResumeFrom->nItem = 2, row = 11, col = 0, pRow = 2, pSize = 3
+@@@ world[13][1], pattern[1][0], match = 1
+@@@ world[13][2], pattern[1][1], match = 1
+@@@ world[13][3], pattern[1][2], match = 1
+@@@ world[15][4], pattern[3][3], match = 2
+i = 0, listToResumeFrom->nItem = 1, row = 11, col = 1, pRow = 2, pSize = 3
+@@@ world[13][2], pattern[1][0], match = 0
+--- SPECIAL DEBUG!! (local) Start = 14, end = 15 ---
+0  OOOOOOOOOOOOOOOOOOOOOO
+1  OOOOOOOOOOOOOOOOOOOOOO
+2  OOOOOOOOOOOOOOOOOOOOOO
+3  OOOOOOOOOOOOOOOOOOOOOO
+4  OOOOOOOOOOOOOOOOOOOOOO
+5  OOOOOOOOOOOOOOOOOOOOOO
+6  OOOOOOOOOOOOOOOOOOOOOO
+7  OOOOOOOOOOOOOOOOOOOOOO
+8  OOOOOOOOOOOOOOOOOOOOOO
+9  OOOOOOOOOOOOOOOOOOOOOO
+10 OOOOOOOOOOOOOOOOOOOOOO
+11 OOOOOOOOOOOOOOOOOOOOOO
+12 OOOOOOOOOOOOOOOOOOOOOO
+13 OOOOOOOOOOOOOOOOOOOOOO
+14 OOOOOOOOOOOOOOOOOOOOOO
+15 OOOOOOOOOOOOOOOOOOOOOO
+16 OOOOOOOOOOOOOOOOOOOOOO
+17 OOOOOOOOOOOOOOOOOOOOOO
+18 OOOOOOOOOOOOOOOOOOOOOO
+19 OOOOOOOOOOOOOOOOOOOOOO
+20 OOOOOOOOOOOOOOOOOOOOOO
+21 OOOOOOOOOOOOOOOOOOOOOO
+
+0  XOO
+1  XOO
+2  XOO
+
+--- SPECIAL DEBUG!! (local) ---
+i = 0, listToResumeFrom->nItem = 1, row = 11, col = 0, pRow = 4, pSize = 3
+--- SPECIAL DEBUG!! (local) Start = 16, end = 17 ---
+0  OOOOOOOOOOOOOOOOOOOOOO
+1  OOOOOOOOOOOOOOOOOOOOOO
+2  OOOOOOOOOOOOOOOOOOOOOO
+3  OOOOOOOOOOOOOOOOOOOOOO
+4  OOOOOOOOOOOOOOOOOOOOOO
+5  OOOOOOOOOOOOOOOOOOOOOO
+6  OOOOOOOOOOOOOOOOOOOOOO
+7  OOOOOOOOOOOOOOOOOOOOOO
+8  OOOOOOOOOOOOOOOOOOOOOO
+9  OOOOOOOOOOOOOOOOOOOOOO
+10 OOOOOOOOOOOOOOOOOOOOOO
+11 OOOOOOOOOOOOOOOOOOOOOO
+12 OOOOOOOOOOOOOOOOOOOOOO
+13 OOOOOOOOOOOOOOOOOOOOOO
+14 OOOOOOOOOOOOOOOOOOOOOO
+15 OOOOOOOOOOOOOOOOOOOOOO
+16 OOOOOOOOOOOOOOOOOOOOOO
+17 OOOOOOOOOOOOOOOOOOOOOO
+18 OXOOOOOOOOOOOOOOOOOOXO
+19 OOOOOOOOOOOOOOOOOOOOOO
+20 OOOOOOOOOOOOOOOOOOOOOO
+21 OOOOOOOOOOOOOOOOOOOOOO
+
+0  XOO
+1  XOO
+2  XOO
+
+--- SPECIAL DEBUG!! (local) ---
+---------- Iteration = 0, Row = 17, Col = 0, Rotation = 0, match = 2, listToContinueFinding = true
 World Size = 20
 Iterations = 3
 Pattern size = 3
@@ -152,7 +265,7 @@ Pattern size = 3
 --- SPECIAL DEBUG!! (local) ---
 ---------- Iteration = 0, Row = 1, Col = 2, Rotation = 0, match = 2, listToContinueFinding = true
 ---------- Iteration = 0, Row = 2, Col = 2, Rotation = 0, match = 2, listToContinueFinding = true
---- SPECIAL DEBUG!! (local) Start = 14, end = 15 ---
+--- SPECIAL DEBUG!! (local) Start = 3, end = 5 ---
 0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOOOOOOOOOOOOOOOO
 2  OOOOOOOOOOOOOOOOOOOOOO
@@ -181,36 +294,310 @@ Pattern size = 3
 2  XOO
 
 --- SPECIAL DEBUG!! (local) ---
---- SPECIAL DEBUG!! (local) Start = 16, end = 17 ---
-0  OOOOOOOOOOOOOOOOOOOOOO
-1  OOOOOOOOOOOOOOOOOOOOOO
-2  OOOOOOOOOOOOOOOOOOOOOO
-3  OOOOOOOOOOOOOOOOOOOOOO
-4  OOOOOOOOOOOOOOOOOOOOOO
-5  OOOOOOOOOOOOOOOOOOOOOO
-6  OOOOOOOOOOOOOOOOOOOOOO
-7  OOOOOOOOOOOOOOOOOOOOOO
-8  OOOOOOOOOOOOOOOOOOOOOO
-9  OOOOOOOOOOOOOOOOOOOOOO
-10 OOOOOOOOOOOOOOOOOOOOOO
-11 OOOOOOOOOOOOOOOOOOOOOO
-12 OOOOOOOOOOOOOOOOOOOOOO
-13 OOOOOOOOOOOOOOOOOOOOOO
-14 OOOOOOOOOOOOOOOOOOOOOO
-15 OOOOOOOOOOOOOOOOOOOOOO
-16 OOOOOOOOOOOOOOOOOOOOOO
-17 OOOOOOOOOOOOOOOOOOOOOO
-18 OXOOOOOOOOOOOOOOOOOOXO
-19 OOOOOOOOOOOOOOOOOOOOOO
-20 OOOOOOOOOOOOOOOOOOOOOO
-21 OOOOOOOOOOOOOOOOOOOOOO
-
-0  XOO
-1  XOO
-2  XOO
-
---- SPECIAL DEBUG!! (local) ---
----------- Iteration = 0, Row = 17, Col = 0, Rotation = 0, match = 2, listToContinueFinding = true
+i = 0, listToResumeFrom->nItem = 2, row = 1, col = 2, pRow = 3, pSize = 3
+@@@ world[4][3], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 2, row = 2, col = 2, pRow = 2, pSize = 3
+@@@ world[4][3], pattern[1][0], match = 0
+i = 0, listToResumeFrom->nItem = 2, row = 1, col = 2, pRow = 3, pSize = 3
+@@@ world[4][3], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 2, row = 2, col = 2, pRow = 2, pSize = 3
+@@@ world[4][3], pattern[1][0], match = 0
+i = 0, listToResumeFrom->nItem = 2, row = 1, col = 2, pRow = 3, pSize = 3
+@@@ world[4][3], pattern[2][0], match = 1
+@@@ world[4][4], pattern[2][1], match = 1
+@@@ world[4][5], pattern[2][2], match = 1
+i = 1, listToResumeFrom->nItem = 2, row = 2, col = 2, pRow = 2, pSize = 3
+@@@ world[4][3], pattern[1][0], match = 1
+@@@ world[4][4], pattern[1][1], match = 1
+@@@ world[4][5], pattern[1][2], match = 1
+@@@ world[5][3], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 1, row = 2, col = 0, pRow = 2, pSize = 3
+i = 0, listToResumeFrom->nItem = 26, row = 1, col = 3, pRow = 3, pSize = 3
+@@@ world[4][4], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 26, row = 1, col = 8, pRow = 3, pSize = 3
+@@@ world[4][9], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 26, row = 1, col = 9, pRow = 3, pSize = 3
+@@@ world[4][10], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 26, row = 1, col = 10, pRow = 3, pSize = 3
+@@@ world[4][11], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 26, row = 1, col = 11, pRow = 3, pSize = 3
+@@@ world[4][12], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 26, row = 1, col = 12, pRow = 3, pSize = 3
+@@@ world[4][13], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 26, row = 1, col = 13, pRow = 3, pSize = 3
+@@@ world[4][14], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 26, row = 1, col = 14, pRow = 3, pSize = 3
+@@@ world[4][15], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 26, row = 1, col = 15, pRow = 3, pSize = 3
+@@@ world[4][16], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 26, row = 1, col = 16, pRow = 3, pSize = 3
+@@@ world[4][17], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 26, row = 1, col = 17, pRow = 3, pSize = 3
+@@@ world[4][18], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 26, row = 2, col = 3, pRow = 2, pSize = 3
+@@@ world[4][4], pattern[1][0], match = 1
+@@@ world[4][5], pattern[1][1], match = 1
+@@@ world[4][6], pattern[1][2], match = 1
+@@@ world[5][4], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 26, row = 2, col = 4, pRow = 2, pSize = 3
+@@@ world[4][5], pattern[1][0], match = 1
+@@@ world[4][6], pattern[1][1], match = 1
+@@@ world[4][7], pattern[1][2], match = 1
+@@@ world[5][5], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 26, row = 2, col = 5, pRow = 2, pSize = 3
+@@@ world[4][6], pattern[1][0], match = 1
+@@@ world[4][7], pattern[1][1], match = 1
+@@@ world[4][8], pattern[1][2], match = 1
+@@@ world[5][6], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 26, row = 2, col = 6, pRow = 2, pSize = 3
+@@@ world[4][7], pattern[1][0], match = 1
+@@@ world[4][8], pattern[1][1], match = 1
+@@@ world[4][9], pattern[1][2], match = 1
+@@@ world[5][7], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 26, row = 2, col = 7, pRow = 2, pSize = 3
+@@@ world[4][8], pattern[1][0], match = 1
+@@@ world[4][9], pattern[1][1], match = 1
+@@@ world[4][10], pattern[1][2], match = 1
+@@@ world[5][8], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 26, row = 2, col = 8, pRow = 2, pSize = 3
+@@@ world[4][9], pattern[1][0], match = 1
+@@@ world[4][10], pattern[1][1], match = 1
+@@@ world[4][11], pattern[1][2], match = 1
+@@@ world[5][9], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 26, row = 2, col = 9, pRow = 2, pSize = 3
+@@@ world[4][10], pattern[1][0], match = 1
+@@@ world[4][11], pattern[1][1], match = 1
+@@@ world[4][12], pattern[1][2], match = 1
+@@@ world[5][10], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 26, row = 2, col = 10, pRow = 2, pSize = 3
+@@@ world[4][11], pattern[1][0], match = 1
+@@@ world[4][12], pattern[1][1], match = 1
+@@@ world[4][13], pattern[1][2], match = 1
+@@@ world[5][11], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 26, row = 2, col = 11, pRow = 2, pSize = 3
+@@@ world[4][12], pattern[1][0], match = 1
+@@@ world[4][13], pattern[1][1], match = 1
+@@@ world[4][14], pattern[1][2], match = 1
+@@@ world[5][12], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 26, row = 2, col = 12, pRow = 2, pSize = 3
+@@@ world[4][13], pattern[1][0], match = 1
+@@@ world[4][14], pattern[1][1], match = 1
+@@@ world[4][15], pattern[1][2], match = 1
+@@@ world[5][13], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 26, row = 2, col = 13, pRow = 2, pSize = 3
+@@@ world[4][14], pattern[1][0], match = 1
+@@@ world[4][15], pattern[1][1], match = 1
+@@@ world[4][16], pattern[1][2], match = 1
+@@@ world[5][14], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 26, row = 2, col = 14, pRow = 2, pSize = 3
+@@@@@ world[7][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 4, col = 12, pRow = 3, pSize = 3
+@@@ world[7][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 4, col = 13, pRow = 3, pSize = 3
+@@@ world[7][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 4, col = 14, pRow = 3, pSize = 3
+@@@ world[7][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 4, col = 15, pRow = 3, pSize = 3
+@@@ world[7][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 4, col = 16, pRow = 3, pSize = 3
+@@@ world[7][17], pattern[2][0], match = 0
+@ world[4][15], pattern[1][0], match = 1
+@@@ world[4][16], pattern[1][1], match = 1
+@@@ world[4][17], pattern[1][2], match = 1
+@@@ world[5][15], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 26, row = 2, col = 15, pRow = 2, pSize = 3
+@@@ world[4][16], pattern[1][0], match = 1
+@@@ world[4][17], pattern[1][1], match = 1
+@@@ world[4][18], pattern[1][2], match = 1
+@@@ world[5][16], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 26, row = 2, col = 16, pRow = 2, pSize = 3
+@@@ world[4][17], pattern[1][0], match = 1
+@@@ world[4][18], pattern[1][1], match = 1
+@@@ world[4][19], pattern[1][2], match = 1
+@@@ world[5][17], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 26, row = 2, col = 17, pRow = 2, pSize = 3
+@@@ world[4][18], pattern[1][0], match = 1
+@@@ world[4][19], pattern[1][1], match = 1
+@@@ world[4][20], pattern[1][2], match = 1
+@@@ world[5][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 26, row = 1, col = 3, pRow = 3, pSize = 3
+i = 17, listToResumeFrom->nItem = 36, row = 4, col = 17, pRow = 3, pSize = 3
+@@@ world[7][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 5, col = 0, pRow = 2, pSize = 3
+@@@ world[7][1], pattern[1][0], match = 1
+@@@ world[7][2], pattern[1][1], match = 1
+@@@ world[7][3], pattern[1][2], match = 1
+@@@ world[8][1], pattern[2][0], match = 1
+@@@ world[8][2], pattern[2][1], match = 1
+@@@ world[8][3], pattern[2][2], match = 1
+i = 19, listToResumeFrom->nItem = 36, row = 5, col = 1, pRow = 2, pSize = 3
+@@@ world[7][2], pattern[1][0], match = 1
+@@@ world[7][3], pattern[1][1], match = 1
+@@@ world[7][4], pattern[1][2], match = 1
+@@@ world[8][2], pattern[2][0], match = 1
+@@@ world[8][3], pattern[2][1], match = 1
+@@@ world[8][4], pattern[2][2], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 5, col = 2, pRow = 2, pSize = 3
+@@@ world[7][3], pattern[1][0], match = 1
+@@@ world[7][4], pattern[1][1], match = 1
+@@@ world[7][5], pattern[1][2], match = 1
+@@@ world[8][3], pattern[2][0], match = 1
+@@@ world[8][4], pattern[2][1], match = 0
+i = 21, listToResumeFrom->nItem = 36, row = 5, col = 3, pRow = 2, pSize = 3
+@@@ world[7][4], pattern[1][0], match = 1
+@@@ world[7][5], pattern[1][1], match = 1
+@@@ world[7][6], pattern[1][2], match = 1
+@@@ world[8][4], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 36, row = 5, col = 4, pRow = 2, pSize = 3
+@@@ world[7][5], pattern[1][0], match = 1
+@@@ world[7][6], pattern[1][1], match = 1
+@@@ world[7][7], pattern[1][2], match = 1
+@@@ world[8][5], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 36, row = 5, col = 5, pRow = 2, pSize = 3
+@@@ world[7][6], pattern[1][0], match = 1
+@@@ world[7][7], pattern[1][1], match = 1
+@@@ world[7][8], pattern[1][2], match = 1
+@@@ world[8][6], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 36, row = 5, col = 6, pRow = 2, pSize = 3
+@@@ world[7][7], pattern[1][0], match = 1
+@@@ world[7][8], pattern[1][1], match = 1
+@@@ world[7][9], pattern[1][2], match = 1
+@@@ world[8][7], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 36, row = 5, col = 7, pRow = 2, pSize = 3
+@@@ world[7][8], pattern[1][0], match = 1
+@@@ world[7][9], pattern[1][1], match = 1
+@@@ world[7][10], pattern[1][2], match = 1
+@@@ world[8][8], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 36, row = 5, col = 8, pRow = 2, pSize = 3
+@@@ world[7][9], pattern[1][0], match = 1
+@@@ world[7][10], pattern[1][1], match = 1
+@@@ world[7][11], pattern[1][2], match = 1
+@@@ world[8][9], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 36, row = 5, col = 9, pRow = 2, pSize = 3
+@@@ world[7][10], pattern[1][0], match = 1
+@@@ world[7][11], pattern[1][1], match = 1
+@@@ world[7][12], pattern[1][2], match = 1
+@@@ world[8][10], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 36, row = 5, col = 10, pRow = 2, pSize = 3
+@@@ world[7][11], pattern[1][0], match = 1
+@@@ world[7][12], pattern[1][1], match = 1
+@@@ world[7][13], pattern[1][2], match = 1
+@@@ world[8][11], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 36, row = 5, col = 11, pRow = 2, pSize = 3
+@@@ world[7][12], pattern[1][0], match = 1
+@@@ world[7][13], pattern[1][1], match = 1
+@@@ world[7][14], pattern[1][2], match = 1
+@@@ world[8][12], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 36, row = 5, col = 12, pRow = 2, pSize = 3
+@@@ world[7][13], pattern[1][0], match = 1
+@@@ world[7][14], pattern[1][1], match = 1
+@@@ world[7][15], pattern[1][2], match = 1
+@@@ world[8][13], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 36, row = 5, col = 13, pRow = 2, pSize = 3
+@@@ world[7][14], pattern[1][0], match = 1
+@@@ world[7][15], pattern[1][1], match = 1
+@@@ world[7][16], pattern[1][2], match = 1
+@@@ world[8][14], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 36, row = 5, col = 14, pRow = 2, pSize = 3
+@@@ world[7][15], pattern[1][0], match = 1
+@@@ world[7][16], pattern[1][1], match = 1
+@@@ world[7][17], pattern[1][2], match = 1
+@@@ world[8][15], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 36, row = 5, col = 15, pRow = 2, pSize = 3
+@@@ world[7][16], pattern[1][0], match = 1
+@@@ world[7][17], pattern[1][1], match = 1
+@@@ world[7][18], pattern[1][2], match = 1
+@@@ world[8][16], pattern[2][0], match = 0
+i = 34, listToResumeFrom->nItem = 36, row = 5, col = 16, pRow = 2, pSize = 3
+@@@ world[7][17], pattern[1][0], match = 1
+@@@ world[7][18], pattern[1][1], match = 1
+@@@ world[7][19], pattern[1][2], match = 1
+@@@ world[8][17], pattern[2][0], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 5, col = 17, pRow = 2, pSize = 3
+@@@ world[7][18], pattern[1][0], match = 1
+@@@ world[7][19], pattern[1][1], match = 1
+@@@ world[7][20], pattern[1][2], match = 1
+@@@ world[8][18], pattern[2][0], match = 1
+@@@ world[8][19], pattern[2][1], match = 0
+i = 0, listToResumeFrom->nItem = 34, row = 10, col = 1, pRow = 3, pSize = 3
+@@@ world[13][2], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 34, row = 10, col = 2, pRow = 3, pSize = 3
+@@@ world[13][3], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 34, row = 10, col = 3, pRow = 3, pSize = 3
+@@@ world[13][4], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 34, row = 10, col = 4, pRow = 3, pSize = 3
+@@@ world[13][5], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 34, row = 10, col = 5, pRow = 3, pSize = 3
+@@@ world[13][6], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 34, row = 10, col = 6, pRow = 3, pSize = 3
+@@@ world[13][7], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 34, row = 10, col = 7, pRow = 3, pSize = 3
+@@@ world[13][8], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 34, row = 10, col = 8, pRow = 3, pSize = 3
+@@@ world[13][9], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 34, row = 10, col = 9, pRow = 3, pSize = 3
+@@@ world[13][10], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 34, row = 10, col = 10, pRow = 3, pSize = 3
+@@@ world[13][11], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 34, row = 10, col = 11, pRow = 3, pSize = 3
+@@@ world[13][12], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 34, row = 10, col = 12, pRow = 3, pSize = 3
+@@@ world[13][13], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 34, row = 10, col = 13, pRow = 3, pSize = 3
+@@@ world[13][14], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 34, row = 10, col = 14, pRow = 3, pSize = 3
+@@@ world[13][15], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 34, row = 10, col = 15, pRow = 3, pSize = 3
+@@@ world[13][16], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 34, row = 10, col = 16, pRow = 3, pSize = 3
+@@@ world[13][17], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 34, row = 10, col = 17, pRow = 3, pSize = 3
+@@@ world[13][18], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 34, row = 11, col = 1, pRow = 2, pSize = 3
+@@@ world[13][2], pattern[1][0], match = 1
+@@@ world[13][3], pattern[1][1], match = 1
+@@@ world[13][4], pattern[1][2], match = 1
+@@@ world[14][2], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 34, row = 11, col = 2, pRow = 2, pSize = 3
+@@@ world[13][3], pattern[1][0], match = 1
+@@@ world[13][4], pattern[1][1], match = 1
+@@@ world[13][5], pattern[1][2], match = 1
+@@@ world[14][3], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 34, row = 11, col = 3, pRow = 2, pSize = 3
+@@@ world[13][4], pattern[1][0], match = 1
+@@@ world[13][5], pattern[1][1], match = 1
+@@@ world[13][6], pattern[1][2], match = 1
+@@@ world[14][4], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 34, row = 11, col = 4, pRow = 2, pSize = 3
+@@@ world[13][5], pattern[1][0], match = 1
+@@@ world[13][6], pattern[1][1], match = 1
+@@@ world[13][7], pattern[1][2], match = 1
+@@@ world[14][5], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 34, row = 11, col = 5, pRow = 2, pSize = 3
+@@@ world[13][6], pattern[1][0], match = 1
+@@@ world[13][7], pattern[1][1], match = 1
+@@@ world[13][8], pattern[1][2], match = 1
+@@@ world[14][6], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 34, row = 11, col = 6, pRow = 2, pSize = 3
+@@@ world[13][7], pattern[1][0], match = 1
+@@@ world[13][8], pattern[1][1], match = 1
+@@@ world[13][9], pattern[1][2], match = 1
+@@@ world[14][7], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 34, row = 11, col = 7, pRow = 2, pSize = 3
+@@@ world[13][8], pattern[1][0], match = 1
+@@@ world[13][9], pattern[1][1], match = 1
+@@@ world[13][10], pattern[1][2], match = 1
+@@@ world[14][8], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 34, row = 11, col = 8, pRow = 2, pSize = 3
+@@@ world[13][9], pattern[1][0], match = 1
+@@@ world[13][10], pattern[1][1], match = 1
+@@@ world[13][11], pattern[1][2], match = 1
+@@@ world[14][9], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 34, row = 11, col =i = 0, listToResumeFrom->nItem = 1, row = 17, col = 17, pRow = 2, pSize = 3
+@@@ world[19][18], pattern[1][0], match = 1
+@@@ world[19][19], pattern[1][1], match = 1
+@@@ world[19][20], pattern[1][2], match = 1
+@@@ world[21][21], pattern[3][3], match = 2
 --- SPECIAL DEBUG!! (local) Start = 18, end = 19 ---
 0  OOOOOOOOOOOOOOOOOOOOOO
 1  OOOOOOOOOOOOOOOOOOOOOO
@@ -240,6 +627,1778 @@ Pattern size = 3
 2  XOO
 
 --- SPECIAL DEBUG!! (local) ---
+i = 0, listToResumeFrom->nItem = 1, row = 17, col = 0, pRow = 2, pSize = 3
+@@@ world[19][1], pattern[1][0], match = 1
+@@@ world[19][2], pattern[1][1], match = 1
+@@@ world[19][3], pattern[1][2], match = 1
+@@@ world[21][4], pattern[3][3], match = 2
+@@@ world[4][4], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 26, row = 1, col = 8, pRow = 3, pSize = 3
+@@@ world[4][9], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 26, row = 1, col = 9, pRow = 3, pSize = 3
+@@@ world[4][10], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 26, row = 1, col = 10, pRow = 3, pSize = 3
+@@@ world[4][11], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 26, row = 1, col = 11, pRow = 3, pSize = 3
+@@@ world[4][12], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 26, row = 1, col = 12, pRow = 3, pSize = 3
+@@@ world[4][13], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 26, row = 1, col = 13, pRow = 3, pSize = 3
+@@@ world[4][14], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 26, row = 1, col = 14, pRow = 3, pSize = 3
+@@@ world[4][15], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 26, row = 1, col = 15, pRow = 3, pSize = 3
+@@@ world[4][16], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 26, row = 1, col = 16, pRow = 3, pSize = 3
+@@@ world[4][17], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 26, row = 1, col = 17, pRow = 3, pSize = 3
+@@@ world[4][18], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 26, row = 2, col = 3, pRow = 2, pSize = 3
+@@@ world[4][4], pattern[1][0], match = 1
+@@@ world[4][5], pattern[1][1], match = 1
+@@@ world[4][6], pattern[1][2], match = 1
+@@@ world[5][4], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 26, row = 2, col = 4, pRow = 2, pSize = 3
+@@@ world[4][5], pattern[1][0], match = 1
+@@@ world[4][6], pattern[1][1], match = 1
+@@@ world[4][7], pattern[1][2], match = 1
+@@@ world[5][5], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 26, row = 2, col = 5, pRow = 2, pSize = 3
+@@@ world[4][6], pattern[1][0], match = 1
+@@@ world[4][7], pattern[1][1], match = 1
+@@@ world[4][8], pattern[1][2], match = 1
+@@@ world[5][6], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 26, row = 2, col = 6, pRow = 2, pSize = 3
+@@@ world[4][7], pattern[1][0], match = 1
+@@@ world[4][8], pattern[1][1], match = 1
+@@@ world[4][9], pattern[1][2], match = 1
+@@@ world[5][7], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 26, row = 2, col = 7, pRow = 2, pSize = 3
+@@@ world[4][8], pattern[1][0], match = 1
+@@@ world[4][9], pattern[1][1], match = 1
+@@@ world[4][10], pattern[1][2], match = 1
+@@@ world[5][8], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 26, row = 2, col = 8, pRow = 2, pSize = 3
+@@@ world[4][9], pattern[1][0], match = 1
+@@@ world[4][10], pattern[1][1], match = 1
+@@@ world[4][11], pattern[1][2], match = 1
+@@@ world[5][9], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 26, row = 2, col = 9, pRow = 2, pSize = 3
+@@@ world[4][10], pattern[1][0], match = 1
+@@@ world[4][11], pattern[1][1], match = 1
+@@@ world[4][12], pattern[1][2], match = 1
+@@@ world[5][10], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 26, row = 2, col = 10, pRow = 2, pSize = 3
+@@@ world[4][11], pattern[1][0], match = 1
+@@@ world[4][12], pattern[1][1], match = 1
+@@@ world[4][13], pattern[1][2], match = 1
+@@@ world[5][11], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 26, row = 2, col = 11, pRow = 2, pSize = 3
+@@@ world[4][12], pattern[1][0], match = 1
+@@@ world[4][13], pattern[1][1], match = 1
+@@@ world[4][14], pattern[1][2], match = 1
+@@@ world[5][12], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 26, row = 2, col = 12, pRow = 2, pSize = 3
+@@@ world[4][13], pattern[1][0], match = 1
+@@@ world[4][14], pattern[1][1], match = 1
+@@@ world[4][15], pattern[1][2], match = 1
+@@@ world[5][13], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 26, row = 2, col = 13, pRow = 2, pSize = 3
+@@@ world[4][14], pattern[1][0], match = 1
+@@@ world[4][15], pattern[1][1], match = 1
+@@@ world[4][16], pattern[1][2], match = 1
+@@@ world[5][14], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 26, row = 2, col = 14, pRow = 2, pSize = 3
+@@@ world[4][15], pattern[1][0], match = 1
+@@@ world[4][16], pattern[1][1], mi = 0, listToResumeFrom->nItem = 27, row = 7, col = 3, pRow = 3, pSize = 3
+@@@ world[10][4], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 27, row = 7, col = 4, pRow = 3, pSize = 3
+@@@ world[10][5], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 27, row = 7, col = 5, pRow = 3, pSize = 3
+@@@ world[10][6], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 27, row = 7, col = 6, pRow = 3, pSize = 3
+@@@ world[10][7], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 27, row = 7, col = 7, pRow = 3, pSize = 3
+@@@ world[10][8], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 27, row = 7, col = 8, pRow = 3, pSize = 3
+@@@ world[10][9], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 27, row = 7, col = 9, pRow = 3, pSize = 3
+@@@ world[10][10], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 27, row = 7, col = 10, pRow = 3, pSize = 3
+@@@ world[10][11], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 27, row = 7, col = 11, pRow = 3, pSize = 3
+@@@ world[10][12], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 27, row = 7, col = 12, pRow = 3, pSize = 3
+@@@ world[10][13], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 27, row = 7, col = 13, pRow = 3, pSize = 3
+@@@ world[10][14], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 27, row = 7, col = 14, pRow = 3, pSize = 3
+@@@ world[10][15], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 27, row = 8, col = 0, pRow = 2, pSize = 3
+@@@ world[10][1], pattern[1][0], match = 1
+@@@ world[10][2], pattern[1][1], match = 1
+@@@ world[10][3], pattern[1][2], match = 1
+@@@ world[11][1], pattern[2][0], match = 1
+@@@ world[11][2], pattern[2][1], match = 0
+i = 13, listToResumeFrom->nItem = 27, row = 8, col = 1, pRow = 2, pSize = 3
+@@@ world[10][2], pattern[1][0], match = 1
+@@@ world[10][3], pattern[1][1], match = 1
+@@@ world[10][4], pattern[1][2], match = 1
+@@@ world[11][2], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 27, row = 8, col = 2, pRow = 2, pSize = 3
+@@@ world[10][3], pattern[1][0], match = 1
+@@@ world[10][4], pattern[1][1], match = 1
+@@@ world[10][5], pattern[1][2], match = 1
+@@@ world[11][3], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 27, row = 8, col = 3, pRow = 2, pSize = 3
+@@@ world[10][4], pattern[1][0], match = 1
+@@@ world[10][5], pattern[1][1], match = 1
+@@@ world[10][6], pattern[1][2], match = 1
+@@@ world[11][4], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 27, row = 8, col = 4, pRow = 2, pSize = 3
+@@@ world[10][5], pattern[1][0], match = 1
+@@@ world[10][6], pattern[1][1], match = 1
+@@@ world[10][7], pattern[1][2], match = 1
+@@@ world[11][5], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 27, row = 8, col = 5, pRow = 2, pSize = 3
+@@@ world[10][6], pattern[1][0], match = 1
+@@@ world[10][7], pattern[1][1], match = 1
+@@@ world[10][8], pattern[1][2], match = 1
+@@@ world[11][6], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 27, row = 8, col = 6, pRow = 2, pSize = 3
+@@@ world[10][7], pattern[1][0], match = 1
+@@@ world[10][8], pattern[1][1], match = 1
+@@@ world[10][9], pattern[1][2], match = 1
+@@@ world[11][7], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 27, row = 8, col = 7, pRow = 2, pSize = 3
+@@@ world[10][8], pattern[1][0], match = 1
+@@@ world[10][9], pattern[1][1], match = 1
+@@@ world[10][10], pattern[1][2], match = 1
+@@@ world[11][8], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 27, row = 8, col = 8, pRow = 2, pSize = 3
+@@@ world[10][9], pattern[1][0], match = 1
+@@@ world[10][10], pattern[1][1], match = 1
+@@@ world[10][11], pattern[1][2], match = 1
+@@@ world[11][9], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 27, row = 8, col = 9, pRow = 2, pSize = 3
+@@@ world[10][10], pattern[1][0], match = 1
+@@@ world[10][11], pattern[1][1], match = 1
+@@@ world[10][12], pattern[1][2], match = 1
+@@@ world[11][10], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 27, row = 8, col = 10, pRow = 2, pSize = 3
+@@@ world[10][11], pattern[1][0], match = 1
+@@@ world[10][1atch = 1
+@@@ world[4][17], pattern[1][2], match = 1
+@@@ world[5][15], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 26, row = 2, col = 15, pRow = 2, pSize = 3
+@@@ world[4][16], pattern[1][0], match = 1
+@@@ world[4][17], pattern[1][1], match = 1
+@@@ world[4][18], pattern[1][2], match = 1
+@@@ world[5][16], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 26, row = 2, col = 16, pRow = 2, pSize = 3
+@@@ world[4][17], pattern[1][0], match = 1
+@@@ world[4][18], pattern[1][1], match = 1
+@@@ world[4][19], pattern[1][2], match = 1
+@@@ world[5][17], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 26, row = 2, col = 17, pRow = 2, pSize = 3
+@@@ world[4][18], pattern[1][0], match = 1
+@@@ world[4][19], pattern[1][1], match = 1
+@@@ world[4][20], pattern[1][2], match = 1
+@@@ world[5][18], pattern[2][0], match = 0
+ 9, pRow = 2, pSize = 3
+@@@ world[13][10], pattern[1][0], match = 1
+@@@ world[13][11], pattern[1][1], match = 1
+@@@ world[13][12], pattern[1][2], match = 1
+@@@ world[14][10], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 34, row = 11, col = 10, pRow = 2, pSize = 3
+@@@ world[13][11], pattern[1][0], match = 1
+@@@ world[13][12], pattern[1][1], match = 1
+@@@ world[13][13], pattern[1][2], match = 1
+@@@ world[14][11], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 34, row = 11, col = 11, pRow = 2, pSize = 3
+@@@ world[13][12], pattern[1][0], match = 1
+@@@ world[13][13], pattern[1][1], match = 1
+@@@ world[13][14], pattern[1][2], match = 1
+@@@ world[14][12], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 34, row = 11, col = 12, pRow = 2, pSize = 3
+@@@ world[13][13], pattern[1][0], match = 1
+@@@ world[13][14], pattern[1][1], match = 1
+@@@ world[13][15], pattern[1][2], match = 1
+@@@ world[14][13], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 34, row = 11, col = 13, pRow = 2, pSize = 3
+@@@ world[13][14], pattern[1][0], match = 1
+@@@ world[13][15], pattern[1][1], match = 1
+@@@ world[13][16], pattern[1][2], match = 1
+@@@ world[14][14], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 34, row = 11, col = 14, pRow = 2, pSize = 3
+@@@ world[13][15], pattern[1][0], match = 1
+@@@ world[13][16], pattern[1][1], match = 1
+@@@ world[13][17], pattern[1][2], match = 1
+@@@ world[14][15], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 34, row = 11, col = 15, pRow = 2, pSize = 3
+@@@ world[13][16], pattern[1][0], match = 1
+@@@ world[13][17], pattern[1][1], match = 1
+@@@ world[13][18], pattern[1][2], match = 1
+@@@ world[14][16], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 34, row = 11, col = 16, pRow = 2, pSize = 3
+@@@ world[13][17], pattern[1][0], match = 1
+@@@ world[13][18], pattern[1][1], match = 1
+@@@ world[13][19], pattern[1][2], match = 1
+@@@ world[14][17], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 34, row = 11, col = 17, pRow = 2, pSize = 3
+@@@ world[13][18], pattern[1][0], match = 1
+@@@ world[13][19], pattern[1][1], match = 1
+@@@ world[13][20], pattern[1][2], match = 1
+@@@ world[14][18], pattern[2][0], match = 0
+2], pattern[1][1], match = 1
+@@@ world[10][13], pattern[1][2], match = 1
+@@@ world[11][11], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 27, row = 8, col = 11, pRow = 2, pSize = 3
+@@@ world[10][12], pattern[1][0], match = 1
+@@@ world[10][13], pattern[1][1], match = 1
+@@@ world[10][14], pattern[1][2], match = 1
+@@@ world[11][12], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 27, row = 8, col = 12, pRow = 2, pSize = 3
+@@@ world[10][13], pattern[1][0], match = 1
+@@@ world[10][14], pattern[1][1], match = 1
+@@@ world[10][15], pattern[1][2], match = 1
+@@@ world[11][13], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 27, row = 8, col = 13, pRow = 2, pSize = 3
+@@@ world[10][14], pattern[1][0], match = 1
+@@@ world[10][15], pattern[1][1], match = 1
+@@@ world[10][16], pattern[1][2], match = 1
+@@@ world[11][14], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 27, row = 8, col = 14, pRow = 2, pSize = 3
+@@@ world[10][15], pattern[1][0], match = 1
+@@@ world[10][16], pattern[1][1], match = 1
+@@@ world[10][17], pattern[1][2], match = 1
+@@@ world[11][15], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 26, row = 1, col = 3, pRow = 3, pSize = 3
+i = 0, listToResumeFrom->nItem = 36, row = 4, col = 0, pRow = 3, pSize = 3
+@@@ world[4][1], pattern[1][0], match = 1
+@@@ world[4][2], pattern[1][1], match = 1
+@@@ world[4][3], pattern[1][2], match = 1
+@@@ world[5][1], pattern[2][0], match = 1
+@@@ world[5][2], pattern[2][1], match = 1
+@@@ world[5][3], pattern[2][2], match = 1
+@@@ world[7][1], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 4, col = 1, pRow = 3, pSize = 3
+@@@ world[7][2], pattern[2][0], match = 1
+@@@ world[7][3], pattern[2][1], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 4, col = 2, pRow = 3, pSize = 3
+@@@ world[7][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 4, col = 3, pRow = 3, pSize = 3
+@@@ world[7][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 4, col = 4, pRow = 3, pSize = 3
+@@@ world[7][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 4, col = 5, pRow = 3, pSize = 3
+@@@ world[7][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 4, col = 6, pRow = 3, pSize = 3
+@@@ world[7][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 4, col = 7, pRow = 3, pSize = 3
+@@@ world[7][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 4, col = 8, pRow = 3, pSize = 3
+@@@ world[7][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 4, col = 9, pRow = 3, pSize = 3
+@@@ world[7][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 4, col = 10, pRow = 3, pSize = 3
+@@@ world[7][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 4, col = 11, pRow = 3, pSize = 3
+@@@ world[7][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 4, col = 12, pRow = 3, pSize = 3
+@@@ world[7][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 4, col = 13, pRow = 3, pSize = 3
+@@@ world[7][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 4, col = 14, pRow = 3, pSize = 3
+@@@ world[7][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 4, col = 15, pRow = 3, pSize = 3
+@@@ world[7][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 4, col = 16, pRow = 3, pSize = 3
+@@@ world[7][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 4, col = 17, pRow = 3, pSize = 3
+@@@ world[7][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 5, col = 0, pRow = 2, pSize = 3
+@@@ world[7][1], pattern[1][0], match = 1
+@@@ world[7][2], pattern[1][1], match = 0
+i = 19, listToResumeFrom->nItem = 36, row = 5, col = 1, pRow = 2, pSize = 3
+@@@ world[7][2], pattern[1][0], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 5, col = 2, pRow = 2, pSize = 3
+@@@ world[7][3], pattern[1][0], match = 1
+@@@ world[7][4], pattern[1][1], match = 1
+@@@ world[7][5], pattern[1][2], match = 1
+@@@ world[8][3], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 36, row = 5, col = 3, pRow = 2, pSize = 3
+@@@ world[7][4], pattern[1][0], match = 1
+@@@ world[7][5], pattern[1][1], match = 1
+@@@ world[7][6], pattern[1][2], match = 1
+@@@ world[8][4], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 36, row = 5, col = 4, pRow = 2, pSize = 3
+@@@ world[7][5], pattern[1][0], match = 1
+@@@ world[7][6], pattern[1][1], match = 1
+@@@ world[7][7], pattern[1][2], match = 1
+@@@ world[8][5], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 36, row = 5, col = 5, pRow = 2, pSize = 3
+@@@ world[7][6], pattern[1][0], match = 1
+@@@ world[7][7], pattern[1][1], match = 1
+@@@ world[7][8], pattern[1][2], match = 1
+@@@ world[8][6], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 36, row = 5, col = 6, pRow = 2, pSize = 3
+@@@ world[7][7], pattern[1][0], match = 1
+@@@ world[7][8], pattern[1][1], match = 1
+@@@ world[7][9], pattern[1][2], match = 1
+@@@ world[8][7], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 36, row = 5, col = 7, pRow = 2, pSize = 3
+@@@ world[7][8], pattern[1][0], match = 1
+@@@ world[7][9], pattern[1][1], match = 1
+@@@ world[7][10], pattern[1][2], match = 1
+@@@ world[8][8], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 36, row = 5, col = 8, pRow = 2, pSize = 3
+@@@ world[7][9], pattern[1][0], match = 1
+@@@ world[7][10], pattern[1][1], match = 1
+@@@ world[7][11], pattern[1][2], match = 1
+@@@ world[8][9], pattern[2][0], match = 0
+i = 27, i = 0, listToResumeFrom->nItem = 1, row = 7, col = 0, pRow = 3, pSize = 3
+@@@ world[10][1], pattern[2][0], match = 1
+@@@ world[10][2], pattern[2][1], match = 1
+@@@ world[10][3], pattern[2][2], match = 1
+i = 0, listToResumeFrom->nItem = 1, row = 8, col = 16, pRow = 2, pSize = 3
+@@@ world[10][17], pattern[1][0], match = 1
+@@@ world[10][18], pattern[1][1], match = 1
+@@@ world[10][19], pattern[1][2], match = 1
+@@@ world[11][17], pattern[2][0], match = 1
+@@@ world[11][18], pattern[2][1], match = 1
+@@@ world[11][19], pattern[2][2], match = 1
+i = 0, listToResumeFrom->nItem = 1, row = 7, col = 0, pRow = 3, pSize = 3
+@@@ world[10][1], pattern[2][0], match = 1
+@@@ world[10][2], pattern[2][1], match = 1
+@@@ world[10][3], pattern[2][2], match = 1
+i = 0, listToResumeFrom->nItem = 32, row = 10, col = 2, pRow = 3, pSize = 3
+@@@ world[13][3], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 32, row = 10, col = 3, pRow = 3, pSize = 3
+@@@ world[13][4], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 32, row = 10, col = 4, pRow = 3, pSize = 3
+@@@ world[13][5], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 32, row = 10, col = 5, pRow = 3, pSize = 3
+@@@ world[13][6], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 32, row = 10, col = 6, pRow = 3, pSize = 3
+@@@ world[13][7], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 32, row = 10, col = 7, pRow = 3, pSize = 3
+@@@ world[13][8], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 32, row = 10, col = 8, pRow = 3, pSize = 3
+@@@ world[13][9], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 32, row = 10, col = 9, pRow = 3, pSize = 3
+@@@ world[13][10], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 32, row = 10, col = 10, pRow = 3, pSize = 3
+@@@ world[13][11], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 32, row = 10, col = 11, pRow = 3, pSize = 3
+@@@ world[13][12], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 32, row = 10, col = 12, pRow = 3, pSize = 3
+@@@ world[13][13], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 32, row = 10, col = 13, pRow = 3, pSize = 3
+@@@ world[13][14], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 32, row = 10, col = 14, pRow = 3, pSize = 3
+@@@ world[13][15], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 32, row = 10, col = 15, pRow = 3, pSize = 3
+@@@ world[13][16], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 32, row = 10, col = 16, pRow = 3, pSize = 3
+@@@ world[13][17], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 32, row = 10, col = 17, pRow = 3, pSize = 3
+@@@ world[13][18], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 32, row = 11, col = 2, pRow = 2, pSize = 3
+@@@ world[13][3], pattern[1][0], match = 1
+@@@ world[13][4], pattern[1][1], match = 1
+@@@ world[13][5], pattern[1][2], match = 1
+@@@ world[14][3], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 32, row = 11, col = 3, pRow = 2, pSize = 3
+@@@ world[13][4], pattern[1][0], match = 1
+@@@ world[13][5], pattern[1][1], match = 1
+@@@ world[13][6], pattern[1][2], match = 1
+@@@ world[14][4], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 32, row = 11, col = 4, pRow = 2, pSize = 3
+@@@ world[13][5], pattern[1][0], match = 1
+@@@ world[13][6], pattern[1][1], match = 1
+@@@ world[13][7], pattern[1][2], match = 1
+@@@ world[14][5], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 32, row = 11, col = 5, pRow = 2, pSize = 3
+@@@ world[13][6], pattern[1][0], match = 1
+@@@ world[13][7], pattern[1][1], match = 1
+@@@ world[13][8], pattern[1][2], match = 1
+@@@ world[14][6], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 32, row = 11, col = 6, pRow = 2, pSize = 3
+@@@ world[13][7], pattern[1][0], match = 1
+@@@ world[13][8], pattern[1][1], match = 1
+@@@ world[13][9], pattern[1][2], match = 1
+@@@ world[14][7], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 32, row = 11, col = 7, pRow = 2, pSize = 3
+@@@ world[13][8], pattern[1][0], match = 1
+@@@ world[13][9], pattern[1][1], match = 1
+@@@ world[13][10], pattern[1][2], match = 1
+@@@ world[14][8], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 32, row = 11, col = 8, pRow = 2, pSize = 3
+@@@ world[13][9], pattern[1][0], match = 1
+@@@ world[13][10], pattern[1][1], match = 1
+@@@ world[13][11], pattern[1][2], match = 1
+@@@ world[14][9], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 32, row = 11, col = 9, pRow = 2, pSize = 3
+@@@ world[13][10], pattern[1][0], match = 1
+@@@ world[13][11], pattern[1][1], match = 1
+@@@ world[13][12], pattern[1][2], match = 1
+@@@ world[14][10], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 32, row = 11, col = 10, pRow = 2, pSize = 3
+@@@ world[13][11], pattern[1][0], match = 1
+@@@ world[13][12], pattern[1][1], match = 1
+@@@@@@ world[4][4], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 26, row = 1, col = 8, pRow = 3, pSize = 3
+@@@ world[4][9], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 26, row = 1, col = 9, pRow = 3, pSize = 3
+@@@ world[4][10], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 26, row = 1, col = 10, pRow = 3, pSize = 3
+@@@ world[4][11], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 26, row = 1, col = 11, pRow = 3, pSize = 3
+@@@ world[4][12], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 26, row = 1, col = 12, pRow = 3, pSize = 3
+@@@ world[4][13], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 26, row = 1, col = 13, pRow = 3, pSize = 3
+@@@ world[4][14], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 26, row = 1, col = 14, pRow = 3, pSize = 3
+@@@ world[4][15], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 26, row = 1, col = 15, pRow = 3, pSize = 3
+@@@ world[4][16], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 26, row = 1, col = 16, pRow = 3, pSize = 3
+@@@ world[4][17], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 26, row = 1, col = 17, pRow = 3, pSize = 3
+@@@ world[4][18], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 26, row = 2, col = 3, pRow = 2, pSize = 3
+@@@ world[4][4], pattern[1][0], match = 1
+@@@ world[4][5], pattern[1][1], match = 1
+@@@ world[4][6], pattern[1][2], match = 1
+@@@ world[5][4], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 26, row = 2, col = 4, pRow = 2, pSize = 3
+@@@ world[4][5], pattern[1][0], match = 1
+@@@ world[4][6], pattern[1][1], match = 1
+@@@ world[4][7], pattern[1][2], match = 1
+@@@ world[5][5], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 26, row = 2, col = 5, pRow = 2, pSize = 3
+@@@ world[4][6], pattern[1][0], match = 1
+@@@ world[4][7], pattern[1][1], match = 1
+@@@ world[4][8], pattern[1][2], match = 1
+@@@ world[5][6], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 26, row = 2, col = 6, pRow = 2, pSize = 3
+@@@ world[4][7], pattern[1][0], match = 1
+@@@ world[4][8], pattern[1][1], match = 1
+@@@ world[4][9], pattern[1][2], match = 1
+@@@ world[5][7], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 26, row = 2, col = 7, pRow = 2, pSize = 3
+@@@ world[4][8], pattern[1][0], match = 1
+@@@ world[4][9], pattern[1][1], match = 1
+@@@ world[4][10], pattern[1][2], match = 1
+@@@ world[5][8], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 26, row = 2, col = 8, pRow = 2, pSize = 3
+@@@ world[4][9], pattern[1][0], match = 1
+@@@ world[4][10], pattern[1][1], match = 1
+@@@ world[4][11], pattern[1][2], match = 1
+@@@ world[5][9], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 26, row = 2, col = 9, pRow = 2, pSize = 3
+@@@ world[4][10], pattern[1][0], match = 1
+@@@ world[4][11], pattern[1][1], match = 1
+@@@ world[4][12], pattern[1][2], match = 1
+@@@ world[5][10], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 26, row = 2, col = 10, pRow = 2, pSize = 3
+@@@ world[4][11], pattern[1][0], match = 1
+@@@ world[4][12], pattern[1][1], match = 1
+@@@ world[4][13], pattern[1][2], match = 1
+@@@ world[5][11], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 26, row = 2, col = 11, pRow = 2, pSize = 3
+@@@ world[4][12], pattern[1][0], match = 1
+@@@ world[4][13], pattern[1][1], match = 1
+@@@ world[4][14], pattern[1][2], match = 1
+@@@ world[5][12], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 26, row = 2, col = 12, pRow = 2, pSize = 3
+@@@ world[4][13], pattern[1][0], match = 1
+@@@ world[4][14], pattern[1][1], match = 1
+@@@ world[4][15], pattern[1][2], match = 1
+@@@ world[5][13], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 26, row = 2, col = 13, pRow = 2, pSize = 3
+@@@ world[4][14], pattern[1][0], match = 1
+@@@ world[4][15], pattern[1][1], match = 1
+@@@ world[4][16], pattern[1][2], match = 1
+@@@ world[5][14], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 26, row = 2, col = 14, pRow = 2, pSize = 3
+@@@ world[4][15], pattern[1][0], match = 1
+@@@ world[4][16], pattern[1][1], mi = 0, listToResumeFrom->nItem = 36, row = 13, col = 0, pRow = 3, pSize = 3
+@@@ world[16][1], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 13, col = 1, pRow = 3, pSize = 3
+@@@ world[16][2], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 13, col = 2, pRow = 3, pSize = 3
+@@@ world[16][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 13, col = 3, pRow = 3, pSize = 3
+@@@ world[16][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 13, col = 4, pRow = 3, pSize = 3
+@@@ world[16][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 13, col = 5, pRow = 3, pSize = 3
+@@@ world[16][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 13, col = 6, pRow = 3, pSize = 3
+@@@ world[16][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 13, col = 7, pRow = 3, pSize = 3
+@@@ world[16][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 13, col = 8, pRow = 3, pSize = 3
+@@@ world[16][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 13, col = 9, pRow = 3, pSize = 3
+@@@ world[16][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 13, col = 10, pRow = 3, pSize = 3
+@@@ world[16][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 13, col = 11, pRow = 3, pSize = 3
+@@@ world[16][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 13, col = 12, pRow = 3, pSize = 3
+@@@ world[16][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 13, col = 13, pRow = 3, pSize = 3
+@@@ world[16][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 13, col = 14, pRow = 3, pSize = 3
+@@@ world[16][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 13, col = 15, pRow = 3, pSize = 3
+@@@ world[16][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 13, col = 16, pRow = 3, pSize = 3
+@@@ world[16][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 13, col = 17, pRow = 3, pSize = 3
+@@@ world[16][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 14, col = 0, pRow = 2, pSize = 3
+@@@ world[16][1], pattern[1][0], match = 1
+@@@ world[16][2], pattern[1][1], match = 1
+@@@ world[16][3], pattern[1][2], match = 1
+@@@ world[17][1], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 36, row = 14, col = 1, pRow = 2, pSize = 3
+@@@ world[16][2], pattern[1][0], match = 1
+@@@ world[16][3], pattern[1][1], match = 1
+@@@ world[16][4], pattern[1][2], match = 1
+@@@ world[17][2], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 14, col = 2, pRow = 2, pSize = 3
+@@@ world[16][3], pattern[1][0], match = 1
+@@@ world[16][4], pattern[1][1], match = 1
+@@@ world[16][5], pattern[1][2], match = 1
+@@@ world[17][3], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 36, row = 14, col = 3, pRow = 2, pSize = 3
+@@@ world[16][4], pattern[1][0], match = 1
+@@@ world[16][5], pattern[1][1], match = 1
+@@@ world[16][6], pattern[1][2], match = 1
+@@@ world[17][4], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 36, row = 14, col = 4, pRow = 2, pSize = 3
+@@@ world[16][5], pattern[1][0], match = 1
+@@@ world[16][6], pattern[1][1], match = 1
+@@@ world[16][7], pattern[1][2], match = 1
+@@@ world[17][5], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 36, row = 14, col = 5, pRow = 2, pSize = 3
+@@@ world[16][6], pattern[1][0], match = 1
+@@@ world[16][7], pattern[1][1], match = 1
+@@@ world[16][8], pattern[1][2], match = 1
+@@@ world[17][6], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 36, row = 14, col = 6, pRow = 2, pSize = 3
+@@@ world[16][7], pattern[1][0], match = 1
+@@@ world[16][8], pattern[1][1], match = 1
+@@@ world[16][9], pattern[1][2], match = 1
+@@@ world[17][7], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 36, row = 14, col = 7, pRow = 2, pSize = 3
+@@@ world[16][8], pattern[1][0], match = 1
+@@@ world[16][9], pattern[1][1], match = 1
+@@@ world[16][10], pati = 0, listToResumeFrom->nItem = 24, row = 7, col = 2, pRow = 3, pSize = 3
+@@@ world[10][3], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 24, row = 7, col = 3, pRow = 3, pSize = 3
+@@@ world[10][4], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 24, row = 7, col = 4, pRow = 3, pSize = 3
+@@@ world[10][5], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 24, row = 7, col = 5, pRow = 3, pSize = 3
+@@@ world[10][6], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 24, row = 7, col = 6, pRow = 3, pSize = 3
+@@@ world[10][7], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 24, row = 7, col = 7, pRow = 3, pSize = 3
+@@@ world[10][8], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 24, row = 7, col = 8, pRow = 3, pSize = 3
+@@@ world[10][9], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 24, row = 7, col = 9, pRow = 3, pSize = 3
+@@@ world[10][10], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 24, row = 7, col = 10, pRow = 3, pSize = 3
+@@@ world[10][11], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 24, row = 7, col = 11, pRow = 3, pSize = 3
+@@@ world[10][12], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 24, row = 7, col = 12, pRow = 3, pSize = 3
+@@@ world[10][13], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 24, row = 7, col = 13, pRow = 3, pSize = 3
+@@@ world[10][14], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 24, row = 8, col = 2, pRow = 2, pSize = 3
+@@@ world[10][3], pattern[1][0], match = 1
+@@@ world[10][4], pattern[1][1], match = 1
+@@@ world[10][5], pattern[1][2], match = 1
+@@@ world[11][3], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 24, row = 8, col = 3, pRow = 2, pSize = 3
+@@@ world[10][4], pattern[1][0], match = 1
+@@@ world[10][5], pattern[1][1], match = 1
+@@@ world[10][6], pattern[1][2], match = 1
+@@@ world[11][4], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 24, row = 8, col = 4, pRow = 2, pSize = 3
+@@@ world[10][5], pattern[1][0], match = 1
+@@@ world[10][6], pattern[1][1], match = 1
+@@@ world[10][7], pattern[1][2], match = 1
+@@@ world[11][5], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 24, row = 8, col = 5, pRow = 2, pSize = 3
+@@@ world[10][6], pattern[1][0], match = 1
+@@@ world[10][7], pattern[1][1], match = 1
+@@@ world[10][8], pattern[1][2], match = 1
+@@@ world[11][6], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 24, row = 8, col = 6, pRow = 2, pSize = 3
+@@@ world[10][7], pattern[1][0], match = 1
+@@@ world[10][8], pattern[1][1], match = 1
+@@@ world[10][9], pattern[1][2], match = 1
+@@@ world[11][7], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 24, row = 8, col = 7, pRow = 2, pSize = 3
+@@@ world[10][8], pattern[1][0], match = 1
+@@@ world[10][9], pattern[1][1], match = 1
+@@@ world[10][10], pattern[1][2], match = 1
+@@@ world[11][8], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 24, row = 8, col = 8, pRow = 2, pSize = 3
+@@@ world[10][9], pattern[1][0], match = 1
+@@@ world[10][10], pattern[1][1], match = 1
+@@@ world[10][11], pattern[1][2], match = 1
+@@@ world[11][9], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 24, row = 8, col = 9, pRow = 2, pSize = 3
+@@@ world[10][10], pattern[1][0], match = 1
+@@@ world[10][11], pattern[1][1], match = 1
+@@@ world[10][12], pattern[1][2], match = 1
+@@@ world[11][10], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 24, row = 8, col = 10, pRow = 2, pSize = 3
+@@@ world[10][11], pattern[1][0], match = 1
+@@@ world[10][12], pattern[1][1], match = 1
+@@@ world[10][13], pattern[1][2], match = 1
+@@@ world[11][11], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 24, row = 8, col = 11, pRow = 2, pSize = 3
+@@@ world[10][12], pattern[1][0], match = 1
+@@@ world[10][13], pattern[1][1], match = 1
+@@@ world[10][14], pattern[1][2], match = 1
+@@@ world[11][12], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 24, row = 8, col = 12, pRow = 2, pSize = 3
+@@@ world[10][13], pattern[1][0], match = 1
+@@@ world[10][14], pattern[1][1], match = 1
+@@@ woi = 0, listToResumeFrom->nItem = 32, row = 16, col = 1, pRow = 3, pSize = 3
+@@@ world[19][2], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 32, row = 16, col = 2, pRow = 3, pSize = 3
+@@@ world[19][3], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 32, row = 16, col = 3, pRow = 3, pSize = 3
+@@@ world[19][4], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 32, row = 16, col = 4, pRow = 3, pSize = 3
+@@@ world[19][5], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 32, row = 16, col = 5, pRow = 3, pSize = 3
+@@@ world[19][6], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 32, row = 16, col = 6, pRow = 3, pSize = 3
+@@@ world[19][7], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 32, row = 16, col = 7, pRow = 3, pSize = 3
+@@@ world[19][8], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 32, row = 16, col = 8, pRow = 3, pSize = 3
+@@@ world[19][9], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 32, row = 16, col = 9, pRow = 3, pSize = 3
+@@@ world[19][10], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 32, row = 16, col = 10, pRow = 3, pSize = 3
+@@@ world[19][11], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 32, row = 16, col = 11, pRow = 3, pSize = 3
+@@@ world[19][12], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 32, row = 16, col = 12, pRow = 3, pSize = 3
+@@@ world[19][13], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 32, row = 16, col = 13, pRow = 3, pSize = 3
+@@@ world[19][14], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 32, row = 16, col = 14, pRow = 3, pSize = 3
+@@@ world[19][15], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 32, row = 16, col = 15, pRow = 3, pSize = 3
+@@@ world[19][16], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 32, row = 16, col = 16, pRow = 3, pSize = 3
+@@@ world[19][17], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 32, row = 17, col = 1, pRow = 2, pSize = 3
+@@@ world[19][2], pattern[1][0], match = 1
+@@@ world[19][3], pattern[1][1], match = 1
+@@@ world[19][4], pattern[1][2], match = 1
+@@@ world[21][5], pattern[3][3], match = 2
+i = 17, listToResumeFrom->nItem = 32, row = 17, col = 2, pRow = 2, pSize = 3
+@@@ world[19][3], pattern[1][0], match = 1
+@@@ world[19][4], pattern[1][1], match = 1
+@@@ world[19][5], pattern[1][2], match = 1
+@@@ world[21][6], pattern[3][3], match = 2
+i = 18, listToResumeFrom->nItem = 32, row = 17, col = 3, pRow = 2, pSize = 3
+@@@ world[19][4], pattern[1][0], match = 1
+@@@ world[19][5], pattern[1][1], match = 1
+@@@ world[19][6], pattern[1][2], match = 1
+@@@ world[21][7], pattern[3][3], match = 2
+i = 19, listToResumeFrom->nItem = 32, row = 17, col = 4, pRow = 2, pSize = 3
+@@@ world[19][5], pattern[1][0], match = 1
+@@@ world[19][6], pattern[1][1], match = 1
+@@@ world[19][7], pattern[1][2], match = 1
+@@@ world[21][8], pattern[3][3], match = 2
+i = 20, listToResumeFrom->nItem = 32, row = 17, col = 5, pRow = 2, pSize = 3
+@@@ world[19][6], pattern[1][0], match = 1
+@@@ world[19][7], pattern[1][1], match = 1
+@@@ world[19][8], pattern[1][2], match = 1
+@@@ world[21][9], pattern[3][3], match = 2
+i = 21, listToResumeFrom->nItem = 32, row = 17, col = 6, pRow = 2, pSize = 3
+@@@ world[19][7], pattern[1][0], match = 1
+@@@ world[19][8], pattern[1][1], match = 1
+@@@ world[19][9], pattern[1][2], match = 1
+@@@ world[21][10], pattern[3][3], match = 2
+i = 22, listToResumeFrom->nItem = 32, row = 17, col = 7, pRow = 2, pSize = 3
+@@@ world[19][8], pattern[1][0], match = 1
+@@@ world[19][9], pattern[1][1], match = 1
+@@@ world[19][10], pattern[1][2], match = 1
+@@@ world[21][11], pattern[3][3], match = 2
+i = 23, listToResumeFrom->nItem = 32, row = 17, col = 8, pRow = 2, pSize = 3
+@@@ world[19][9], pattern[1][0], match = 1
+@@@ world[19][10], pattern[1][1], match = 1
+@@@ world[19][11], pattern[1][2], match = 1
+@@@ world[21][12], pattern[3][3], match = 2
+i = 24, listToResumeFrom->nItem = 32, row = 17, col = 9, pRow = 2, pSize = 3
+@@@ world[19][10], pattern[1][0], match = 1
+@@@ world[19][11], pattern[1][1], match = 1
+@@@ wortern[1][2], match = 1
+@@@ world[17][8], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 36, row = 14, col = 8, pRow = 2, pSize = 3
+@@@ world[16][9], pattern[1][0], match = 1
+@@@ world[16][10], pattern[1][1], match = 1
+@@@ world[16][11], pattern[1][2], match = 1
+@@@ world[17][9], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 36, row = 14, col = 9, pRow = 2, pSize = 3
+@@@ world[16][10], pattern[1][0], match = 1
+@@@ world[16][11], pattern[1][1], match = 1
+@@@ world[16][12], pattern[1][2], match = 1
+@@@ world[17][10], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 36, row = 14, col = 10, pRow = 2, pSize = 3
+@@@ world[16][11], pattern[1][0], match = 1
+@@@ world[16][12], pattern[1][1], match = 1
+@@@ world[16][13], pattern[1][2], match = 1
+@@@ world[17][11], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 36, row = 14, col = 11, pRow = 2, pSize = 3
+@@@ world[16][12], pattern[1][0], match = 1
+@@@ world[16][13], pattern[1][1], match = 1
+@@@ world[16][14], pattern[1][2], match = 1
+@@@ world[17][12], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 36, row = 14, col = 12, pRow = 2, pSize = 3
+@@@ world[16][13], pattern[1][0], match = 1
+@@@ world[16][14], pattern[1][1], match = 1
+@@@ world[16][15], pattern[1][2], match = 1
+@@@ world[17][13], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 36, row = 14, col = 13, pRow = 2, pSize = 3
+@@@ world[16][14], pattern[1][0], match = 1
+@@@ world[16][15], pattern[1][1], match = 1
+@@@ world[16][16], pattern[1][2], match = 1
+@@@ world[17][14], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 36, row = 14, col = 14, pRow = 2, pSize = 3
+@@@ world[16][15], pattern[1][0], match = 1
+@@@ world[16][16], pattern[1][1], match = 1
+@@@ world[16][17], pattern[1][2], match = 1
+@@@ world[17][15], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 36, row = 14, col = 15, pRow = 2, pSize = 3
+@@@ world[16][16], pattern[1][0], match = 1
+@@@ world[16][17], pattern[1][1], match = 1
+@@@ world[16][18], pattern[1][2], match = 1
+@@@ world[17][16], pattern[2][0], match = 0
+i = 34, listToResumeFrom->nItem = 36, row = 14, col = 16, pRow = 2, pSize = 3
+@@@ world[16][17], pattern[1][0], match = 1
+@@@ world[16][18], pattern[1][1], match = 1
+@@@ world[16][19], pattern[1][2], match = 1
+@@@ world[17][17], pattern[2][0], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 14, col = 17, pRow = 2, pSize = 3
+@@@ world[16][18], pattern[1][0], match = 1
+@@@ world[16][19], pattern[1][1], match = 1
+@@@ world[16][20], pattern[1][2], match = 1
+@@@ world[17][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 36, row = 13, col = 0, pRow = 3, pSize = 3
+@@@ world[16][1], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 13, col = 1, pRow = 3, pSize = 3
+@@@ world[16][2], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 13, col = 2, pRow = 3, pSize = 3
+@@@ world[16][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 13, col = 3, pRow = 3, pSize = 3
+@@@ world[16][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 13, col = 4, pRow = 3, pSize = 3
+@@@ world[16][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 13, col = 5, pRow = 3, pSize = 3
+@@@ world[16][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 13, col = 6, pRow = 3, pSize = 3
+@@@ world[16][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 13, col = 7, pRow = 3, pSize = 3
+@@@ world[16][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 13, col = 8, pRow = 3, pSize = 3
+@@@ world[16][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 13, col = 9, pRow = 3, pSize = 3
+@@@ world[16][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 13, col = 10, pRow = 3, pSize = 3
+@@@ world[16][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 13, col = 11, pRow = 3, pSize = 3
+@@@ world[16][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 13, col = 12, prld[10][15], pattern[1][2], match = 1
+@@@ world[11][13], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 24, row = 8, col = 13, pRow = 2, pSize = 3
+@@@ world[10][14], pattern[1][0], match = 1
+@@@ world[10][15], pattern[1][1], match = 1
+@@@ world[10][16], pattern[1][2], match = 1
+@@@ world[11][14], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 27, row = 7, col = 3, pRow = 3, pSize = 3
+@@@ world[10][4], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 27, row = 7, col = 4, pRow = 3, pSize = 3
+@@@ world[10][5], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 27, row = 7, col = 5, pRow = 3, pSize = 3
+@@@ world[10][6], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 27, row = 7, col = 6, pRow = 3, pSize = 3
+@@@ world[10][7], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 27, row = 7, col = 7, pRow = 3, pSize = 3
+@@@ world[10][8], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 27, row = 7, col = 8, pRow = 3, pSize = 3
+@@@ world[10][9], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 27, row = 7, col = 9, pRow = 3, pSize = 3
+@@@ world[10][10], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 27, row = 7, col = 10, pRow = 3, pSize = 3
+@@@ world[10][11], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 27, row = 7, col = 11, pRow = 3, pSize = 3
+@@@ world[10][12], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 27, row = 7, col = 12, pRow = 3, pSize = 3
+@@@ world[10][13], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 27, row = 7, col = 13, pRow = 3, pSize = 3
+@@@ world[10][14], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 27, row = 7, col = 14, pRow = 3, pSize = 3
+@@@ world[10][15], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 27, row = 8, col = 0, pRow = 2, pSize = 3
+@@@ world[10][1], pattern[1][0], match = 1
+@@@ world[10][2], pattern[1][1], match = 1
+@@@ world[10][3], pattern[1][2], match = 1
+@@@ world[11][1], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 27, row = 8, col = 1, pRow = 2, pSize = 3
+@@@ world[10][2], pattern[1][0], match = 1
+@@@ world[10][3], pattern[1][1], match = 1
+@@@ world[10][4], pattern[1][2], match = 1
+@@@ world[11][2], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 27, row = 8, col = 2, pRow = 2, pSize = 3
+@@@ world[10][3], pattern[1][0], match = 1
+@@@ world[10][4], pattern[1][1], match = 1
+@@@ world[10][5], pattern[1][2], match = 1
+@@@ world[11][3], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 27, row = 8, col = 3, pRow = 2, pSize = 3
+@@@ world[10][4], pattern[1][0], match = 1
+@@@ world[10][5], pattern[1][1], match = 1
+@@@ world[10][6], pattern[1][2], match = 1
+@@@ world[11][4], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 27, row = 8, col = 4, pRow = 2, pSize = 3
+@@@ world[10][5], pattern[1][0], match = 1
+@@@ world[10][6], pattern[1][1], match = 1
+@@@ world[10][7], pattern[1][2], match = 1
+@@@ world[11][5], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 27, row = 8, col = 5, pRow = 2, pSize = 3
+@@@ world[10][6], pattern[1][0], match = 1
+@@@ world[10][7], pattern[1][1], match = 1
+@@@ world[10][8], pattern[1][2], match = 1
+@@@ world[11][6], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 27, row = 8, col = 6, pRow = 2, pSize = 3
+@@@ world[10][7], pattern[1][0], match = 1
+@@@ world[10][8], pattern[1][1], match = 1
+@@@ world[10][9], pattern[1][2], match = 1
+@@@ world[11][7], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 27, row = 8, col = 7, pRow = 2, pSize = 3
+@@@ world[10][8], pattern[1][0], match = 1
+@@@ world[10][9], pattern[1][1], match = 1
+@@@ world[10][10], pattern[1][2], match = 1
+@@@ world[11][8], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 27, row = 8, col = 8, pRow = 2, pSize = 3
+@@@ world[10][9], pattern[1][0], match = 1
+@@@ world[10][10], pattern[1][1], match = 1
+@@@ world[10][11], pattern[1][2], match = 1
+@@@ world[11][9], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 27, row = 8, col = 9, pRow = 2, pSize = 3
+@@@ world[10][10], pld[19][12], pattern[1][2], match = 1
+@@@ world[21][13], pattern[3][3], match = 2
+i = 25, listToResumeFrom->nItem = 32, row = 17, col = 10, pRow = 2, pSize = 3
+@@@ world[19][11], pattern[1][0], match = 1
+@@@ world[19][12], pattern[1][1], match = 1
+@@@ world[19][13], pattern[1][2], match = 1
+@@@ world[21][14], pattern[3][3], match = 2
+i = 26, listToResumeFrom->nItem = 32, row = 17, col = 11, pRow = 2, pSize = 3
+@@@ world[19][12], pattern[1][0], match = 1
+@@@ world[19][13], pattern[1][1], match = 1
+@@@ world[19][14], pattern[1][2], match = 1
+@@@ world[21][15], pattern[3][3], match = 2
+i = 27, listToResumeFrom->nItem = 32, row = 17, col = 12, pRow = 2, pSize = 3
+@@@ world[19][13], pattern[1][0], match = 1
+@@@ world[19][14], pattern[1][1], match = 1
+@@@ world[19][15], pattern[1][2], match = 1
+@@@ world[21][16], pattern[3][3], match = 2
+i = 28, listToResumeFrom->nItem = 32, row = 17, col = 13, pRow = 2, pSize = 3
+@@@ world[19][14], pattern[1][0], match = 1
+@@@ world[19][15], pattern[1][1], match = 1
+@@@ world[19][16], pattern[1][2], match = 1
+@@@ world[21][17], pattern[3][3], match = 2
+i = 29, listToResumeFrom->nItem = 32, row = 17, col = 14, pRow = 2, pSize = 3
+@@@ world[19][15], pattern[1][0], match = 1
+@@@ world[19][16], pattern[1][1], match = 1
+@@@ world[19][17], pattern[1][2], match = 1
+@@@ world[21][18], pattern[3][3], match = 2
+i = 30, listToResumeFrom->nItem = 32, row = 17, col = 15, pRow = 2, pSize = 3
+@@@ world[19][16], pattern[1][0], match = 1
+@@@ world[19][17], pattern[1][1], match = 1
+@@@ world[19][18], pattern[1][2], match = 1
+@@@ world[21][19], pattern[3][3], match = 2
+i = 31, listToResumeFrom->nItem = 32, row = 17, col = 16, pRow = 2, pSize = 3
+@@@ world[19][17], pattern[1][0], match = 1
+@@@ world[19][18], pattern[1][1], match = 1
+@@@ world[19][19], pattern[1][2], match = 1
+@@@ world[21][20], pattern[3][3], match = 2
+i = 0, listToResumeFrom->nItem = 36, row = 16, col = 0, pRow = 3, pSize = 3
+@@@ world[19][1], pattern[2][0], match = 1
+@@@ world[19][2], pattern[2][1], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 16, col = 1, pRow = 3, pSize = 3
+@@@ world[19][2], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 16, col = 2, pRow = 3, pSize = 3
+@@@ world[19][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 16, col = 3, pRow = 3, pSize = 3
+@@@ world[19][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 16, col = 4, pRow = 3, pSize = 3
+@@@ world[19][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 16, col = 5, pRow = 3, pSize = 3
+@@@ world[19][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 16, col = 6, pRow = 3, pSize = 3
+@@@ world[19][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 16, col = 7, pRow = 3, pSize = 3
+@@@ world[19][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 16, col = 8, pRow = 3, pSize = 3
+@@@ world[19][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 16, col = 9, pRow = 3, pSize = 3
+@@@ world[19][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 16, col = 10, pRow = 3, pSize = 3
+@@@ world[19][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 16, col = 11, pRow = 3, pSize = 3
+@@@ world[19][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 16, col = 12, pRow = 3, pSize = 3
+@@@ world[19][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 16, col = 13, pRow = 3, pSize = 3
+@@@ world[19][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 16, col = 14, pRow = 3, pSize = 3
+@@@ world[19][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 16, col = 15, pRow = 3, pSize = 3
+@@@ world[19][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 16, col = 16, pRow = 3, pSize = 3
+@@@ world[19][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 16, col = 17, pRow = 3, pSize = 3
+@@@ world[19][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->listToResumeFrom->nItem = 36, row = 5, col = 9, pRow = 2, pSize = 3
+@@@ world[7][10], pattern[1][0], match = 1
+@@@ world[7][11], pattern[1][1], match = 1
+@@@ world[7][12], pattern[1][2], match = 1
+@@@ world[8][10], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 36, row = 5, col = 10, pRow = 2, pSize = 3
+@@@ world[7][11], pattern[1][0], match = 1
+@@@ world[7][12], pattern[1][1], match = 1
+@@@ world[7][13], pattern[1][2], match = 1
+@@@ world[8][11], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 36, row = 5, col = 11, pRow = 2, pSize = 3
+@@@ world[7][12], pattern[1][0], match = 1
+@@@ world[7][13], pattern[1][1], match = 1
+@@@ world[7][14], pattern[1][2], match = 1
+@@@ world[8][12], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 36, row = 5, col = 12, pRow = 2, pSize = 3
+@@@ world[7][13], pattern[1][0], match = 1
+@@@ world[7][14], pattern[1][1], match = 1
+@@@ world[7][15], pattern[1][2], match = 1
+@@@ world[8][13], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 36, row = 5, col = 13, pRow = 2, pSize = 3
+@@@ world[7][14], pattern[1][0], match = 1
+@@@ world[7][15], pattern[1][1], match = 1
+@@@ world[7][16], pattern[1][2], match = 1
+@@@ world[8][14], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 36, row = 5, col = 14, pRow = 2, pSize = 3
+@@@ world[7][15], pattern[1][0], match = 1
+@@@ world[7][16], pattern[1][1], match = 1
+@@@ world[7][17], pattern[1][2], match = 1
+@@@ world[8][15], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 36, row = 5, col = 15, pRow = 2, pSize = 3
+@@@ world[7][16], pattern[1][0], match = 1
+@@@ world[7][17], pattern[1][1], match = 1
+@@@ world[7][18], pattern[1][2], match = 1
+@@@ world[8][16], pattern[2][0], match = 0
+i = 34, listToResumeFrom->nItem = 36, row = 5, col = 16, pRow = 2, pSize = 3
+@@@ world[7][17], pattern[1][0], match = 1
+@@@ world[7][18], pattern[1][1], match = 1
+@@@ world[7][19], pattern[1][2], match = 1
+@@@ world[8][17], pattern[2][0], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 5, col = 17, pRow = 2, pSize = 3
+@@@ world[7][18], pattern[1][0], match = 1
+@@@ world[7][19], pattern[1][1], match = 1
+@@@ world[7][20], pattern[1][2], match = 1
+@@@ world[8][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 36, row = 4, col = 0, pRow = 3, pSize = 3
+@@@ world[7][1], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 4, col = 1, pRow = 3, pSize = 3
+@@@ world[7][2], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 4, col = 2, pRow = 3, pSize = 3
+@@@ world[7][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 4, col = 3, pRow = 3, pSize = 3
+@@@ world[7][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 4, col = 4, pRow = 3, pSize = 3
+@@@ world[7][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 4, col = 5, pRow = 3, pSize = 3
+@@@ world[7][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 4, col = 6, pRow = 3, pSize = 3
+@@@ world[7][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 4, col = 7, pRow = 3, pSize = 3
+@@@ world[7][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 4, col = 8, pRow = 3, pSize = 3
+@@@ world[7][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 4, col = 9, pRow = 3, pSize = 3
+@@@ world[7][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 4, col = 10, pRow = 3, pSize = 3
+@@@ world[7][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 4, col = 11, pRow = 3, pSize = 3
+@@@ world[7][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 4, col = 12, pRow = 3, pSize = 3
+@@@ world[7][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 4, col = 13, pRow = 3, pSize = 3
+@@@ world[7][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 4, col = 14, pRow = 3, pSize = 3
+@@@ world[7][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 4, col = 15, pRow = 3, pSize = 3
+@@@ world[7][16 world[13][13], pattern[1][2], match = 1
+@@@ world[14][11], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 32, row = 11, col = 11, pRow = 2, pSize = 3
+@@@ world[13][12], pattern[1][0], match = 1
+@@@ world[13][13], pattern[1][1], match = 1
+@@@ world[13][14], pattern[1][2], match = 1
+@@@ world[14][12], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 32, row = 11, col = 12, pRow = 2, pSize = 3
+@@@ world[13][13], pattern[1][0], match = 1
+@@@ world[13][14], pattern[1][1], match = 1
+@@@ world[13][15], pattern[1][2], match = 1
+@@@ world[14][13], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 32, row = 11, col = 13, pRow = 2, pSize = 3
+@@@ world[13][14], pattern[1][0], match = 1
+@@@ world[13][15], pattern[1][1], match = 1
+@@@ world[13][16], pattern[1][2], match = 1
+@@@ world[14][14], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 32, row = 11, col = 14, pRow = 2, pSize = 3
+@@@ world[13][15], pattern[1][0], match = 1
+@@@ world[13][16], pattern[1][1], match = 1
+@@@ world[13][17], pattern[1][2], match = 1
+@@@ world[14][15], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 32, row = 11, col = 15, pRow = 2, pSize = 3
+@@@ world[13][16], pattern[1][0], match = 1
+@@@ world[13][17], pattern[1][1], match = 1
+@@@ world[13][18], pattern[1][2], match = 1
+@@@ world[14][16], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 32, row = 11, col = 16, pRow = 2, pSize = 3
+@@@ world[13][17], pattern[1][0], match = 1
+@@@ world[13][18], pattern[1][1], match = 1
+@@@ world[13][19], pattern[1][2], match = 1
+@@@ world[14][17], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 32, row = 11, col = 17, pRow = 2, pSize = 3
+@@@ world[13][18], pattern[1][0], match = 1
+@@@ world[13][19], pattern[1][1], match = 1
+@@@ world[13][20], pattern[1][2], match = 1
+@@@ world[14][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 36, row = 10, col = 0, pRow = 3, pSize = 3
+@@@ world[13][1], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 10, col = 1, pRow = 3, pSize = 3
+@@@ world[13][2], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 10, col = 2, pRow = 3, pSize = 3
+@@@ world[13][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 10, col = 3, pRow = 3, pSize = 3
+@@@ world[13][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 10, col = 4, pRow = 3, pSize = 3
+@@@ world[13][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 10, col = 5, pRow = 3, pSize = 3
+@@@ world[13][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 10, col = 6, pRow = 3, pSize = 3
+@@@ world[13][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 10, col = 7, pRow = 3, pSize = 3
+@@@ world[13][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 10, col = 8, pRow = 3, pSize = 3
+@@@ world[13][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 10, col = 9, pRow = 3, pSize = 3
+@@@ world[13][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 10, col = 10, pRow = 3, pSize = 3
+@@@ world[13][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 10, col = 11, pRow = 3, pSize = 3
+@@@ world[13][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 10, col = 12, pRow = 3, pSize = 3
+@@@ world[13][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 10, col = 13, pRow = 3, pSize = 3
+@@@ world[13][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 10, col = 14, pRow = 3, pSize = 3
+@@@ world[13][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 10, col = 15, pRow = 3, pSize = 3
+@@@ world[13][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 10, col = 16, pRow = 3, pSize = 3
+@@@ world[13][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 10, col = 17, pRow = 3, pSize = 3
+@@@ world[13][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 11, col = 0, pRow = 2atch = 1
+@@@ world[4][17], pattern[1][2], match = 1
+@@@ world[5][15], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 26, row = 2, col = 15, pRow = 2, pSize = 3
+@@@ world[4][16], pattern[1][0], match = 1
+@@@ world[4][17], pattern[1][1], match = 1
+@@@ world[4][18], pattern[1][2], match = 1
+@@@ world[5][16], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 26, row = 2, col = 16, pRow = 2, pSize = 3
+@@@ world[4][17], pattern[1][0], match = 1
+@@@ world[4][18], pattern[1][1], match = 1
+@@@ world[4][19], pattern[1][2], match = 1
+@@@ world[5][17], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 26, row = 2, col = 17, pRow = 2, pSize = 3
+@@@ world[4][18], pattern[1][0], match = 1
+@@@ world[4][19], pattern[1][1], match = 1
+@@@ world[4][20], pattern[1][2], match = 1
+@@@ world[5][18], pattern[2][0], match = 0
+nItem = 36, row = 17, col = 0, pRow = 2, pSize = 3
+@@@ world[19][1], pattern[1][0], match = 0
+i = 19, listToResumeFrom->nItem = 36, row = 17, col = 1, pRow = 2, pSize = 3
+@@@ world[19][2], pattern[1][0], match = 1
+@@@ world[19][3], pattern[1][1], match = 1
+@@@ world[19][4], pattern[1][2], match = 1
+@@@ world[21][5], pattern[3][3], match = 2
+i = 20, listToResumeFrom->nItem = 36, row = 17, col = 2, pRow = 2, pSize = 3
+@@@ world[19][3], pattern[1][0], match = 1
+@@@ world[19][4], pattern[1][1], match = 1
+@@@ world[19][5], pattern[1][2], match = 1
+@@@ world[21][6], pattern[3][3], match = 2
+i = 21, listToResumeFrom->nItem = 36, row = 17, col = 3, pRow = 2, pSize = 3
+@@@ world[19][4], pattern[1][0], match = 1
+@@@ world[19][5], pattern[1][1], match = 1
+@@@ world[19][6], pattern[1][2], match = 1
+@@@ world[21][7], pattern[3][3], match = 2
+i = 22, listToResumeFrom->nItem = 36, row = 17, col = 4, pRow = 2, pSize = 3
+@@@ world[19][5], pattern[1][0], match = 1
+@@@ world[19][6], pattern[1][1], match = 1
+@@@ world[19][7], pattern[1][2], match = 1
+@@@ world[21][8], pattern[3][3], match = 2
+i = 23, listToResumeFrom->nItem = 36, row = 17, col = 5, pRow = 2, pSize = 3
+@@@ world[19][6], pattern[1][0], match = 1
+@@@ world[19][7], pattern[1][1], match = 1
+@@@ world[19][8], pattern[1][2], match = 1
+@@@ world[21][9], pattern[3][3], match = 2
+i = 24, listToResumeFrom->nItem = 36, row = 17, col = 6, pRow = 2, pSize = 3
+@@@ world[19][7], pattern[1][0], match = 1
+@@@ world[19][8], pattern[1][1], match = 1
+@@@ world[19][9], pattern[1][2], match = 1
+@@@ world[21][10], pattern[3][3], match = 2
+i = 25, listToResumeFrom->nItem = 36, row = 17, col = 7, pRow = 2, pSize = 3
+@@@ world[19][8], pattern[1][0], match = 1
+@@@ world[19][9], pattern[1][1], match = 1
+@@@ world[19][10], pattern[1][2], match = 1
+@@@ world[21][11], pattern[3][3], match = 2
+i = 26, listToResumeFrom->nItem = 36, row = 17, col = 8, pRow = 2, pSize = 3
+@@@ world[19][9], pattern[1][0], match = 1
+@@@ world[19][10], pattern[1][1], match = 1
+@@@ world[19][11], pattern[1][2], match = 1
+@@@ world[21][12], pattern[3][3], match = 2
+i = 27, listToResumeFrom->nItem = 36, row = 17, col = 9, pRow = 2, pSize = 3
+@@@ world[19][10], pattern[1][0], match = 1
+@@@ world[19][11], pattern[1][1], match = 1
+@@@ world[19][12], pattern[1][2], match = 1
+@@@ world[21][13], pattern[3][3], match = 2
+i = 28, listToResumeFrom->nItem = 36, row = 17, col = 10, pRow = 2, pSize = 3
+@@@ world[19][11], pattern[1][0], match = 1
+@@@ world[19][12], pattern[1][1], match = 1
+@@@ world[19][13], pattern[1][2], match = 1
+@@@ world[21][14], pattern[3][3], match = 2
+i = 29, listToResumeFrom->nItem = 36, row = 17, col = 11, pRow = 2, pSize = 3
+@@@ world[19][12], pattern[1][0], match = 1
+@@@ world[19][13], pattern[1][1], match = 1
+@@@ world[19][14], pattern[1][2], match = 1
+@@@ world[21][15], pattern[3][3], match = 2
+i = 30, listToResumeFrom->nItem = 36, row = 17, col = 12, pRow = 2, pSize = 3
+@@@ world[19][13], pattern[1][0], match = 1
+@@@ world[19][14], pattern[1][1], match = 1
+@@@ world[19][15], pattern[1][2], match = 1
+@@@ world[21][16], pattern[3][3], match = 2
+i = 31, listToResumeFrom->nItem = 36, row = 17, col = 13, pRow = 2, pSize = 3
+@@@ world[19][14], pattern[1][0], match = 1
+@@@ world[19][15], pattern[1][1], match = 1
+@@@ world[19][16], pattern[1][2], match = 1
+@@@ world[21][17], pattern[3][3], match = 2
+i = 32, listToResumeFrom->nItem = 36, row = 17, col = 14, pRow = 2, pSize = 3
+@@@ world[19][15], pattern[1][0], match = 1
+@@@ world[19][16], pattern[1][1], match = 1
+@@@ world[19][17], pattern[1][2], match = 1
+@@@ world[21][18], pattern[3][3], match = 2
+i = 33, listToResumeFrom->nItem = 36, row = 17, col = 15, pRow = 2, pSize = 3
+@@@ world[19][16], pattern[1][0], match = 1
+@@@ world[19][17], pattern[1][1], match = 1
+@@@ world[19][18], pattern[1][2], match = 1
+@@@ world[21][19], pattern[3][3], match = 2
+i = 34, listToResumeFrom->nItem = 36, row = 17, col = 16, pRow = 2, pSize = 3
+@@@ world[19][17], pattern[1][0], match = 1
+@@@ world[19][18], pattern[1][1], match = 1
+@@@ world[19][19], pattern[1][2], match = 1
+@@@ world[21][20], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 4, col = 16, pRow = 3, pSize = 3
+@@@ world[7][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 4, col = 17, pRow = 3, pSize = 3
+@@@ world[7][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 5, col = 0, pRow = 2, pSize = 3
+@@@ world[7][1], pattern[1][0], match = 1
+@@@ world[7][2], pattern[1][1], match = 1
+@@@ world[7][3], pattern[1][2], match = 1
+@@@ world[8][1], pattern[2][0], match = 1
+@@@ world[8][2], pattern[2][1], match = 1
+@@@ world[8][3], pattern[2][2], match = 1
+i = 19, listToResumeFrom->nItem = 36, row = 5, col = 1, pRow = 2, pSize = 3
+@@@ world[7][2], pattern[1][0], match = 1
+@@@ world[7][3], pattern[1][1], match = 1
+@@@ world[7][4], pattern[1][2], match = 1
+@@@ world[8][2], pattern[2][0], match = 1
+@@@ world[8][3], pattern[2][1], match = 1
+@@@ world[8][4], pattern[2][2], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 5, col = 2, pRow = 2, pSize = 3
+@@@ world[7][3], pattern[1][0], match = 1
+@@@ world[7][4], pattern[1][1], match = 1
+@@@ world[7][5], pattern[1][2], match = 1
+@@@ world[8][3], pattern[2][0], match = 1
+@@@ world[8][4], pattern[2][1], match = 0
+i = 21, listToResumeFrom->nItem = 36, row = 5, col = 3, pRow = 2, pSize = 3
+@@@ world[7][4], pattern[1][0], match = 1
+@@@ world[7][5], pattern[1][1], match = 1
+@@@ world[7][6], pattern[1][2], match = 1
+@@@ world[8][4], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 36, row = 5, col = 4, pRow = 2, pSize = 3
+@@@ world[7][5], pattern[1][0], match = 1
+@@@ world[7][6], pattern[1][1], match = 1
+@@@ world[7][7], pattern[1][2], match = 1
+@@@ world[8][5], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 36, row = 5, col = 5, pRow = 2, pSize = 3
+@@@ world[7][6], pattern[1][0], match = 1
+@@@ world[7][7], pattern[1][1], match = 1
+@@@ world[7][8], pattern[1][2], match = 1
+@@@ world[8][6], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 36, row = 5, col = 6, pRow = 2, pSize = 3
+@@@ world[7][7], pattern[1][0], match = 1
+@@@ world[7][8], pattern[1][1], match = 1
+@@@ world[7][9], pattern[1][2], match = 1
+@@@ world[8][7], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 36, row = 5, col = 7, pRow = 2, pSize = 3
+@@@ world[7][8], pattern[1][0], match = 1
+@@@ world[7][9], pattern[1][1], match = 1
+@@@ world[7][10], pattern[1][2], match = 1
+@@@ world[8][8], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 36, row = 5, col = 8, pRow = 2, pSize = 3
+@@@ world[7][9], pattern[1][0], match = 1
+@@@ world[7][10], pattern[1][1], match = 1
+@@@ world[7][11], pattern[1][2], match = 1
+@@@ world[8][9], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 36, row = 5, col = 9, pRow = 2, pSize = 3
+@@@ world[7][10], pattern[1][0], match = 1
+@@@ world[7][11], pattern[1][1], match = 1
+@@@ world[7][12], pattern[1][2], match = 1
+@@@ world[8][10], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 36, row = 5, col = 10, pRow = 2, pSize = 3
+@@@ world[7][11], pattern[1][0], match = 1
+@@@ world[7][12], pattern[1][1], match = 1
+@@@ world[7][13], pattern[1][2], match = 1
+@@@ world[8][11], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 36, row = 5, col = 11, pRow = 2, pSize = 3
+@@@ world[7][12], pattern[1][0], match = 1
+@@@ world[7][13], pattern[1][1], match = 1
+@@@ world[7][14], pattern[1][2], match = 1
+@@@ world[8][12], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 36, row = 5, col = 12, pRow = 2, pSize = 3
+@@@ world[7][13], pattern[1][0], match = 1
+@@@ world[7][14], pattern[1][1], match = 1
+@@@ world[7][15], pattern[1][2], match = 1
+@@@ world[8][13], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 36, row = 5, col = 13, pRow = 2, pSize = 3
+@@@ world[7][14], pattern[1][0], match = 1
+@@@ world[7][15], pattern[1][1], match = 1
+@@@ world[7][16], pattern[1][2], match = 1
+@@@ world[8][14], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 36, row = 5, col = 14, pRow = 2, pSize = 3
+@@@ world[7][15], pattern[1][0], match = 1
+@@@ world[7][16], pattern[1][1], match = 1
+@@@ world[7, pSize = 3
+@@@ world[13][1], pattern[1][0], match = 1
+@@@ world[13][2], pattern[1][1], match = 1
+@@@ world[13][3], pattern[1][2], match = 1
+@@@ world[14][1], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 36, row = 11, col = 1, pRow = 2, pSize = 3
+@@@ world[13][2], pattern[1][0], match = 1
+@@@ world[13][3], pattern[1][1], match = 1
+@@@ world[13][4], pattern[1][2], match = 1
+@@@ world[14][2], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 11, col = 2, pRow = 2, pSize = 3
+@@@ world[13][3], pattern[1][0], match = 1
+@@@ world[13][4], pattern[1][1], match = 1
+@@@ world[13][5], pattern[1][2], match = 1
+@@@ world[14][3], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 36, row = 11, col = 3, pRow = 2, pSize = 3
+@@@ world[13][4], pattern[1][0], match = 1
+@@@ world[13][5], pattern[1][1], match = 1
+@@@ world[13][6], pattern[1][2], match = 1
+@@@ world[14][4], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 36, row = 11, col = 4, pRow = 2, pSize = 3
+@@@ world[13][5], pattern[1][0], match = 1
+@@@ world[13][6], pattern[1][1], match = 1
+@@@ world[13][7], pattern[1][2], match = 1
+@@@ world[14][5], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 36, row = 11, col = 5, pRow = 2, pSize = 3
+@@@ world[13][6], pattern[1][0], match = 1
+@@@ world[13][7], pattern[1][1], match = 1
+@@@ world[13][8], pattern[1][2], match = 1
+@@@ world[14][6], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 36, row = 11, col = 6, pRow = 2, pSize = 3
+@@@ world[13][7], pattern[1][0], match = 1
+@@@ world[13][8], pattern[1][1], match = 1
+@@@ world[13][9], pattern[1][2], match = 1
+@@@ world[14][7], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 36, row = 11, col = 7, pRow = 2, pSize = 3
+@@@ world[13][8], pattern[1][0], match = 1
+@@@ world[13][9], pattern[1][1], match = 1
+attern[1][0], match = 1
+@@@ world[10][11], pattern[1][1], match = 1
+@@@ world[10][12], pattern[1][2], match = 1
+@@@ world[11][10], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 27, row = 8, col = 10, pRow = 2, pSize = 3
+@@@ world[10][11], pattern[1][0], match = 1
+@@@ world[10][12], pattern[1][1], match = 1
+@@@ world[10][13], pattern[1][2], match = 1
+@@@ world[11][11], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 27, row = 8, col = 11, pRow = 2, pSize = 3
+@@@ world[10][12], pattern[1][0], match = 1
+@@@ world[10][13], pattern[1][1], match = 1
+@@@ world[10][14], pattern[1][2], match = 1
+@@@ world[11][12], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 27, row = 8, col = 12, pRow = 2, pSize = 3
+@@@ world[10][13], pattern[1][0], match = 1
+@@@ world[10][14], pattern[1][1], match = 1
+@@@ world[10][15], pattern[1][2], match = 1
+@@@ world[11][13], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 27, row = 8, col = 13, pRow = 2, pSize = 3
+@@@ world[10][14], pattern[1][0], match = 1
+@@@ world[10][15], pattern[1][1], match = 1
+@@@ world[10][16], pattern[1][2], match = 1
+@@@ world[11][14], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 27, row = 8, col = 14, pRow = 2, pSize = 3
+@@@ world[10][15], pattern[1][0], match = 1
+@@@ world[10][16], pattern[1][1], match = 1
+@@@ world[10][17], pattern[1][2], match = 1
+@@@ world[11][15], pattern[2][0], match = 0
+Row = 3, pSize = 3
+@@@ world[16][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 13, col = 13, pRow = 3, pSize = 3
+@@@ world[16][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 13, col = 14, pRow = 3, pSize = 3
+@@@ world[16][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 13, col = 15, pRow = 3, pSize = 3
+@@@ world[16][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 13, col = 16, pRow = 3, pSize = 3
+@@@ world[16][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 13, col = 17, pRow = 3, pSize = 3
+@@@ world[16][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 14, col = 0, pRow = 2, pSize = 3
+@@@ world[16][1], pattern[1][0], match = 1
+@@@ world[16][2], pattern[1][1], match = 1
+@@@ world[16][3], pattern[1][2], match = 1
+@@@ world[17][1], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 36, row = 14, col = 1, pRow = 2, pSize = 3
+@@@ world[16][2], pattern[1][0], match = 1
+@@@ world[16][3], pattern[1][1], match = 1
+@@@ world[16][4], pattern[1][2], match = 1
+@@@ world[17][2], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 14, col = 2, pRow = 2, pSize = 3
+@@@ world[16][3], pattern[1][0], match = 1
+@@@ world[16][4], pattern[1][1], match = 1
+@@@ world[16][5], pattern[1][2], match = 1
+@@@ world[17][3], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 36, row = 14, col = 3, pRow = 2, pSize = 3
+@@@ world[16][4], pattern[1][0], match = 1
+@@@ world[16][5], pattern[1][1], match = 1
+@@@ world[16][6], pattern[1][2], match = 1
+@@@ world[17][4], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 36, row = 14, col = 4, pRow = 2, pSize = 3
+@@@ world[16][5], pattern[1][0], match = 1
+@@@ world[16][6], pattern[1][1], match = 1
+@@@ world[16][7], pattern[1][2], match = 1
+@@@ world[17][5], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 36, row = 14, col = 5, pRow = 2, pSize = 3
+@@@ world[16][6], pattern[1][0], match = 1
+@@@ world[16][7], pattern[1][1], match = 1
+@@@ world[16][8], pattern[1][2], match = 1
+@@@ world[17][6], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 36, row = 14, col = 6, pRow = 2, pSize = 3
+@@@ world[16][7], pattern[1][0], match = 1
+@@@ world[16][8], pattern[1][1], match = 1
+@@@ world[16][9], pattern[1][2], match = 1
+@@@ world[17][7], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 36, row = 14, col = 7, pRow = 2, pSize = 3
+@@@ world[16][8], pattern[1][0], match = 1
+@@@ world[16][9], pattern[1][1], match = 1
+@@@ world[16][10], pattern[1][2], match = 1
+@@@ world[17][8], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 36, row = 14, col = 8, pRow = 2, pSize = 3
+@@@ world[16][9], pattern[1][0], match = 1
+@@@ world[16][10], pattern[1][1], match = 1
+@@@ world[16][11], pattern[1][2], match = 1
+@@@ world[17][9], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 36, row = 14, col = 9, pRow = 2, pSize = 3
+@@@ world[16][10], pattern[1][0], match = 1
+@@@ world[16][11], pattern[1][1], match = 1
+@@@ world[16][12], pattern[1][2], match = 1
+@@@ world[17][10], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 36, row = 14, col = 10, pRow = 2, pSize = 3
+@@@ world[16][11], pattern[1][0], match = 1
+@@@ world[16][12], pattern[1][1], match = 1
+@@@ world[16][13], pattern[1][2], match = 1
+@@@ world[17][11], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 36, row = 14, col = 11, pRow = 2, pSize = 3
+@@@ world[16][12], pattern[1][0], match = 1
+@@@ world[16][13], pattern[1][1], match = 1
+@@@ world[16][14], pattern[1][2], match = 1
+@@@ world[17][12], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 36, row = 14, col = 12, pRow = 2, pSize = 3
+@@@ world[16][13], pattern[1][0], match = 1
+@@@ world[16][14], pattern[1][1], match = 1
+@@@ world[16][15], pattern[1][2], match = 1
+@@@ world[17][13], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 36, row = 14, col = 13, pRow = 2, pSize = 3
+@@@ world[16][14], pattern[1][0], match = 1
+@@@ world[16][15], pattern[1][1], match =], pattern[3][3], match = 2
+i = 35, listToResumeFrom->nItem = 36, row = 17, col = 17, pRow = 2, pSize = 3
+@@@ world[19][18], pattern[1][0], match = 1
+@@@ world[19][19], pattern[1][1], match = 1
+@@@ world[19][20], pattern[1][2], match = 0
+][17], pattern[1][2], match = 1
+@@@ world[8][15], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 36, row = 5, col = 15, pRow = 2, pSize = 3
+@@@ world[7][16], pattern[1][0], match = 1
+@@@ world[7][17], pattern[1][1], match = 1
+@@@ world[7][18], pattern[1][2], match = 1
+@@@ world[8][16], pattern[2][0], match = 0
+i = 34, listToResumeFrom->nItem = 36, row = 5, col = 16, pRow = 2, pSize = 3
+@@@ world[7][17], pattern[1][0], match = 1
+@@@ world[7][18], pattern[1][1], match = 1
+@@@ world[7][19], pattern[1][2], match = 1
+@@@ world[8][17], pattern[2][0], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 5, col = 17, pRow = 2, pSize = 3
+@@@ world[7][18], pattern[1][0], match = 1
+@@@ world[7][19], pattern[1][1], match = 1
+@@@ world[7][20], pattern[1][2], match = 1
+@@@ world[8][18], pattern[2][0], match = 1
+@@@ world[8][19], pattern[2][1], match = 0
+@@@ world[13][10], pattern[1][2], match = 1
+@@@ world[14][8], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 36, row = 11, col = 8, pRow = 2, pSize = 3
+@@@ world[13][9], pattern[1][0], match = 1
+@@@ world[13][10], pattern[1][1], match = 1
+@@@ world[13][11], pattern[1][2], match = 1
+@@@ world[14][9], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 36, row = 11, col = 9, pRow = 2, pSize = 3
+@@@ world[13][10], pattern[1][0], match = 1
+@@@ world[13][11], pattern[1][1], match = 1
+@@@ world[13][12], pattern[1][2], match = 1
+@@@ world[14][10], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 36, row = 11, col = 10, pRow = 2, pSize = 3
+@@@ world[13][11], pattern[1][0], match = 1
+@@@ world[13][12], pattern[1][1], match = 1
+@@@ world[13][13], pattern[1][2], match = 1
+@@@ world[14][11], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 36, row = 11, col = 11, pRow = 2, pSize = 3
+@@@ world[13][12], pattern[1][0], match = 1
+@@@ world[13][13], pattern[1][1], match = 1
+@@@ world[13][14], pattern[1][2], match = 1
+ 1
+@@@ world[16][16], pattern[1][2], match = 1
+@@@ world[17][14], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 36, row = 14, col = 14, pRow = 2, pSize = 3
+@@@ world[16][15], pattern[1][0], match = 1
+@@@ world[16][16], pattern[1][1], match = 1
+@@@ world[16][17], pattern[1][2], match = 1
+@@@ world[17][15], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 36, row = 14, col = 15, pRow = 2, pSize = 3
+@@@ world[16][16], pattern[1][0], match = 1
+@@@ world[16][17], pattern[1][1], match = 1
+@@@ world[16][18], pattern[1][2], match = 1
+@@@ world[17][16], pattern[2][0], match = 0
+i = 34, listToResumeFrom->nItem = 36, row = 14, col = 16, pRow = 2, pSize = 3
+@@@ world[16][17], pattern[1][0], match = 1
+@@@ world[16][18], pattern[1][1], match = 1
+@@@ world[16][19], pattern[1][2], match = 1
+@@@ world[17][17], pattern[2][0], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 14, col = 17, pRow = 2, pSize = 3
+@@@ world[16][18], pattern[1][0], match = 1
+@@@ world[16][19], pattern[1][1], match = 1
+@@@ world[16][20], pattern[1][2], match = 1
+@@@ world[17][18], pattern[2][0], match = 0
+@@@ world[14][12], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 36, row = 11, col = 12, pRow = 2, pSize = 3
+@@@ world[13][13], pattern[1][0], match = 1
+@@@ world[13][14], pattern[1][1], match = 1
+@@@ world[13][15], pattern[1][2], match = 1
+@@@ world[14][13], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 36, row = 11, col = 13, pRow = 2, pSize = 3
+@@@ world[13][14], pattern[1][0], match = 1
+@@@ world[13][15], pattern[1][1], match = 1
+@@@ world[13][16], pattern[1][2], match = 1
+@@@ world[14][14], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 36, row = 11, col = 14, pRow = 2, pSize = 3
+@@@ world[13][15], pattern[1][0], match = 1
+@@@ world[13][16], pattern[1][1], match = 1
+@@@ world[13][17], pattern[1][2], match = 1
+@@@ world[14][15], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 36, row = 11, col = 15, pRow = 2, pSize = 3
+@@@ world[13][16], pattern[1][0], match = 1
+@@@ world[13][17], pattern[1][1], match = 1
+@@@ world[13][18], pattern[1][2], match = 1
+@@@ world[14][16], pattern[2][0], match = 0
+i = 34, listToResumeFrom->nItem = 36, row = 11, col = 16, pRow = 2, pSize = 3
+@@@ world[13][17], pattern[1][0], match = 1
+@@@ world[13][18], pattern[1][1], match = 1
+@@@ world[13][19], pattern[1][2], match = 1
+@@@ world[14][17], pattern[2][0], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 11, col = 17, pRow = 2, pSize = 3
+@@@ world[13][18], pattern[1][0], match = 1
+@@@ world[13][19], pattern[1][1], match = 1
+@@@ world[13][20], pattern[1][2], match = 1
+@@@ world[14][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 36, row = 13, col = 0, pRow = 3, pSize = 3
+@@@ world[16][1], pattern[2][0], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 13, col = 1, pRow = 3, pSize = 3
+@@@ world[16][2], pattern[2][0], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 13, col = 2, pRow = 3, pSize = 3
+@@@ world[16][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 13, col = 3, pRow = 3, pSize = 3
+@@@ world[16][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 13, col = 4, pRow = 3, pSize = 3
+@@@ world[16][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 13, col = 5, pRow = 3, pSize = 3
+@@@ world[16][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 13, col = 6, pRow = 3, pSize = 3
+@@@ world[16][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 13, col = 7, pRow = 3, pSize = 3
+@@@ world[16][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 13, col = 8, pRow = 3, pSize = 3
+@@@ world[16][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 13, col = 9, pRow = 3, pSize = 3
+@@@ world[16][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 13, col = 10, pRow = 3, pSize = 3
+@@@ world[16][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 13, col = 11, pRow = 3, pSize = 3
+@@@ world[16][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 13, col = 12, pRow = 3, pSize = 3
+@@@ world[16][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 13, col = 13, pRow = 3, pSize = 3
+@@@ world[16][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 13, col = 14, pRow = 3, pSize = 3
+@@@ world[16][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 13, col = 15, pRow = 3, pSize = 3
+@@@ world[16][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 13, col = 16, pRow = 3, pSize = 3
+@@@ world[16][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 13, col = 17, pRow = 3, pSize = 3
+@@@ world[16][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 14, col = 0, pRow = 2, pSize = 3
+@@@ world[16][1], pattern[1][0], match = 1
+@@@ world[16][2], pattern[1][1], match = 1
+@@@ world[16][3], pattern[1][2], match = 1
+@@@ world[17][1], pattern[2][0], match = 0
+i = 19, listToResumeFrom->nItem = 36, row = 14, col = 1, pRow = 2, pSize = 3
+@@@ world[16][2], pattern[1][0], match = 1
+@@@ world[16][3], pattern[1][1], match = 1
+@@@ world[16][4], pattern[1][2], match = 1
+@@@ world[17][2], pattern[2][0], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 14, col = 2, pRow = 2, pSize = 3
+@@@ world[16][3], pattern[1][0], match = 1
+@@@ world[16][4], pattern[1][1], match = 1
+@@@ world[16][5], pattern[1][2], match = 1
+@@@ world[17][3], pattern[2][0], match = 0
+i = 21, listToResumeFrom->nItem = 36, row = 14, col = 3, pRow = 2, pSize = 3
+@@@ world[16][4], pattern[1][0], match = 1
+@@@ world[16][5], pattern[1][1], match = 1
+@@@ world[16][6], pattern[1][2], match = 1
+@@@ world[17][4], pattern[2][0], match = 0
+i = 22, listToResumeFrom->nItem = 36, row = 14, col = 4, pRow = 2, pSize = 3
+@@@ world[16][5], pattern[1][0], match = 1
+@@@ world[16][6], pattern[1][1], match = 1
+@@@ world[16][7], pattern[1][2], match = 1
+@@@ world[17][5], pattern[2][0], match = 0
+i = 23, listToResumeFrom->nItem = 36, row = 14, col = 5, pRow = 2, pSize = 3
+@@@ world[16][6], pattern[1][0], match = 1
+@@@ world[16][7], pattern[1][1], match = 1
+@@@ world[16][8], pattern[1][2], match = 1
+@@@ world[17][6], pattern[2][0], match = 0
+i = 24, listToResumeFrom->nItem = 36, row = 14, col = 6, pRow = 2, pSize = 3
+@@@ world[16][7], pattern[1][0], match = 1
+@@@ world[16][8], pattern[1][1], match = 1
+@@@ world[16][9], pattern[1][2], match = 1
+@@@ world[17][7], pattern[2][0], match = 0
+i = 25, listToResumeFrom->nItem = 36, row = 14, col = 7, pRow = 2, pSize = 3
+@@@ world[16][8], pattern[1][0], match = 1
+@@@ world[16][9], pattern[1][1], match = 1
+@@@ world[16][10], pattern[1][2], match = 1
+@@@ world[17][8], pattern[2][0], match = 0
+i = 26, listToResumeFrom->nItem = 36, row = 14, col = 8, pRow = 2, pSize = 3
+@@@ world[16][9], pattern[1][0], match = 1
+@@@ world[16][10], pattern[1][1], match = 1
+@@@ world[16][11], pattern[1][2], match = 1
+@@@ world[17][9], pattern[2][0], match = 0
+i = 27, listToResumeFrom->nItem = 36, row = 14, col = 9, pRow = 2, pSize = 3
+@@@ world[16][10], pattern[1][0], match = 1
+@@@ world[16][11], pattern[1][1], match = 1
+@@@ world[16][12], pattern[1][2], match = 1
+@@@ world[17][10], pattern[2][0], match = 0
+i = 28, listToResumeFrom->nItem = 36, row = 14, col = 10, pRow = 2, pSize = 3
+@@@ world[16][11], pattern[1][0], match = 1
+@@@ world[16][12], pattern[1][1], match = 1
+@@@ world[16][13], pattern[1][2], match = 1
+@@@ world[17][11], pattern[2][0], match = 0
+i = 29, listToResumeFrom->nItem = 36, row = 14, col = 11, pRow = 2, pSize = 3
+@@@ world[16][12], pattern[1][0], match = 1
+@@@ world[16][13], pattern[1][1], match = 1
+@@@ world[16][14], pattern[1][2], match = 1
+@@@ world[17][12], pattern[2][0], match = 0
+i = 30, listToResumeFrom->nItem = 36, row = 14, col = 12, pRow = 2, pSize = 3
+@@@ world[16][13], pattern[1][0], match = 1
+@@@ world[16][14], pattern[1][1], match = 1
+@@@ world[16][15], pattern[1][2], match = 1
+@@@ world[17][13], pattern[2][0], match = 0
+i = 31, listToResumeFrom->nItem = 36, row = 14, col = 13, pRow = 2, pSize = 3
+@@@ world[16][14], pattern[1][0], match = 1
+@@@ world[16][15], pattern[1][1], match = 1
+@@@ world[16][16], pattern[1][2], match = 1
+@@@ world[17][14], pattern[2][0], match = 0
+i = 32, listToResumeFrom->nItem = 36, row = 14, col = 14, pRow = 2, pSize = 3
+@@@ world[16][15], pattern[1][0], match = 1
+@@@ world[16][16], pattern[1][1], match = 1
+@@@ world[16][17], pattern[1][2], match = 1
+@@@ world[17][15], pattern[2][0], match = 0
+i = 33, listToResumeFrom->nItem = 36, row = 14, col = 15, pRow = 2, pSize = 3
+@@@ world[16][16], pattern[1][0], match = 1
+@@@ world[16][17], pattern[1][1], match = 1
+@@@ world[16][18], pattern[1][2], match = 1
+@@@ world[17][16], pattern[2][0], match = 0
+i = 34, listToResumeFrom->nItem = 36, row = 14, col = 16, pRow = 2, pSize = 3
+@@@ world[16][17], pattern[1][0], match = 1
+@@@ world[16][18], pattern[1][1], match = 1
+@@@ world[16][19], pattern[1][2], match = 1
+@@@ world[17][17], pattern[2][0], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 14, col = 17, pRow = 2, pSize = 3
+@@@ world[16][18], pattern[1][0], match = 1
+@@@ world[16][19], pattern[1][1], match = 1
+@@@ world[16][20], pattern[1][2], match = 1
+@@@ world[17][18], pattern[2][0], match = 0
+i = 0, listToResumeFrom->nItem = 36, row = 16, col = 0, pRow = 3, pSize = 3
+@@@ world[19][1], pattern[2][0], match = 1
+@@@ world[19][2], pattern[2][1], match = 1
+@@@ world[19][3], pattern[2][2], match = 0
+i = 1, listToResumeFrom->nItem = 36, row = 16, col = 1, pRow = 3, pSize = 3
+@@@ world[19][2], pattern[2][0], match = 1
+@@@ world[19][3], pattern[2][1], match = 0
+i = 2, listToResumeFrom->nItem = 36, row = 16, col = 2, pRow = 3, pSize = 3
+@@@ world[19][3], pattern[2][0], match = 0
+i = 3, listToResumeFrom->nItem = 36, row = 16, col = 3, pRow = 3, pSize = 3
+@@@ world[19][4], pattern[2][0], match = 0
+i = 4, listToResumeFrom->nItem = 36, row = 16, col = 4, pRow = 3, pSize = 3
+@@@ world[19][5], pattern[2][0], match = 0
+i = 5, listToResumeFrom->nItem = 36, row = 16, col = 5, pRow = 3, pSize = 3
+@@@ world[19][6], pattern[2][0], match = 0
+i = 6, listToResumeFrom->nItem = 36, row = 16, col = 6, pRow = 3, pSize = 3
+@@@ world[19][7], pattern[2][0], match = 0
+i = 7, listToResumeFrom->nItem = 36, row = 16, col = 7, pRow = 3, pSize = 3
+@@@ world[19][8], pattern[2][0], match = 0
+i = 8, listToResumeFrom->nItem = 36, row = 16, col = 8, pRow = 3, pSize = 3
+@@@ world[19][9], pattern[2][0], match = 0
+i = 9, listToResumeFrom->nItem = 36, row = 16, col = 9, pRow = 3, pSize = 3
+@@@ world[19][10], pattern[2][0], match = 0
+i = 10, listToResumeFrom->nItem = 36, row = 16, col = 10, pRow = 3, pSize = 3
+@@@ world[19][11], pattern[2][0], match = 0
+i = 11, listToResumeFrom->nItem = 36, row = 16, col = 11, pRow = 3, pSize = 3
+@@@ world[19][12], pattern[2][0], match = 0
+i = 12, listToResumeFrom->nItem = 36, row = 16, col = 12, pRow = 3, pSize = 3
+@@@ world[19][13], pattern[2][0], match = 0
+i = 13, listToResumeFrom->nItem = 36, row = 16, col = 13, pRow = 3, pSize = 3
+@@@ world[19][14], pattern[2][0], match = 0
+i = 14, listToResumeFrom->nItem = 36, row = 16, col = 14, pRow = 3, pSize = 3
+@@@ world[19][15], pattern[2][0], match = 0
+i = 15, listToResumeFrom->nItem = 36, row = 16, col = 15, pRow = 3, pSize = 3
+@@@ world[19][16], pattern[2][0], match = 0
+i = 16, listToResumeFrom->nItem = 36, row = 16, col = 16, pRow = 3, pSize = 3
+@@@ world[19][17], pattern[2][0], match = 0
+i = 17, listToResumeFrom->nItem = 36, row = 16, col = 17, pRow = 3, pSize = 3
+@@@ world[19][18], pattern[2][0], match = 0
+i = 18, listToResumeFrom->nItem = 36, row = 17, col = 0, pRow = 2, pSize = 3
+@@@ world[19][1], pattern[1][0], match = 0
+i = 19, listToResumeFrom->nItem = 36, row = 17, col = 1, pRow = 2, pSize = 3
+@@@ world[19][2], pattern[1][0], match = 0
+i = 20, listToResumeFrom->nItem = 36, row = 17, col = 2, pRow = 2, pSize = 3
+@@@ world[19][3], pattern[1][0], match = 1
+@@@ world[19][4], pattern[1][1], match = 1
+@@@ world[19][5], pattern[1][2], match = 1
+@@@ world[21][6], pattern[3][3], match = 2
+i = 21, listToResumeFrom->nItem = 36, row = 17, col = 3, pRow = 2, pSize = 3
+@@@ world[19][4], pattern[1][0], match = 1
+@@@ world[19][5], pattern[1][1], match = 1
+@@@ world[19][6], pattern[1][2], match = 1
+@@@ world[21][7], pattern[3][3], match = 2
+i = 22, listToResumeFrom->nItem = 36, row = 17, col = 4, pRow = 2, pSize = 3
+@@@ world[19][5], pattern[1][0], match = 1
+@@@ world[19][6], pattern[1][1], match = 1
+@@@ world[19][7], pattern[1][2], match = 1
+@@@ world[21][8], pattern[3][3], match = 2
+i = 23, listToResumeFrom->nItem = 36, row = 17, col = 5, pRow = 2, pSize = 3
+@@@ world[19][6], pattern[1][0], match = 1
+@@@ world[19][7], pattern[1][1], match = 1
+@@@ world[19][8], pattern[1][2], match = 1
+@@@ world[21][9], pattern[3][3], match = 2
+i = 24, listToResumeFrom->nItem = 36, row = 17, col = 6, pRow = 2, pSize = 3
+@@@ world[19][7], pattern[1][0], match = 1
+@@@ world[19][8], pattern[1][1], match = 1
+@@@ world[19][9], pattern[1][2], match = 1
+@@@ world[21][10], pattern[3][3], match = 2
+i = 25, listToResumeFrom->nItem = 36, row = 17, col = 7, pRow = 2, pSize = 3
+@@@ world[19][8], pattern[1][0], match = 1
+@@@ world[19][9], pattern[1][1], match = 1
+@@@ world[19][10], pattern[1][2], match = 1
+@@@ world[21][11], pattern[3][3], match = 2
+i = 26, listToResumeFrom->nItem = 36, row = 17, col = 8, pRow = 2, pSize = 3
+@@@ world[19][9], pattern[1][0], match = 1
+@@@ world[19][10], pattern[1][1], match = 1
+@@@ world[19][11], pattern[1][2], match = 1
+@@@ world[21][12], pattern[3][3], match = 2
+i = 27, listToResumeFrom->nItem = 36, row = 17, col = 9, pRow = 2, pSize = 3
+@@@ world[19][10], pattern[1][0], match = 1
+@@@ world[19][11], pattern[1][1], match = 1
+@@@ world[19][12], pattern[1][2], match = 1
+@@@ world[21][13], pattern[3][3], match = 2
+i = 28, listToResumeFrom->nItem = 36, row = 17, col = 10, pRow = 2, pSize = 3
+@@@ world[19][11], pattern[1][0], match = 1
+@@@ world[19][12], pattern[1][1], match = 1
+@@@ world[19][13], pattern[1][2], match = 1
+@@@ world[21][14], pattern[3][3], match = 2
+i = 29, listToResumeFrom->nItem = 36, row = 17, col = 11, pRow = 2, pSize = 3
+@@@ world[19][12], pattern[1][0], match = 1
+@@@ world[19][13], pattern[1][1], match = 1
+@@@ world[19][14], pattern[1][2], match = 1
+@@@ world[21][15], pattern[3][3], match = 2
+i = 30, listToResumeFrom->nItem = 36, row = 17, col = 12, pRow = 2, pSize = 3
+@@@ world[19][13], pattern[1][0], match = 1
+@@@ world[19][14], pattern[1][1], match = 1
+@@@ world[19][15], pattern[1][2], match = 1
+@@@ world[21][16], pattern[3][3], match = 2
+i = 31, listToResumeFrom->nItem = 36, row = 17, col = 13, pRow = 2, pSize = 3
+@@@ world[19][14], pattern[1][0], match = 1
+@@@ world[19][15], pattern[1][1], match = 1
+@@@ world[19][16], pattern[1][2], match = 1
+@@@ world[21][17], pattern[3][3], match = 2
+i = 32, listToResumeFrom->nItem = 36, row = 17, col = 14, pRow = 2, pSize = 3
+@@@ world[19][15], pattern[1][0], match = 1
+@@@ world[19][16], pattern[1][1], match = 1
+@@@ world[19][17], pattern[1][2], match = 1
+@@@ world[21][18], pattern[3][3], match = 2
+i = 33, listToResumeFrom->nItem = 36, row = 17, col = 15, pRow = 2, pSize = 3
+@@@ world[19][16], pattern[1][0], match = 1
+@@@ world[19][17], pattern[1][1], match = 1
+@@@ world[19][18], pattern[1][2], match = 1
+@@@ world[21][19], pattern[3][3], match = 2
+i = 34, listToResumeFrom->nItem = 36, row = 17, col = 16, pRow = 2, pSize = 3
+@@@ world[19][17], pattern[1][0], match = 1
+@@@ world[19][18], pattern[1][1], match = 1
+@@@ world[19][19], pattern[1][2], match = 0
+i = 35, listToResumeFrom->nItem = 36, row = 17, col = 17, pRow = 2, pSize = 3
+@@@ world[19][18], pattern[1][0], match = 1
+@@@ world[19][19], pattern[1][1], match = 0
 List size = 15
 0:7:17:0
 0:10:0:0
