@@ -714,13 +714,13 @@ void searchPatterns(char** world, int wSize, int iteration,
 void searchSinglePattern(char** world, int wSize, int iteration, char** pattern, int pSize,
 		int rotation, MATCHLIST* list, MATCHLIST* listToContinueFinding, int start, int end)
 {
-	
+	/*
 	if ((iteration == 0) && (rotation == 0)) {
 		printf("--- SPECIAL DEBUG!! (local) Start = %d, end = %d ---\n", start, end);
 		printSquareMatrix(world, wSize + 2);
 		printSquareMatrix(pattern, pSize);
 		printf("--- SPECIAL DEBUG!! (local) ---\n");
-	}
+	}*/
 	
 	int wRow, wCol, pRow, pCol, match;
 	int cTerminate = wSize - pSize + 1;
@@ -761,10 +761,10 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 			
 			// printf("(%d, %d) gets match = %d\n", wRow - 1, wCol - 1, match);
 			
-			
+			/*
 			if ((iteration == 0) && (rotation == 0) && (match != 0))
 				printf("---------- Iteration = %d, Row = %d, Col = %d, Rotation = %d, match = %d, listToContinueFinding = %s\n", iteration, wRow-1, wCol-1, rotation, match, (listToContinueFinding ? "true" : "false"));
-			
+			*/
 			
 			
 			if (match == 1){
@@ -792,7 +792,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
 	cur = listToResumeFrom->tail->next;
 	for( i = 0; i < listToResumeFrom->nItem; i++, cur=cur->next) {
 	
-		printf("i = %d, listToResumeFrom->nItem = %d, row = %d, col = %d, pRow = %d, pSize = %d\n", i, listToResumeFrom->nItem, cur->row, cur->col, start - cur->row + 1, pSize);
+		//printf("i = %d, listToResumeFrom->nItem = %d, row = %d, col = %d, pRow = %d, pSize = %d\n", i, listToResumeFrom->nItem, cur->row, cur->col, start - cur->row + 1, pSize);
 		match = 1;
 		
 		for (pRow = start - cur->row; match && pRow < pSize; pRow++){
@@ -805,7 +805,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
 					pCol = pSize;
 					match = 2;
 				}
-				printf("@@@ world[%d][%d], pattern[%d][%d], match = %d\n", cur->row + pRow + 1, cur->col + pCol + 1, pRow, pCol, match);
+				//printf("@@@ world[%d][%d], pattern[%d][%d], match = %d\n", cur->row + pRow + 1, cur->col + pCol + 1, pRow, pCol, match);
 			}
 		}
 		if (match == 1){
