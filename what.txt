@@ -1,6 +1,10 @@
 World Size = 20
 Iterations = 3
 Pattern size = 3
+---------- Iteration = 0, Row = 7, Col = 17, Rotation = 0, match = 1, listToContinueFinding = true
+---------- Iteration = 1, Row = 6, Col = 1, Rotation = 0, match = 1, listToContinueFinding = true
+---------- Iteration = 2, Row = 1, Col = 2, Rotation = 0, match = 1, listToContinueFinding = true
+---------- Iteration = 2, Row = 7, Col = 17, Rotation = 0, match = 1, listToContinueFinding = true
 RANK 4!! iter = 0, nextList->nItem = 15
 RANK 4: KIBOU OU HOPE i = 0, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 1, iter = 0, row = 5, col = 0, rot = 3
@@ -52,6 +56,7 @@ RANK 4: KIBOU OU HOPE i = 11, iter = 2, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 12, iter = 0, row = 5, col = 0, rot = 3
 RANK 4: KIBOU OU HOPE i = 13, iter = 1, row = 6, col = 16, rot = 3
 RANK 4: KIBOU OU HOPE i = 14, iter = 2, row = 5, col = 0, rot = 3
+---------- Iteration = 0, Row = 10, Col = 0, Rotation = 0, match = 1, listToContinueFinding = true
 List size = 62
 0:7:17:0
 0:10:0:0
