@@ -714,12 +714,13 @@ void searchPatterns(char** world, int wSize, int iteration,
 void searchSinglePattern(char** world, int wSize, int iteration, char** pattern, int pSize,
 		int rotation, MATCHLIST* list, MATCHLIST* listToContinueFinding, int start, int end)
 {
+	/*
 	if ((iteration == 1) && (rotation == 0)) {
 		printf("--- SPECIAL DEBUG!! (local) Start = %d, end = %d ---\n", start, end);
 		printSquareMatrix(world, wSize + 2);
 		printSquareMatrix(pattern, pSize);
 		printf("--- SPECIAL DEBUG!! (local) ---\n");
-	}
+	}*/
 	
 	int wRow, wCol, pRow, pCol, match;
 	int cTerminate = wSize - pSize + 1;
