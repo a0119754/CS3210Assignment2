@@ -372,8 +372,10 @@ int main( int argc, char** argv)
 					// Send results to next guy
 					omg = nextList->nItem;
 					
+					/*
 					if (rank == 4) // Debugging
 						printf("RANK 4!! iter = %d, nextList->nItem = %d\n", iter, omg);
+						*/
 					
 					MPI_Send(&omg, 1, MPI_INT, rank + 4, 0, MPI_COMM_WORLD);
 					if (omg > 0) cur = nextList->tail->next;
@@ -758,7 +760,7 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 			// printf("(%d, %d) gets match = %d\n", wRow - 1, wCol - 1, match);
 			
 			
-			if ((iteration == 1) && (rotation == 0) && (match != 0))
+			if ((iteration == 1) && (rotation == 0)) // && (match != 0))
 				printf("---------- Iteration = %d, Row = %d, Col = %d, Rotation = %d, match = %d, listToContinueFinding = %s\n", iteration, wRow-1, wCol-1, rotation, match, (listToContinueFinding ? "true" : "false"));
 				
 			
