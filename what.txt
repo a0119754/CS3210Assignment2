@@ -126,6 +126,8 @@ Pattern size = 3
 
 --- SPECIAL DEBUG!! (local) ---
 ---------- Iteration = 0, Row = 10, Col = 0, Rotation = 0, match = 1, listToContinueFinding = true
+i = 0, listToResumeFrom->nItem = 2, row = 8, col = 17
+i = 1, listToResumeFrom->nItem = 2, row = 9, col = 17
 @@@ world[12][18], pattern[2][0], match = 0
 --- SPECIAL DEBUG!! (local) Start = 10, end = 19 ---
 0  OOOOOOOOOOOOOOOOOOOOOO
@@ -185,6 +187,8 @@ Pattern size = 3
 2  XOO
 
 --- SPECIAL DEBUG!! (local) ---
+i = 0, listToResumeFrom->nItem = 2, row = 8, col = 17
+i = 1, listToResumeFrom->nItem = 2, row = 9, col = 17
 @@@ world[12][18], pattern[2][0], match = 0
 List size = 16
 0:7:17:0
