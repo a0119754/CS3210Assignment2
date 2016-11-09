@@ -74,5 +74,10 @@ rank 5=soctf-pdc-002 slot=0:0-2
 
 ## To do:
 
-1. When using more than one cluster, results seem erratic. Low priority - currently debugging code without using machinefile or rankfile
-2. Tried processes from 2 to 8 inclusive, working fine. Processes = 9, rank 4 sends multiples of same item to rank 8, resulting in duplicates in final result.
+1. Execution results and analysis on lab machine and NSCC
+  - random3000.w, glider3.p, iter = 100
+2. NSCC - password Q0q0q0q0!
+  1. makefile.nscc - for compiling on NSCC
+  2. SETL.pbs - PBS job script for submitting program to NSCC
+  3. SETL.pbs.o and SETL.pbs.e - summary reports from execution
+3. Enable np=1?
