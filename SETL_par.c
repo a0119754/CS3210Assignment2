@@ -800,7 +800,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
 				if(world[cur->row + pRow + 1][cur->col + pCol + 1] != pattern[pRow][pCol]){
 					match = 0;
 				}
-				if ((cur->row + pRow + 1) > end) {
+				if ((cur->row + pRow) > end) {
 					pRow = pSize;
 					pCol = pSize;
 					match = 2;
