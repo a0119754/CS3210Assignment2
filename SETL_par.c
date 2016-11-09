@@ -757,15 +757,17 @@ void searchSinglePattern(char** world, int wSize, int iteration, char** pattern,
 			
 			// printf("(%d, %d) gets match = %d\n", wRow - 1, wCol - 1, match);
 			
-			
+			/*
 			if ((rotation == 3) && (match != 0))
 				printf("---------- Iteration = %d, Row = %d, Col = %d, Rotation = %d, match = %d, listToContinueFinding = %s\n", iteration, wRow-1, wCol-1, rotation, match, (listToContinueFinding ? "true" : "false"));
+				*/
 			
 			
 			if (match == 1){
 				insertEnd(list, iteration, wRow-1, wCol-1, rotation);
 			} else if (match == 2) {
 				if (listToContinueFinding) {
+					if (rotation == 3) printf("------- Inserted into listToContinueFinding: iter = %d, row = %d, col = %d, rot = %d\n", iteration, wRow - 1, wCol - 1, rotation);
 					insertEnd(listToContinueFinding, iteration, wRow - 1, wCol - 1, rotation);
 				}
 			}
