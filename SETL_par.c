@@ -792,7 +792,7 @@ void continueSearch(char** world, int wSize, int iteration, char** pattern, int 
 	cur = listToResumeFrom->tail->next;
 	for( i = 0; i < listToResumeFrom->nItem; i++, cur=cur->next) {
 	
-		printf("i = %d, listToResumeFrom->nItem = %d, row = %d, col = %d\n", i, listToResumeFrom->nItem, cur->row, cur->col);
+		printf("i = %d, listToResumeFrom->nItem = %d, row = %d, col = %d, pRow = %d, pSize = %d\n", i, listToResumeFrom->nItem, cur->row, cur->col, start - cur->row + 1, pSize);
 		match = 1;
 		
 		for (pRow = start - cur->row + 1; match && pRow < pSize; pRow++){
